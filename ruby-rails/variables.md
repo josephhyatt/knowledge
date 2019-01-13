@@ -1,7 +1,5 @@
 # Variables
 
-## **Variables:**
-
 #### Local Variable
 
 > A **local variable** for a method or block \(gone when the method is done\).
