@@ -1,7 +1,3 @@
----
-description: A general overview of Ruby/Rails variables
----
-
 # Variables
 
 ## **Variables:**
