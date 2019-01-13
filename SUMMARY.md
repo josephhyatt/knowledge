@@ -10,4 +10,7 @@
 * [ERB: Embedded Ruby](ruby-rails/erb-embedded-ruby.md)
 * [Migrations](ruby-rails/migrations.md)
 * [The Structure of a Rails Application](ruby-rails/the-structure-of-a-rails-application.md)
+* [Keywords](ruby-rails/keywords.md)
+* [Backslash Notations](ruby-rails/backslash-notations.md)
+* [Operators](ruby-rails/operators.md)
 
