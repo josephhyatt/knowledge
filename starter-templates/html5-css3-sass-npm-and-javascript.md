@@ -1,6 +1,6 @@
 # HTML5, CSS3, Sass, NPM , and JavaScript
 
-> **Technologies Used**
+## **Technologies Used**
 
 ```text
 HTML5 CSS3 - Transitions
@@ -9,6 +9,8 @@ NPM - Package Manager
 JavaScript 
 Git
 ```
+
+## Step 1
 
 > create folder for project and open **text editor** in projects folder
 
@@ -26,9 +28,13 @@ Git
 
 > create `main.scss` **file** in **scss folder**
 
+## **Step 2**
+
 > in the **terminal,** `cd` into **project-folder** and run `npm init`**.**  This creates `package.json` **file** in the **main directory**.
 
 > in the **terminal** run `npm i node-sass`. This creates `node_modules` **folder** in the **main directory**
+
+## **Step 3**
 
 > now inside the `package.json` **file** in the `script` section, **change** `test` into `scss`
 

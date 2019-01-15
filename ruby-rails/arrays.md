@@ -1,6 +1,6 @@
 # Arrays
 
-#### Create an Array
+## Create an Array
 
 ```ruby
 array = []                    # Array; zero-based indexing
@@ -9,7 +9,7 @@ array = Array.new(2, "abc")   # ["abc", "abc"]
 array = Array(0..9)           # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
-#### Most commonly used methods with arrays
+## Most commonly used methods with arrays
 
 ```ruby
 array.size                            # Array size

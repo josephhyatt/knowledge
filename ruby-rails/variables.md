@@ -1,6 +1,6 @@
 # Variables
 
-#### Local Variable
+## Local Variable
 
 > A **local variable** for a method or block \(gone when the method is done\).
 
@@ -8,7 +8,7 @@
 age = 21
 ```
 
-#### **Instance Variable**
+## **Instance Variable**
 
 > A **instance variable** owned by each object \(it sticks around\).
 
@@ -16,7 +16,7 @@ age = 21
 @age = 21
 ```
 
-#### Class Variable
+## Class Variable
 
 > A **class variable** shared by all objects \(it sticks around, too\).
 
@@ -24,7 +24,7 @@ age = 21
 @@age = 21
 ```
 
-#### Global Variable
+## Global Variable
 
 > A **global variable** can be referred to from anywhere in a program.
 
@@ -32,7 +32,7 @@ age = 21
 $age = 21
 ```
 
-#### Constant Variable
+## Constant Variable
 
 > A **constant variable** is like a regular **variable**, except that its value is supposed to remain **constant** for the duration of a program.
 

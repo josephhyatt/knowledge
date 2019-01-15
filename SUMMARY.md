@@ -22,3 +22,8 @@
 
 * [HTML5, CSS3, Sass, NPM , and JavaScript](starter-templates/html5-css3-sass-npm-and-javascript.md)
 
+## Think Like A Programmer
+
+* [Untitled](think-like-a-programmer/untitled.md)
+* [Google Search](think-like-a-programmer/google-search.md)
+

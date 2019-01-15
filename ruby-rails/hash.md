@@ -2,7 +2,7 @@
 
 > Hashes associate a **key** to some **value**. You may then retrieve the value based upon its key. Hashes can map from anything to anything! You can map from Strings to Numbers, Strings to Strings, Numbers to Boolean's… and you can mix all of those. Symbols are especially common as keys. Symbols look like this :symbol. A symbol is a colon followed by some characters. You can think of them as special strings that stand for \(symbolize\) something! We often use symbols because Ruby runs faster when we use symbols instead of strings.
 
-#### **Create** Hash
+## **Create** Hash
 
 > You create a hash by **surrounding** the **key-value pairs** with **curly braces**. The arrow always goes from the key to the value depicting the meaning: "This key points to this value.". Key-value pairs are then separated by commas.
 
@@ -20,7 +20,7 @@ hash = {}     # New Hash without default value
   :name => "Tobi" }
 ```
 
-#### Accessing a Hash
+## Accessing a Hash
 
 > **Accessing** an entry in a hash looks a lot like accessing it in an array. However **with a hash the key can be anything**, not just numbers. If you try to access a key that does not exist, the value nil is returned, which is Ruby's way of saying "nothing", because if it doesn't recognize the key it can't return a value for it.
 
@@ -54,7 +54,7 @@ hash # => {
 }
 ```
 
-#### Deleting Key From Hash
+## Deleting Key From Hash
 
 > Delete a specified key from the hash, so that the key and its value can not be accessed.
 
@@ -70,7 +70,7 @@ hash.delete(:a)
 hash # => {:b=>10}
 ```
 
-#### Most common hash methods
+## Most common hash methods
 
 ```ruby
 hash = Hash.new("default_value")  # New hash with a default value for any key

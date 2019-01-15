@@ -2,7 +2,7 @@
 
 > A **migration** is a file that contains a specific set of instructions for the database. Rails introduces a specific Domain-specific language for writing instructions for how a database should be created. For example, last week we created a migration file to create the articles table with columns for title and body. When this migration file is run, Rails will be able to make the changes to the database and automatically create the table for us.
 
-**Create Migration with Columns**
+## **Create Migration with Columns**
 
 ```ruby
 rails g migration CreatTablename columnname:columntype    # Syntax
@@ -27,7 +27,7 @@ class CreateAuthors < ActiveRecord::Migration[5.0]
 end
 ```
 
-#### Change Column Name for Existing Table 
+## Change Column Name for Existing Table 
 
 > To change column `channel` to `Section` in table **channels**
 
@@ -54,7 +54,7 @@ class RenameChannelToName < ActiveRecord::Migration[5.2]
 end
 ```
 
-**One Line Migration to Drop DB Columns**
+## **One Line Migration to Drop DB Columns**
 
 ```ruby
 rails generate migration RemoveFieldNameFromTableName field_name:datatype    # Syntax
@@ -72,13 +72,13 @@ class RemoveNameFromMerchant < ActiveRecord::Migration
 end
 ```
 
-#### Drop DB Table
+## Drop DB Table
 
 ```ruby
 rails generate migration DropMerchantsTable    # Will drop Merchants table from the DB
 ```
 
-#### Most Common CLI Migration Methods
+## Most Common CLI Migration Methods
 
 ```ruby
 db:create                     # creates the database for the current env 
