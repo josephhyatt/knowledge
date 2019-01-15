@@ -18,3 +18,7 @@
 
 * [Untitled](javascript/untitled.md)
 
+## Starter Templates
+
+* [HTML5, CSS3, Sass, NPM , and JavaScript](starter-templates/html5-css3-sass-npm-and-javascript.md)
+
