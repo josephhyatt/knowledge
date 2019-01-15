@@ -18,6 +18,8 @@ Git
 
 > create `index.html` **file** in `dist` folder
 
+> in `index.html` **file,** using **html emmet** type `!` followed by **tab** to create starter html template
+
 > add `link` tag in the `index.html` file in the `header` section above `title`
 
 ```css
