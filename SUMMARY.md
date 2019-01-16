@@ -13,6 +13,7 @@
 * [Keywords](ruby-rails/keywords.md)
 * [Backslash Notations](ruby-rails/backslash-notations.md)
 * [Operators](ruby-rails/operators.md)
+* [Naming Conventions](ruby-rails/naming-conventions.md)
 
 ## JavaScript
 
