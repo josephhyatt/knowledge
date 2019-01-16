@@ -1,32 +1,12 @@
 # Ruby/Rails Cheat Sheet
 
-
-
-
-
-I think the most confusing thing that I have found about Ruby on Rails so far has been the transition from \(trying to\) write code myself to the use of the fabled "Rails Magic". So, to help my own understanding of a few core Ruby on Rails concepts, I have decided to write something on what I think is a _**CRITICAL**_ topic... the idea of **Convention over Configuration** and why \(in my mind\) it is the most important thing that helps Rails become magic!
-
-_\(This may be a topic that we cover in more detail in class but as I said, I'm writing this for my own understanding... I hope it helps someone else understand things too... Perhaps you can give me a hand when I'm crying next week!\)_
-
-\#\#Convention over configuration \#\#\#What does this "actually" mean...
-
-Wikipedia says:
-
-> "Convention over configuration \(also known as coding by convention\) is a software design paradigm which seeks to decrease the number of decisions that developers need to make, gaining simplicity, but not necessarily losing flexibility."
-
-Rails' homepage says:
-
-> "Ruby on Rails is an open-source web framework that's optimized for programmer happiness and sustainable productivity. It lets you write beautiful code by favoring convention over configuration."
-
-Before having a web application framework as powerful as Rails with tools that can do things like scaffold things for you, developers had to make LOTS more decisions about how they called each variable, controller, model, database table etc that they put into their application. Although there were things like lower\_snake\_case, cameBack and UpperCamelCase there was still a lot of room for personal decision...
-
 In Rails, there are different conventions for the:
 
 1. **File name** \(outside\) e.g. orders\_controller.rb
 2. **File definition** \(inside\) e.g. OrdersController
 3. **File location** \(inside\) e.g. /app/controllers
 
-\#\#Rails Naming Convention
+## Rails Naming Convention
 
 Rails use the same naming convention as Ruby \(for a list of the Ruby naming conventions scroll down\) with some additions:
 
