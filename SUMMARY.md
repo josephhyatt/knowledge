@@ -14,6 +14,7 @@
 * [Backslash Notations](ruby-rails/backslash-notations.md)
 * [Operators](ruby-rails/operators.md)
 * [Naming Conventions](ruby-rails/naming-conventions.md)
+* [Ruby/Rails Cheat Sheet](ruby-rails/ruby-rails-cheat-sheet.md)
 
 ## JavaScript
 

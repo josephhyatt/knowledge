@@ -152,7 +152,3 @@ app/views/bigfoot_sightings/show.html.erb
 app/views/profile/show.html.erb
 ```
 
-![Rails Naming Conventions](../.gitbook/assets/rails-naming-conventions.pdf)
-
-
-
