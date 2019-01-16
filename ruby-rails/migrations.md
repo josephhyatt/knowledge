@@ -5,12 +5,13 @@
 ## **Create Migration with Columns**
 
 ```ruby
-rails g migration CreatTablename columnname:columntype    # Syntax
-
-rails g migration CreateAuthors first_name:string last_name:string email:string birthday:date age:integer
+# Syntax
+rails g migration CreatTablename columnname:columntype
 ```
 
-> Will **create**
+```ruby
+rails g migration CreateAuthors first_name:string last_name:string email:string birthday:date age:integer
+```
 
 ```ruby
 class CreateAuthors < ActiveRecord::Migration[5.0]
