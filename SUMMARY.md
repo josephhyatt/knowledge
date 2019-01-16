@@ -29,3 +29,12 @@
 * [Untitled](think-like-a-programmer/untitled.md)
 * [Google Search](think-like-a-programmer/google-search.md)
 
+## Vocabulary
+
+* [Programming](vocabulary/programming.md)
+
+## Writing
+
+* [Medium](writing/medium.md)
+* [Untitled](writing/untitled.md)
+
