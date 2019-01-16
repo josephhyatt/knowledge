@@ -15,6 +15,7 @@
 * [Operators](ruby-rails/operators.md)
 * [Naming Conventions](ruby-rails/naming-conventions.md)
 * [Ruby/Rails Cheat Sheet](ruby-rails/ruby-rails-cheat-sheet.md)
+* [MVC](ruby-rails/mvc.md)
 
 ## JavaScript
 
