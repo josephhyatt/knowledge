@@ -1,6 +1,9 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Just try 1](just-try-1/README.md)
+  * [2](just-try-1/2.md)
+  * [1](just-try-1/1.md)
 
 ## Ruby/Rails
 
