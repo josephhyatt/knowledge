@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Ruby/Rails](ruby-rails-1/README.md)
+  * [Rails Console](ruby-rails-1/rails-console.md)
   * [MVC](ruby-rails-1/mvc.md)
   * [Ruby/Rails Cheat Sheet](ruby-rails-1/ruby-rails-cheat-sheet.md)
   * [Naming Conventions](ruby-rails-1/naming-conventions.md)
