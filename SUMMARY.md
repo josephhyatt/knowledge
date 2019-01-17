@@ -1,24 +1,19 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Just try 1](just-try-1/README.md)
-  * [2](just-try-1/2.md)
-  * [1](just-try-1/1.md)
-
-## Ruby/Rails
-
-* [Variables](ruby-rails/variables.md)
-* [Arrays](ruby-rails/arrays.md)
-* [Hash](ruby-rails/hash.md)
-* [ERB: Embedded Ruby](ruby-rails/erb-embedded-ruby.md)
-* [Migrations](ruby-rails/migrations.md)
-* [The Structure of a Rails Application](ruby-rails/the-structure-of-a-rails-application.md)
-* [Keywords](ruby-rails/keywords.md)
-* [Backslash Notations](ruby-rails/backslash-notations.md)
-* [Operators](ruby-rails/operators.md)
-* [Naming Conventions](ruby-rails/naming-conventions.md)
-* [Ruby/Rails Cheat Sheet](ruby-rails/ruby-rails-cheat-sheet.md)
-* [MVC](ruby-rails/mvc.md)
+* [Ruby/Rails](ruby-rails-1/README.md)
+  * [MVC](ruby-rails-1/mvc.md)
+  * [Ruby/Rails Cheat Sheet](ruby-rails-1/ruby-rails-cheat-sheet.md)
+  * [Naming Conventions](ruby-rails-1/naming-conventions.md)
+  * [Operators](ruby-rails-1/operators.md)
+  * [Backslash Notations](ruby-rails-1/backslash-notations.md)
+  * [Keywords](ruby-rails-1/keywords.md)
+  * [The Structure of a Rails Application](ruby-rails-1/the-structure-of-a-rails-application.md)
+  * [Migrations](ruby-rails-1/migrations.md)
+  * [ERB: Embedded Ruby](ruby-rails-1/erb-embedded-ruby.md)
+  * [Hash](ruby-rails-1/hash.md)
+  * [Arrays](ruby-rails-1/arrays.md)
+  * [Variables](ruby-rails-1/variables.md)
 
 ## JavaScript
 

@@ -1,6 +1,6 @@
 # The Structure of a Rails Application
 
-## app
+app
 
 > This folder contains your application. Therefore it is the most important folder in Ruby on Rails and it is worth digging into its sub-folders. See the following rows. app/assets Assets basically are your front-end stuff. This folder contains images you use on your website, javascripts for all your fancy front-end interaction and stylesheets for all your CSS making your website absolutely beautiful. app/controllers The controllers sub-directory contains the controllers, which handle the requests from the users. It is often responsible for a single resource type, such as places, users or attendees. Controllers also tie together the models and the views.
 

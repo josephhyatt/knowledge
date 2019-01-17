@@ -1,5 +1,7 @@
 # Hash
 
+
+
 > Hashes associate a **key** to some **value**. You may then retrieve the value based upon its key. Hashes can map from anything to anything! You can map from Strings to Numbers, Strings to Strings, Numbers to Boolean's… and you can mix all of those. Symbols are especially common as keys. Symbols look like this :symbol. A symbol is a colon followed by some characters. You can think of them as special strings that stand for \(symbolize\) something! We often use symbols because Ruby runs faster when we use symbols instead of strings.
 
 ## **Create** Hash
@@ -51,12 +53,8 @@ hash[:key] = "value"
 hash # => {
   :a=>"b", 
   :key=>"value"
-}
+}HashDelete a specified key from the hash, so that the key and its value can not be accessed.
 ```
-
-## Deleting Key From Hash
-
-> Delete a specified key from the hash, so that the key and its value can not be accessed.
 
 ```ruby
 hash.delete(key) # Syntax

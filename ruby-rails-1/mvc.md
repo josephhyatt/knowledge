@@ -1,8 +1,6 @@
----
-description: Model-View-Controller
----
-
 # MVC
+
+
 
 ![](../.gitbook/assets/mvc_rails.png)
 
