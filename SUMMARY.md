@@ -30,9 +30,10 @@
 * [Untitled](think-like-a-programmer/untitled.md)
 * [Google Search](think-like-a-programmer/google-search.md)
 
-## Vocabulary
+## General Programming
 
-* [Programming](vocabulary/programming.md)
+* [Programming](programming/programming.md)
+* [Starting A Serious Web Development Project](programming/starting-a-serious-web-development-project.md)
 
 ## Writing
 
