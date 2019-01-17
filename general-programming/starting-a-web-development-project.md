@@ -1,4 +1,4 @@
-# Starting A Serious Web Development Project
+# Starting A Web Development Project
 
 ## Get All the Requirements
 

@@ -1,4 +1,4 @@
-# Google Search
+# Google Search Tips
 
 ## **Basic Search Symbols**
 

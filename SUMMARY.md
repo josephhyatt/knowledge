@@ -14,27 +14,14 @@
   * [Hash](ruby-rails-1/hash.md)
   * [Arrays](ruby-rails-1/arrays.md)
   * [Variables](ruby-rails-1/variables.md)
-
-## JavaScript
-
-* [Untitled](javascript/untitled.md)
-
-## Starter Templates
-
-* [HTML5, CSS3, Sass, NPM , and JavaScript](starter-templates/html5-css3-sass-npm-and-javascript.md)
-
-## Think Like A Programmer
-
-* [Untitled](think-like-a-programmer/untitled.md)
-* [Google Search](think-like-a-programmer/google-search.md)
-
-## General Programming
-
-* [Programming](programming/programming.md)
-* [Starting A Serious Web Development Project](programming/starting-a-serious-web-development-project.md)
-
-## Writing
-
-* [Medium](writing/medium.md)
-* [Untitled](writing/untitled.md)
+* [JavaScript](javascript-1/README.md)
+  * [Untitled](javascript-1/untitled.md)
+* [Starter Templates](starter-templates-1/README.md)
+  * [WebSite](starter-templates-1/website.md)
+* [General Programming](general-programming/README.md)
+  * [Starting A Web Development Project](general-programming/starting-a-web-development-project.md)
+  * [Problems and Solutions](general-programming/problems-and-solutions.md)
+  * [Thinking Like A Programmer](general-programming/thinking-like-a-programmer.md)
+* [Google](google/README.md)
+  * [Google Search Tips](google/google-search-tips.md)
 

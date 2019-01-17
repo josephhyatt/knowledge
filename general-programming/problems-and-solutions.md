@@ -1,4 +1,4 @@
-# Programming
+# Problems and Solutions
 
 > A list of word's and their definitions that you will hear throughout your programming career.
 
