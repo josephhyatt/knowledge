@@ -35,19 +35,6 @@ Where a term from this list is used in a definition, it will link to the term an
 
 `Example: I assigned the number 22 to the age variable.`
 
-## Brackets
-
-> Characters often used to surround text. The different types of brackets are:
->
-> * Parenthesis/parens/round brackets: \( \)
-> * Curly brackets/braces: { }
-> * Angle brackets: &lt; &gt;
-> * Square brackets: \[ \]
->
-> The bracket at the beginning is called the “opening” or the “left” bracket. The bracket at the end is called the “closing” or “right” bracket.
-
-`Example: Your` `code won’t compile because you forgot a closing bracket.`
-
 ## Bug
 
 > A mistake in a program.
@@ -63,4 +50,40 @@ Where a term from this list is used in a definition, it will link to the term an
 ## Class
 
 > A type that can be defined by the programmer. Classes are defined in order to create objects of that class.
+
+## Compiler
+
+> A program that converts code into an executable, and checks that the syntax is correct. Sometimes compilers convert code into other code.
+
+`Example: The compiler is giving me an error, so I must have incorrect syntax somewhere.`
+
+## Constant
+
+> A variable that never changes its value.
+
+`Example: The PI constant has the value 3.14.`
+
+## Data Structure
+
+> A value that contains other values.
+
+`Example: Arrays are one kind of data structure.`
+
+## Debug
+
+> To investigate and fix bugs.
+
+`Example: I spent all day debugging a complicated error.`
+
+## Declaration
+
+> Code that declares that something exists – usually a variable, function or a class. A declaration might not fully define the thing it is declaring. E.g. a constant may be declared to exist, without actually defining what it’s value is. Not all programming languages allow for declarations.
+
+`Example: My code won’t compile because I wrote a function declaration, but I forgot to write the actual function.`
+
+## Definition
+
+> Code that fully implements something – usually a variable, function or a class. The code that implements a class is called the “class definition.” The code that implements a function is called the “function definition.”
+
+`Example: The function wasn’t doing what I expected, so I had a look at its definition.`
 
