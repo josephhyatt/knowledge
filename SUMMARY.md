@@ -20,9 +20,12 @@
 * [Starter Templates](starter-templates-1/README.md)
   * [WebSite](starter-templates-1/website.md)
 * [General Programming](general-programming/README.md)
+  * [Vocabulary](general-programming/vocabulary.md)
   * [Starting A Web Development Project](general-programming/starting-a-web-development-project.md)
   * [Problems and Solutions](general-programming/problems-and-solutions.md)
   * [Thinking Like A Programmer](general-programming/thinking-like-a-programmer.md)
 * [Google](google/README.md)
   * [Google Search Tips](google/google-search-tips.md)
+* [Ubuntu](ubuntu/README.md)
+  * [Useful Ubuntu Commands](ubuntu/useful-ubuntu-commands.md)
 
