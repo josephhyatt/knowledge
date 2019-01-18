@@ -10,15 +10,15 @@ In Rails, there are different conventions for the:
 
 Rails use the same naming convention as Ruby \(for a list of the Ruby naming conventions scroll down\) with some additions:
 
-**Variable** - _e.g. order\_amount, total_  
+**Variable** - `order_amount` _`total`_  
 Variables are named where all letters are lowercase and words are separated by underscores.
 
-**Class and Module** - _e.g. InvoiceItem_  
+**Class and Module** - `InvoiceItem`  
 Classes and modules use MixedCase and have no underscores, each word starts with a uppercase letter.
 
-**Database Table** - _e.g. invoice\_items, orders_ Table names have all lowercase letters and underscores between words, also all table names need to be plural.
+**Database Table** - `invoice_items` _orders_ Table names have all lowercase letters and underscores between words, also all table names need to be plural.
 
-**Model** - _e.g. Order_  
+**Model** - `Order`  
 The model is named using the class naming convention of unbroken MixedCase and is always the singular of the table name. e.g.
 
 * Table name might be orders \(plural\)
@@ -26,7 +26,7 @@ The model is named using the class naming convention of unbroken MixedCase and i
 * Rails will then look for the class definition in a file called order.rb in the /app/models directory.
 * If the model class name has multiple capitalised words, the table name is assumed to have underscores between these words.
 
-**Controller** - _e.g. OrdersController_  
+**Controller** - `OrdersController`  
 Controller class names are pluralized, such that **OrdersController would be the controller class for the orders table**. Rails will then look for the class definition in a file called orders\_controller.rb in the /app/controllers directory.
 
 **Files, Directories and other pluralization**  
@@ -118,12 +118,42 @@ _name = "Joseph"
 @age = 21
 ```
 
-## **Constant**
+## **Constants**
 
 > Constant names start with an uppercase letter followed by other characters. Constant objects are by convention named using all uppercase letters and underscores between words
 
 ```ruby
 AGE = 21 # constant; by convention - constants can be modified and generate a warning
+```
+
+## **Class Variables**
+
+> Class variable names start with a double "at" sign `(@@)` and may be followed by digits, underscores, and letters.
+
+```ruby
+class Car
+    @make
+    @@wheels = 4
+
+    def initialize(make)
+        @make = make
+    end
+
+    def self.wheels
+        @@wheels
+    end
+    attr_accessor :make
+end
+
+#outside the class
+civic = Car.new("Honda")
+
+#instance variable, called on the object
+>> civic.make
+=> "Honda"
+#class variable, called on the class itself
+>> Car.wheels
+=> 4
 ```
 
 ## **Instance Methods**
@@ -164,14 +194,74 @@ end
 basket = Basket.find(‘abc’)  
 ```
 
-## **Class Variables**
+## Functions
 
-> Class variable names start with a double "at" sign `(@@)` and may be followed by digits, underscores, and letters.
+> A function is a block of code that can be called from another location in the program or class. It is used to reduce the repetition of multiple lines of code. A function can either return nil, a value, or an array of values. If multiple items are returned, they will be returned as an array.
 
 ```ruby
-@@age = 21
-@@name = "Joseph"
+# Syntax
+# standard functions
+# if within a class, called on the object
+def functionName(passedParameters)
+
+   # code to be executed
+
+   # optional return value or variable
+   return value
+   # another way to return value
+   value
+end
 ```
 
-\*\*\*\*
+```ruby
+# Example
+def absolute_value(x)
+    if x < 0
+        x = x * -1
+    end
+    return x
+end
+```
+
+## Blocks
+
+> A block contains code that can be executed. Blocks are not objects, but there are methods that can be used on blocks for repetition and local variable purposes.
+
+```ruby
+# Syntax
+# x is a local variable which represents a parameter passed into a block
+# one way to write a block
+{ |x|
+    # code to be executed
+}
+
+# other way to do it
+do |x|
+    # code to be executed
+end
+```
+
+```ruby
+# Example
+10.times { puts "This code will execute 10 times!" }
+```
+
+## Collect
+
+> Applies a block onto every item in an array. Collect does not modify an array, rather it returns a copy.
+
+```ruby
+# Syntax
+array.collect { |element| #code to run on element }
+```
+
+```ruby
+# Example
+numberLine = [ 1, 2, 3, 4, 5 ]
+shiftedNumberLine = numberLine.collect { |number| number + 1 }
+
+# Output =>
+shiftedNumberLine is [2, 3, 4, 5, 6]
+
+```
 

@@ -10,6 +10,8 @@
   * [Google Search Tips](google/google-search-tips.md)
 * [JavaScript](javascript-1.md)
 * [Ruby/Rails](ruby-rails-1/README.md)
+  * [Interview Questions](ruby-rails-1/interview-questions.md)
+  * [Design Philosophy](ruby-rails-1/design-philosophy.md)
   * [Arrays](ruby-rails-1/arrays.md)
   * [Backslash Notations](ruby-rails-1/backslash-notations.md)
   * [ERB: Embedded Ruby](ruby-rails-1/erb-embedded-ruby.md)
