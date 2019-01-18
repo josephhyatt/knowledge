@@ -92,31 +92,86 @@ _As Jon would say, ProTip:_
 
 > Ruby uses the first character of the name to help it determine it’s intended use.
 
+## **Global Variables**
+
+> Starts with a dollar \($\) sign followed by other characters
+
+```ruby
+$age = 21
+$name = "Joseph"
+```
+
 ## **Local Variables**
 
-> These should be a lowercase letter followed by other characters, naming convention states that it is better to use underscores rather than **camelBack** for multiple word names, `e.g. mileage, variable_xyz`
+> These should be a lowercase letter followed by other characters, naming convention states that it is better to use underscores rather than **camelBack** for multiple word names
+
+```ruby
+_age = 21
+_name = "Joseph"
+```
 
 ## **Instance Variables**
 
-> Instance variables are defined using the **single "at" sign \(@\) followed by a name**. It is suggested that a lowercase letter should be used after the **@**, `e.g. @colour`
+> Instance variables are defined using the **single "at" sign \(@\) followed by a name**. It is suggested that a lowercase letter should be used after the **@**
 
-## **Instance Methods**
-
-> Method names should start with a lowercase letter, and may be followed by digits, underscores, and letters, `e.g. paint, close_the_door`
-
-## **Class Variables**
-
-> Class variable names start with a **double "at" sign \(@@\) and may be followed by digits, underscores, and letters**, `e.g. @@colour`
+```ruby
+@age = 21
+```
 
 ## **Constant**
 
-> Constant names start with an uppercase letter followed by other characters. Constant objects are by convention named using all uppercase letters and underscores between words, `e.g. THIS_IS_A_CONSTANT`
+> Constant names start with an uppercase letter followed by other characters. Constant objects are by convention named using all uppercase letters and underscores between words
 
-## **Class and Module**
+```ruby
+AGE = 21 # constant; by convention - constants can be modified and generate a warning
+```
 
-> Class and module names starts with an uppercase letter, by convention they are named using MixedCase, `e.g. module Encryption, class MixedCase`
+## **Instance Methods**
 
-## **Global Variables**
+> Instance Methods can only be called on a particular instance of the class. You use Instance Methods when you need to act on a particular instance of the class. This is often when the functionality concerns the identity of the instance such as calling properties on the object, or invoking behavior.
 
-> Starts with a dollar \($\) sign followed by other characters, `e.g. $global`
+```ruby
+class Basket  
+  def self.find(id)  
+    puts "finding basket with the id of #{id}"  
+  end
+
+  def products  
+    []  
+  end  
+end  
+
+# in the rails console
+basket = Basket.new  
+=> #<Basket:0x007fd2e446c7b0>
+
+basket.products  
+=> []  
+```
+
+## **Class Method**
+
+> A Class Method is a method that is defined on the class. In this example I’ve defined a `find` method on the `Basket` class that accepts an `id`. You should use Class Methods when the functionality you are writing does not belong to an instance of that class.
+
+```ruby
+class Basket  
+  def self.find(id) # self signifies that this method is a Class Method. 
+    puts "finding basket with the id of #{id}"  
+  end  
+end
+
+# to use this method
+basket = Basket.find(‘abc’)  
+```
+
+## **Class Variables**
+
+> Class variable names start with a double "at" sign `(@@)` and may be followed by digits, underscores, and letters.
+
+```ruby
+@@age = 21
+@@name = "Joseph"
+```
+
+\*\*\*\*
 

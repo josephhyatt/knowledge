@@ -4,6 +4,8 @@ description: 'This is my gitbook, there are many like it but this one is mine.'
 
 # Introduction
 
+
+
 > Hi there! My name is **Joseph Hyatt** and this is a list of everything I find useful to reference when the time is needed. Hope it helps you out as well.
 
 ## A little about me..
