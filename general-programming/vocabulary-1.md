@@ -87,3 +87,45 @@ Where a term from this list is used in a definition, it will link to the term an
 
 `Example: The function wasn’t doing what I expected, so I had a look at its definition.`
 
+## Double
+
+> A float that can represent a wider range of numbers than a normal float. Short for “double-precision floating-point number.”
+
+`Example: The number was so tiny I had to use a double instead of a float`
+
+## Execute
+
+> Synonym for run.
+
+`Example: I can’t execute my program because it won’t compile.`
+
+## Float
+
+> A type of value that represents numbers with fractional parts. Short for “floating-point number”.
+
+`Example: The value 3.14 is a float.`
+
+## Function
+
+> A piece of code that is not run until it is called. Functions take zero or more arguments. When a function finishes running, it returns a return value back to the code that called it.
+
+`Example: I wrote a function that takes an array of numbers as an argument, and returns the average.`
+
+## Implement
+
+> To write all the code to complete something – usually a function or a class.
+
+`Example: I finished implementing those functions.`
+
+## Instance
+
+> Synonym for object.
+
+`Example: I created an instance of the Person class.`
+
+## Instance Variable
+
+> A variable that is attached to an object. Also known as a “member variable” or just a “member.”
+
+`Example: On the tom object, I assigned the value "Tom Dalling" to the name instance variable.`
+
