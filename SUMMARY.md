@@ -24,7 +24,7 @@
   * [Operators](ruby-rails-1/operators.md)
   * [Rails Console](ruby-rails-1/rails-console.md)
   * [Ruby/Rails Cheat Sheet](ruby-rails-1/ruby-rails-cheat-sheet.md)
-  * [The Structure of a Rails Application](ruby-rails-1/the-structure-of-a-rails-application.md)
+  * [Structure of a Rails Application](ruby-rails-1/the-structure-of-a-rails-application.md)
   * [Variables](ruby-rails-1/variables.md)
 * [Starter Templates](starter-templates-1/README.md)
   * [WebSite](starter-templates-1/website.md)

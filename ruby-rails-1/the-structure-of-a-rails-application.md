@@ -1,4 +1,4 @@
-# The Structure of a Rails Application
+# Structure of a Rails Application
 
 app
 
