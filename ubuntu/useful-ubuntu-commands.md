@@ -1,8 +1,10 @@
 # Useful Ubuntu Commands
 
-## Open Command Prompt 
+## xKill 
 
 > `alt + f2`
 
-* `r` - Quick **restart** ubuntu session
+* `r` - Quick **restart** ubuntu sessionC
+
+
 

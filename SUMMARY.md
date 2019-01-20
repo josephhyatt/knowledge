@@ -29,5 +29,6 @@
 * [Starter Templates](starter-templates-1/README.md)
   * [WebSite](starter-templates-1/website.md)
 * [Ubuntu](ubuntu/README.md)
+  * [Migrating Settings](ubuntu/migrating-settings.md)
   * [Useful Ubuntu Commands](ubuntu/useful-ubuntu-commands.md)
 

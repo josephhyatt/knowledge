@@ -4,7 +4,11 @@ description: 'This is my gitbook, there are many like it but this one is mine.'
 
 # Introduction
 
+## Syntax\# standard functions\# if within a class, called on the objectdef functionName\(passedParameters\)
 
+## code to be executed
+
+## optional return value or variable   return value   \# another way to return value   valueend
 
 > Hi there! My name is **Joseph Hyatt** and this is a list of everything I find useful to reference when the time is needed. Hope it helps you out as well.
 
