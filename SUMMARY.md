@@ -1,6 +1,8 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Computer Science](computer-science-1/README.md)
+  * [Computer Science Degree Links](computer-science-1/computer-science-degree-links.md)
 * [General Programming](general-programming/README.md)
   * [Problems and Solutions](general-programming/problems-and-solutions.md)
   * [Starting A Web Development Project](general-programming/starting-a-web-development-project.md)
@@ -11,12 +13,12 @@
 * [JavaScript](javascript-1/README.md)
   * [jQuery](javascript-1/jquery.md)
 * [Ruby/Rails](ruby-rails-1/README.md)
-  * [Interview Questions](ruby-rails-1/interview-questions.md)
-  * [Design Philosophy](ruby-rails-1/design-philosophy.md)
   * [Arrays](ruby-rails-1/arrays.md)
   * [Backslash Notations](ruby-rails-1/backslash-notations.md)
+  * [Design Philosophy](ruby-rails-1/design-philosophy.md)
   * [ERB: Embedded Ruby](ruby-rails-1/erb-embedded-ruby.md)
   * [Hash](ruby-rails-1/hash.md)
+  * [Interview Questions](ruby-rails-1/interview-questions.md)
   * [Keywords](ruby-rails-1/keywords.md)
   * [Migrations](ruby-rails-1/migrations.md)
   * [MVC](ruby-rails-1/mvc.md)
@@ -27,15 +29,11 @@
   * [Structure of a Rails Application](ruby-rails-1/the-structure-of-a-rails-application.md)
   * [Variables](ruby-rails-1/variables.md)
 * [Starter Templates](starter-templates-1/README.md)
-  * [WebSite](starter-templates-1/website.md)
+  * [A Website](starter-templates-1/website.md)
 * [Ubuntu](ubuntu/README.md)
   * [Migrating Settings](ubuntu/migrating-settings.md)
   * [Useful Ubuntu Commands](ubuntu/useful-ubuntu-commands.md)
 * [Command Line \(CLI\)](command-line-cli/README.md)
   * [Tmux](command-line-cli/tmux.md)
-  * [tmux shortcuts & cheatsheet](command-line-cli/tmux-shortcuts-and-cheatsheet.md)
-
-## Computer Science
-
-* [Computer Science Degree Links](computer-science/helpful-links-open-source.md)
+  * [Tmux Shortcuts & Cheat Sheet](command-line-cli/tmux-shortcuts-and-cheatsheet.md)
 

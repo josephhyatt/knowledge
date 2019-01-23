@@ -2,7 +2,7 @@
 description: 'HTML5, CSS3, Sass, NPM , and JavaScript'
 ---
 
-# WebSite
+# A Website
 
 ## **Technologies Used**
 
