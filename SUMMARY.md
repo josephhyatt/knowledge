@@ -37,5 +37,5 @@
 
 ## Computer Science
 
-* [Helpful Links \(open source\)](computer-science/helpful-links-open-source.md)
+* [Computer Science Degree Links](computer-science/helpful-links-open-source.md)
 
