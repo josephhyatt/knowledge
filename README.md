@@ -4,17 +4,11 @@ description: 'This is my gitbook, there are many like it but this one is mine.'
 
 # Introduction
 
-## Syntax\# standard functions\# if within a class, called on the objectdef functionName\(passedParameters\)
-
-## code to be executed
-
-## optional return value or variable   return value   \# another way to return value   valueend
-
-> Hi there! My name is **Joseph Hyatt** and this is a list of everything I find useful to reference when the time is needed. Hope it helps you out as well.
+> Hi there! My name is **Joseph Hyatt** and this is a list of everything I found to be useful. It covers a wide verity of topics, and overall is what I use as a reference when the time is needed. Hope it helps you out as well. Feel free to add or edit anything you find useful.
 
 ## A little about me..
 
-> My current skillset consists of `C++,` `JavaScript,` `Ruby/Rails,`and `Node.js`. As a web developer/programmer, I’m able to combine my love for creating, with my ability to find simple solutions to complex problems. All my life I have enjoyed recognizing the patterns that surround us on a daily basis. I believe in hard work and sharing what I know. I take challenges as inspiration while always looking for improvements.
+> My current skill set consists of `C++,` `JavaScript,` `Ruby/Rails,`and `Node.js`. I'm currently in school to obtain a Bachelors  degree in Computer Science.  I'm a freelance web developer/programmer and I believe in hard work and sharing what I know. I take challenges as inspiration while always looking for improvements.
 >
-> On my off time, I enjoy researching new technologies coming out to stay ahead of the learning curve.  When I get a case of “Coder’s Block” I ‘ll take my dog “Dooko” out for walks, go out to eat, drink coffee \(lot’s of coffee!\) and travel to new places.  That is one of the great benefits of coding, you can do it anywhere as long as the internet connection isn’t too weak.  I also like to get some gaming in while I can. Big PUBG fan \(on pc\), message me if you feel like putting your skills to the test
+> On my off time, I enjoy researching new technologies coming out to stay ahead of the learning curve.  When I get a case of “Coder’s Block” I ‘ll take my dog “Dooko” out for walks, go out to eat, drink coffee \(lot’s of coffee!\) and travel to new places.  That is one of the great benefits of coding, you can do it anywhere as long as the internet connection isn’t too weak.  I also like to get some gaming in while I can. Big PUBG fan \(on PC of course\), message me if you feel like putting your skills to the test!
 
