@@ -32,5 +32,10 @@
   * [Migrating Settings](ubuntu/migrating-settings.md)
   * [Useful Ubuntu Commands](ubuntu/useful-ubuntu-commands.md)
 * [Command Line \(CLI\)](command-line-cli/README.md)
+  * [Tmux](command-line-cli/tmux.md)
   * [tmux shortcuts & cheatsheet](command-line-cli/tmux-shortcuts-and-cheatsheet.md)
+
+## Computer Science
+
+* [Helpful Links \(open source\)](computer-science/helpful-links-open-source.md)
 
