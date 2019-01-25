@@ -18,6 +18,7 @@
   * [Design Philosophy](ruby-rails-1/design-philosophy.md)
   * [ERB: Embedded Ruby](ruby-rails-1/erb-embedded-ruby.md)
   * [Hash](ruby-rails-1/hash.md)
+  * [Helpful Links](ruby-rails-1/helpful-links.md)
   * [Interview Questions](ruby-rails-1/interview-questions.md)
   * [Keywords](ruby-rails-1/keywords.md)
   * [Migrations](ruby-rails-1/migrations.md)
