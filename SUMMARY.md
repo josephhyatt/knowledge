@@ -1,6 +1,8 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [C++](c++/README.md)
+  * [Frameworks, Libraries, and Resources](c++/frameworks-libraries-and-resources.md)
 * [Computer Science](computer-science-1/README.md)
   * [Computer Science Degree Links](computer-science-1/computer-science-degree-links.md)
 * [General Programming](general-programming/README.md)
