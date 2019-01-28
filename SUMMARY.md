@@ -2,9 +2,11 @@
 
 * [Introduction](README.md)
 * [C++](c++/README.md)
-  * [Standard Template Library](c++/standard-template-library.md)
+  * [Arrays](c++/arrays.md)
   * [Data Structures and Algorithms](c++/data-structures-and-algorithms.md)
   * [Frameworks, Libraries, and Resources](c++/frameworks-libraries-and-resources.md)
+* [Standard Template Library](standard-template-library.md)
+* [Vectors](vectors.md)
 * [Computer Science](computer-science-1/README.md)
   * [Computer Science Degree Links](computer-science-1/computer-science-degree-links.md)
 * [General Programming](general-programming/README.md)
