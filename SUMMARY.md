@@ -12,6 +12,8 @@
   * [Starting A Web Development Project](general-programming/starting-a-web-development-project.md)
   * [Thinking Like A Programmer](general-programming/thinking-like-a-programmer.md)
   * [Vocabulary](general-programming/vocabulary-1.md)
+* [Github](github/README.md)
+  * [Github Basics](github/github-basics.md)
 * [Google](google/README.md)
   * [Google Search Tips](google/google-search-tips.md)
 * [JavaScript](javascript-1/README.md)
