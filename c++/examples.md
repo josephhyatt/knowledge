@@ -6,6 +6,7 @@ In this program, a structure, student is created. This structure has three membe
 
 ```cpp
 #include <iostream>
+
 using namespace std;
 
 struct student
@@ -79,8 +80,8 @@ Marks: 98
 ```cpp
 // Computes time difference of two time period
 // Time periods are entered by the user
-
 #include <iostream>
+
 using namespace std;
 
 struct TIME
@@ -152,8 +153,8 @@ Then, the `computeTimeDifference()` function calculates the difference between t
 
 ```cpp
 // Complex numbers are entered by the user
-
 #include <iostream>
+
 using namespace std;
 
 typedef struct complex
@@ -214,6 +215,7 @@ In the problem, two complex numbers entered by the user is stored in structures 
 
 ```cpp
 #include <iostream>
+
 using namespace std;
 
 struct Distance{
@@ -272,6 +274,7 @@ In this program, a structure\(student\) is created which contains name, roll and
 
 ```cpp
 #include <iostream>
+
 using namespace std;
 
 struct student
@@ -322,6 +325,7 @@ This program takes 10 words from the user and sort them in lexicographical order
 
 ```cpp
 #include <iostream>
+
 using namespace std;
 
 int main()
@@ -388,6 +392,7 @@ To solve this program, an array of string object str\[10\] is created. The 10 wo
 
 ```cpp
 #include <iostream>
+
 using namespace std;
 
 int main()
@@ -456,6 +461,7 @@ You can concatenate two string objects in C++ using **+** operator.
 
 ```cpp
 #include <iostream>
+
 using namespace std;
 
 int main()
@@ -491,6 +497,7 @@ You can concatenate two C-style strings in C++ using `strcat()` function.
 ```cpp
 #include <iostream>
 #include <cstring>
+
 using namespace std;
 
 int main()
@@ -519,5 +526,134 @@ Enter string s1: I love
 Enter string s2:  C++ programming 
 s1 = I love C++ programming
 s2 =  C++ programming
+```
+
+## Find the Length of a String
+
+You can get the length of a string object by using a `size()` function or a `length()` function.
+
+The `size()` and `length()` functions are just synonyms and they both do exactly same thing.
+
+### Length of String Object
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string str = "C++ Programming";
+
+    // you can also use str.length()
+    cout << "String Length = " << str.size();
+
+    return 0;
+}
+```
+
+**Output**
+
+```cpp
+String Length = 15
+```
+
+### Length of C-style string
+
+To get the length of a C-string string, `strlen()` function is used.
+
+```cpp
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main()
+{
+    char str[] = "C++ Programming is awesome";
+
+    // you can also use str.length()
+    cout << "String Length = " << strlen(str);
+
+    return 0;
+}
+```
+
+**Output**
+
+```text
+String Length = 26
+```
+
+## Remove all Characters in a String Except Alphabets
+
+### Remove all characters except alphabets
+
+This program takes a string \(object\) input from the user and removes all characters except alphabets.
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    string line;
+    cout << "Enter a string: ";
+    getline(cin, line);
+
+    for(int i = 0; i < line.size(); ++i)
+    {
+        if (!((line[i] >= 'a' && line[i]<='z') || (line[i] >= 'A' && line[i]<='Z')))
+        {
+            line[i] = '\0';
+        }
+    }
+    cout << "Output String: " << line;    
+    return 0;
+}
+```
+
+**Output**
+
+```cpp
+Enter a string: p2'r"o@gram84iz./
+Output String: programiz
+```
+
+### Remove all characters except alphabets
+
+This program below takes a string \(C-style string\) input from the user and removes all characters except alphabets.
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    char line[100], alphabetString[100];
+    int j = 0;
+    cout << "Enter a string: ";
+    cin.getline(line, 100);
+
+    for(int i = 0; line[i] != '\0'; ++i)
+    {
+        if ((line[i] >= 'a' && line[i]<='z') || (line[i] >= 'A' && line[i]<='Z'))
+        {
+            alphabetString[j++] = line[i]; 
+
+        }
+    }
+    alphabetString[j] = '\0';
+
+    cout << "Output String: " << alphabetString;    
+    return 0;
+}
+```
+
+**Output**
+
+```cpp
+Enter a string: P2'r"o@gram84iz./
+Output String: Programiz
 ```
 
