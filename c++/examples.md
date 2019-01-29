@@ -657,3 +657,292 @@ Enter a string: P2'r"o@gram84iz./
 Output String: Programiz
 ```
 
+## Find the Number of Vowels, Consonants, Digits and White Spaces in a String
+
+### From a C-style string
+
+This program takes a C-style string from the user and calculates the number of vowels, consonants, digits and white-spaces.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    char line[150];
+    int vowels, consonants, digits, spaces;
+
+    vowels =  consonants = digits = spaces = 0;
+
+    cout << "Enter a line of string: ";
+    cin.getline(line, 150);
+    for(int i = 0; line[i]!='\0'; ++i)
+    {
+        if(line[i]=='a' || line[i]=='e' || line[i]=='i' ||
+           line[i]=='o' || line[i]=='u' || line[i]=='A' ||
+           line[i]=='E' || line[i]=='I' || line[i]=='O' ||
+           line[i]=='U')
+        {
+            ++vowels;
+        }
+        else if((line[i]>='a'&& line[i]<='z') || (line[i]>='A'&& line[i]<='Z'))
+        {
+            ++consonants;
+        }
+        else if(line[i]>='0' && line[i]<='9')
+        {
+            ++digits;
+        }
+        else if (line[i]==' ')
+        {
+            ++spaces;
+        }
+    }
+
+    cout << "Vowels: " << vowels << endl;
+    cout << "Consonants: " << consonants << endl;
+    cout << "Digits: " << digits << endl;
+    cout << "White spaces: " << spaces << endl;
+
+    return 0;
+}
+```
+
+**Output**
+
+```cpp
+Enter a line of string: This is 1 hell of a book.
+Vowels: 7
+Consonants: 10
+Digits: 1
+White spaces: 6
+```
+
+### From a String Object
+
+This program takes a string object from the user and calculates the number of vowels, consonants, digits and white-spaces.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    string line;
+    int vowels, consonants, digits, spaces;
+
+    vowels =  consonants = digits = spaces = 0;
+
+    cout << "Enter a line of string: ";
+    getline(cin, line);
+
+    for(int i = 0; i < line.length(); ++i)
+    {
+        if(line[i]=='a' || line[i]=='e' || line[i]=='i' ||
+           line[i]=='o' || line[i]=='u' || line[i]=='A' ||
+           line[i]=='E' || line[i]=='I' || line[i]=='O' ||
+           line[i]=='U')
+        {
+            ++vowels;
+        }
+        else if((line[i]>='a'&& line[i]<='z') || (line[i]>='A'&& line[i]<='Z'))
+        {
+            ++consonants;
+        }
+        else if(line[i]>='0' && line[i]<='9')
+        {
+            ++digits;
+        }
+        else if (line[i]==' ')
+        {
+            ++spaces;
+        }
+    }
+
+    cout << "Vowels: " << vowels << endl;
+    cout << "Consonants: " << consonants << endl;
+    cout << "Digits: " << digits << endl;
+    cout << "White spaces: " << spaces << endl;
+
+    return 0;
+}
+```
+
+**Output**
+
+```cpp
+Enter a line of string: I have 2 C++ programming books.
+Vowels: 8
+Consonants: 14
+Digits: 1
+White spaces: 5
+```
+
+## Find the Frequency of Characters in a String
+
+In this example, frequency of characters in a string object is computed. To do this, `size()` function is used to find the length of a string object. Then, the for loop is iterated until the end of the string. In each iteration, occurrence of character is checked and if found, the value of count is incremented by 1.
+
+### Find Frequency of Characters of a String Object
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    string str = "C++ Programming is awesome";
+    char checkCharacter = 'a';
+    int count = 0;
+
+    for (int i = 0; i < str.size(); i++)
+    {
+        if (str[i] ==  checkCharacter)
+        {
+            ++ count;
+        }
+    }
+
+    cout << "Number of " << checkCharacter << " = " << count;
+
+    return 0;
+}
+```
+
+**Output**
+
+```cpp
+Number of a = 2
+```
+
+In the example below, loop is iterated until the null character **'\0'** is encountered. Null character indicates the end of the string.
+
+In each iteration, the occurrence of the character is checked.
+
+### Find Frequency of Characters in a C-style String
+
+```cpp
+#include <iostream>
+
+using namespace std;
+int main()
+{
+   char c[] = "C++ programming is not easy.", check = 'm';
+   int count = 0;
+
+   for(int i = 0; c[i] != '\0'; ++i)
+   {
+       if(check == c[i])
+           ++count;
+   }
+   cout << "Frequency of " << check <<  " = " << count;
+   return 0;
+}
+```
+
+**Output**
+
+```cpp
+Number of m = 2
+```
+
+## Swap Numbers in Cyclic Order Using Call by Reference
+
+Three variables entered by the user are stored in variables a, b and c respectively.
+
+Then, these variables are passed to the function `cyclicSwap()`. Instead of passing the actual variables, addresses of these variables are passed.
+
+When these variables are swapped in cyclic order in the `cyclicSwap()` function, variables a, band c in the `main` function are also automatically swapped.
+
+### Program to Swap Elements Using Call by Reference
+
+```cpp
+#include<iostream>
+using namespace std;
+
+void cyclicSwap(int *a, int *b, int *c);
+
+int main()
+{
+    int a, b, c;
+
+    cout << "Enter value of a, b and c respectively: ";
+    cin >> a >> b >> c;
+
+    cout << "Value before swapping: " << endl;
+    cout << "a, b and c respectively are: " << a << ", " << b << ", " << c << endl;
+
+    cyclicSwap(&a, &b, &c);
+
+    cout << "Value after swapping numbers in cycle: " << endl;
+    cout << "a, b and c respectively are: " << a << ", " << b << ", " << c << endl;
+
+    return 0;
+}
+
+void cyclicSwap(int *a, int *b, int *c)
+{
+    int temp;
+    temp = *b;
+    *b = *a;
+    *a = *c;
+    *c = temp;
+}
+```
+
+**Output**
+
+```cpp
+Enter value of a, b and c respectively: 1
+2
+3
+Value before swapping: 
+a=1
+b=2
+c=3
+Value after swapping numbers in cycle:
+a=3
+b=1
+c=2
+```
+
+Notice that we haven't returned any values from the `cyclicSwap()` function.
+
+## Access Elements of an Array Using Pointer
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int data[5];
+   cout << "Enter elements: ";
+
+   for(int i = 0; i < 5; ++i)
+      cin >> data[i];
+
+   cout << "You entered: ";
+   for(int i = 0; i < 5; ++i)
+      cout << endl << *(data + i);
+
+   return 0;
+}
+```
+
+**Output**
+
+```cpp
+Enter elements: 1
+2
+3
+5
+4
+You entered: 1
+2
+3
+5
+4
+```
+
+In this program, the five elements are entered by the user and stored in the integer array data. Then, the data array is accessed using a for loop and each element in the array is printed onto the screen. Visit this page to learn about [relationship between pointer and arrays](https://www.programiz.com/cpp-programming/pointers-arrays).
+
