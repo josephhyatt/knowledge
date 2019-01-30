@@ -1,6 +1,8 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Builds](builds/README.md)
+  * [Python Search Engine](builds/python-search-engine.md)
 * [C++](c++/README.md)
   * [Arrays](c++/arrays/README.md)
     * [Multidimensional Arrays](c++/arrays/multidimensional-arrays.md)
