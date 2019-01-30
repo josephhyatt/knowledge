@@ -6,7 +6,7 @@
 
 **C++ Program to display marks of 5 students by passing one-dimensional array to a function.**
 
-```text
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -32,7 +32,7 @@ void display(int m[5])
 
 **Output**
 
-```text
+```cpp
 Displaying marks: 
 Student 1: 88
 Student 2: 76
@@ -43,13 +43,13 @@ Student 5: 69
 
 When an array is passed as an argument to a function, only the name of an array is used as argument.
 
-```text
+```cpp
 display(marks);
 ```
 
 Also notice the difference while passing array as an argument rather than a variable.
 
-```text
+```cpp
 void display(int m[5]);
 ```
 
@@ -69,7 +69,7 @@ C++ handles passing an array to a function in this way to save memory and time.
 
 **C++ Program to display the elements of two dimensional array by passing it to a function.**
 
-```text
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -104,7 +104,7 @@ void display(int n[3][2])
 
 **Output**
 
-```text
+```cpp
 Displaying Values: 
 3 4 9 5 7 1 
 ```

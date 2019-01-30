@@ -6,7 +6,7 @@ In this article, you'll learn about multi-dimensional arrays in C++. More specif
 
 In C++, you can create an [array](https://www.programiz.com/cpp-programming/arrays) of an array known as multi-dimensional array. For example:
 
-```text
+```cpp
 int x[3][4];
 ```
 
@@ -18,7 +18,7 @@ You can think this array as table with 3 rows and each row has 4 columns as show
 
 Three dimensional array also works in a similar way. For example:
 
-```text
+```cpp
 float x[2][4][3];
 ```
 
@@ -30,26 +30,26 @@ You can initialize a multidimensional array in more than one way.
 
 #### Initialization of two dimensional array
 
-```text
+```cpp
 int test[2][3] = {2, 4, -5, 9, 0, 9};
 ```
 
 Better way to initialize this array with same array elements as above.
 
-```text
+```cpp
 int  test[2][3] = { {2, 4, 5}, {9, 0 0}};
 ```
 
 #### Initialization of three dimensional array
 
-```text
+```cpp
 int test[2][3][4] = {3, 4, 2, 3, 0, -3, 9, 11, 23, 12, 23, 
                  2, 13, 4, 56, 3, 5, 9, 3, 5, 5, 1, 4, 9};
 ```
 
 Better way to initialize this array with same elements as above.
 
-```text
+```cpp
 int test[2][3][4] = { 
                      { {3, 4, 2, 3}, {0, -3, 9, 11}, {23, 12, 23, 2} },
                      { {13, 4, 56, 3}, {5, 9, 3, 5}, {3, 1, 4, 9} }
@@ -60,7 +60,7 @@ int test[2][3][4] = {
 
 **C++ Program to display all elements of an initialised two dimensional array.**
 
-```text
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -89,7 +89,7 @@ int main()
 
 **Output**
 
-```text
+```cpp
 test[0][0] = 2
 test[0][1] = -5
 test[1][0] = 4
@@ -102,7 +102,7 @@ test[2][1] = 1
 
 **C++ Program to store temperature of two different cities for a week and display it.**
 
-```text
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -142,7 +142,7 @@ int main()
 
 **Output**
 
-```text
+```cpp
 Enter all temperature for a week of first city and then second city. 
 City 1, Day 1 : 32
 City 1, Day 2 : 33
@@ -181,7 +181,7 @@ City 2, Day 7 = 23
 
 **C++ Program to Store value entered by user in three dimensional array and display it.**
 
-```text
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -225,7 +225,7 @@ int main()
 
 **Output**
 
-```text
+```cpp
 Enter 12 values: 
 1
 2

@@ -29,7 +29,7 @@ Consider this situation, you are taking a survey of 100 people and you have to s
 
 An array is a collection of data that holds fixed number of values of same type. For example:
 
-```text
+```cpp
 int age[100];
 ```
 
@@ -39,13 +39,13 @@ The size and type of arrays cannot be changed after its declaration.
 
 ## How to declare an array in C++?
 
-```text
+```cpp
 dataType arrayName[arraySize];
 ```
 
 For example,
 
-```text
+```cpp
 float mark[5];
 ```
 
@@ -69,13 +69,13 @@ Suppose you declared an array mark as above. The first element is mark\[0\], sec
 
 It's possible to initialize an array during declaration. For example,
 
-```text
+```cpp
 int mark[5] = {19, 10, 8, 17, 9};
 ```
 
 Another method to initialize array during declaration:
 
-```text
+```cpp
 int mark[] = {19, 10, 8, 17, 9};
 ```
 
@@ -83,7 +83,7 @@ int mark[] = {19, 10, 8, 17, 9};
 
 Here,
 
-```text
+```cpp
 mark[0] is equal to 19
 mark[1] is equal to 10
 mark[2] is equal to 8
@@ -93,7 +93,7 @@ mark[4] is equal to 9
 
 ## How to insert and print array elements?
 
-```text
+```cpp
 int mark[5] = {19, 10, 8, 17, 9}
 
 // change 4th element to 9
@@ -116,7 +116,7 @@ cout >> mark[i-1];
 
 ## **C++ program to store and calculate the sum of 5 numbers entered by the user using arrays.**
 
-```text
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -141,7 +141,7 @@ int main()
 
 **Output**
 
-```text
+```cpp
 Enter 5 numbers: 3
 4
 5
@@ -154,7 +154,7 @@ Sum = 18
 
 Suppose you declared an array of 10 elements. Let's say,
 
-```text
+```cpp
 int testArray[10];
 ```
 

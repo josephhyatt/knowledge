@@ -1,5 +1,7 @@
 # Arrays
 
+> An [array](https://en.wikipedia.org/wiki/Array) is a collection of elements, by default an array of n elements has its **index** enumerated from 0 to n-1, i.e, the index to the first element of an array is 0
+
 ## Create an Array
 
 ```ruby
@@ -7,6 +9,20 @@ array = []                    # Array; zero-based indexing
 array = Array.new(5)          # Array with size 
 array = Array.new(2, "abc")   # ["abc", "abc"]
 array = Array(0..9)           # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+```ruby
+a = [4,6,7,5]  # simple array declaration 
+a.length     # => 4
+a.rotate     # => [6, 7, 5, 4]
+a.sort      # => [4, 5, 6, 7]
+a.sort.reverse  # => [7, 6, 5, 4]
+a[0]       # => 4
+a[3]       # => 5
+a[4] = 3     # => 3 ;resulting array is [4, 6, 7, 5, 3]
+a << 1      # => [4, 6, 7, 5, 3, 1] ; useful when array size is unknown
+a[10] = 0    # => 0 ;resulting array is [4, 6, 7, 5, 3, 1, nil, nil, nil, nil, 0]
+a.length     # => 11
 ```
 
 ## Most commonly used methods with arrays
