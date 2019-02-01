@@ -4,7 +4,7 @@ description: 'This is my gitbook, there are many like it but this one is mine.'
 
 # Introduction
 
-> Hi there! My name is **Joseph Hyatt** and this is a list of everything I found to be useful. It covers a wide verity of topics, and overall is what I use as a reference when the time is needed. Hope it helps you out as well. Feel free to add or edit anything you find useful.
+> Hi there! My name is [**Joseph Hyatt**](https://www.josephhyatt.com) and this is a list of everything I found to be useful. It covers a wide verity of topics, and overall is what I use as a reference when the time is needed. Hope it helps you out as well. Feel free to add or edit anything you find useful.
 
 ## A little about me..
 
