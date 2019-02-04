@@ -6,12 +6,17 @@
 
 `ctrl + a`
 
-## .tmux.conf file
+## Create new windows
 
-```text
-set -g prefix C-a # Set mode key to Control+a
-bind C-a send-prefix 
-```
+`ctrl + a + c`
+
+## Move to different window
+
+`ctrl + a + number-of-window`
+
+## Rename pane
+
+`ctrl + a + ,`
 
 ## Open vertical pane
 
@@ -28,18 +33,6 @@ bind C-a send-prefix
 ## Close pane
 
 `ctrl + d or type: exit`
-
-## Create new windows
-
-`ctrl + a + c`
-
-## Move to different window
-
-`ctrl + a + number-of-window`
-
-## Rename pane
-
-`ctrl + a + ,`
 
 ## How to Enter Copy Text Mode
 

@@ -28,6 +28,7 @@
     * [Vector Functions](c++/vectors/vector-functions.md)
     * [Vector Overview](c++/vectors/untitled.md)
 * [Computer Science](computer-science-1/README.md)
+  * [Algorithm](computer-science-1/algorithm.md)
   * [Big O Notation](computer-science-1/big-o-notation.md)
   * [Computer Science Degree Links](computer-science-1/computer-science-degree-links.md)
   * [Recursion](computer-science-1/recursion.md)
