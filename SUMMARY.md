@@ -72,6 +72,5 @@
   * [Migrating Settings](ubuntu/migrating-settings.md)
   * [Useful Ubuntu Commands](ubuntu/useful-ubuntu-commands.md)
 * [Command Line \(CLI\)](command-line-cli/README.md)
-  * [Tmux](command-line-cli/tmux.md)
-  * [Tmux Shortcuts & Cheat Sheet](command-line-cli/tmux-shortcuts-and-cheatsheet.md)
+  * [Tmux Commands](command-line-cli/tmux.md)
 

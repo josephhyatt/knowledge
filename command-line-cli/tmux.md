@@ -1,31 +1,76 @@
-# Tmux
+# Tmux Commands
 
-## Copy Mode \(scrolling & coping terminal output\)
+> Using [Noobs Termin](https://noobs-term.com/#/) .dotfiles. Love this setup!
 
-```bash
-# Prefix = Ctrl key (by Default)
-Prefix [
+## Prefix 
 
-# You may change the keybinding to customize
-# how you access Copy Mode
+`ctrl + a`
 
-# My .tmux.conf file
-    set -g prefix C-a # Set mode key to Control+a
-    bind C-a send-prefix 
+## .tmux.conf file
 
-# How to Enter Copy Text Mode 
-# to Scroll Terminal & Copy and Paste Terminal Output 
+```text
+set -g prefix C-a # Set mode key to Control+a
+bind C-a send-prefix 
+```
 
-# Step 1 - Activate Copy Mode
-    Ctrl + a [ 
-# Step 2 - Highlight Text
-     Press Spacebar than highlight text ith the mouse  
-# Step 3 - Copy text to paste buffer
-    # My way
-        Right Mouse Button + Copy
-# Step 4 - Exit Copy Mode
-    Crtl + c
-# Step 5 - Paste Text in Terminal
-    Ctrl + Shift + v
+## Open vertical pane
+
+`ctrl + a + shift + %`
+
+## Open horizontal pane
+
+`ctrl + a + shift + "`
+
+## Move to different pane
+
+`ctrl + a + arrow key`
+
+## Close pane
+
+`ctrl + d or type: exit`
+
+## Create new windows
+
+`ctrl + a + c`
+
+## Move to different window
+
+`ctrl + a + number-of-window`
+
+## Rename pane
+
+`ctrl + a + ,`
+
+## How to Enter Copy Text Mode
+
+#### Step 1 - Activate Copy Mode
+
+```text
+Ctrl + a [ 
+```
+
+#### Step 2 - Highlight Text
+
+```text
+ Press Spacebar than highlight text ith the mouse  
+```
+
+#### Step 3 - Copy text to paste buffer
+
+```text
+# My way
+    Right Mouse Button + Copy
+```
+
+#### Step 4 - Exit Copy Mode
+
+```text
+Crtl + c
+```
+
+#### Step 5 - Paste Text in Terminal
+
+```text
+Ctrl + Shift + v
 ```
 
