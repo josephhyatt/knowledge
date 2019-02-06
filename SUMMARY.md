@@ -27,6 +27,8 @@
   * [Vectors](c++/vectors/README.md)
     * [Vector Functions](c++/vectors/vector-functions.md)
     * [Vector Overview](c++/vectors/untitled.md)
+* [Command Line \(CLI\)](command-line-cli/README.md)
+  * [Tmux Commands](command-line-cli/tmux.md)
 * [Computer Science](computer-science-1/README.md)
   * [Algorithm](computer-science-1/algorithm.md)
   * [Big O Notation](computer-science-1/big-o-notation.md)
@@ -72,6 +74,4 @@
 * [Ubuntu](ubuntu/README.md)
   * [Migrating Settings](ubuntu/migrating-settings.md)
   * [Useful Ubuntu Commands](ubuntu/useful-ubuntu-commands.md)
-* [Command Line \(CLI\)](command-line-cli/README.md)
-  * [Tmux Commands](command-line-cli/tmux.md)
 
