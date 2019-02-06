@@ -2,9 +2,17 @@
 
 ## xKill 
 
-> `alt + f2`
+`alt + f2`
 
-* `r` - Quick **restart** ubuntu sessionC
+* `r` - Quick **restart** Ubuntu session
+
+## Diagnose Boot Up Problems
+
+`systemd-analyze blame`- outputs a list of services and how long they took to start in descending order.
+
+## Display/Driver Boot   up Message
+
+`dmesg`
 
 ## sudo
 
