@@ -1,4 +1,4 @@
-# Useful Ubuntu Commands
+# Useful CLI Commands
 
 ## xKill 
 
@@ -103,6 +103,13 @@
 ## top
 
 > `top` – Displays the processes using the most system resources at any given time. “q” can be used to exit.
+
+## Check Kernel Version
+
+```bash
+uname -r
+# => 4.15.0.45-generic
+```
 
 ## Ubuntu Terminal Shortcuts:
 

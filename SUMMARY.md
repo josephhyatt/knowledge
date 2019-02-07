@@ -73,5 +73,5 @@
   * [A Website](starter-templates-1/website.md)
 * [Ubuntu](ubuntu/README.md)
   * [Migrating Settings](ubuntu/migrating-settings.md)
-  * [Useful Ubuntu Commands](ubuntu/useful-ubuntu-commands.md)
+  * [Useful CLI Commands](ubuntu/useful-ubuntu-commands.md)
 
