@@ -52,6 +52,8 @@
     * [Vectors](math/linear-algebra/vectors.md)
   * [Logic](math/logic/README.md)
     * [Combinatory Logic](math/logic/combinatory-logic.md)
+* [Python](python/README.md)
+  * [Setup Virtual Environment](python/setup-virtual-environment.md)
 * [Ruby/Rails](ruby-rails-1/README.md)
   * [Arrays](ruby-rails-1/arrays.md)
   * [Backslash Notations](ruby-rails-1/backslash-notations.md)
