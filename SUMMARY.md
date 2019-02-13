@@ -78,4 +78,7 @@
 * [Ubuntu](ubuntu/README.md)
   * [Migrating Settings](ubuntu/migrating-settings.md)
   * [Useful CLI Commands](ubuntu/useful-ubuntu-commands.md)
+* [Vim](vim/README.md)
+  * [.vimrc](vim/.vimrc.md)
+  * [.ycm\_extra\_config.py](vim/.ycm_extra_config.py-file.md)
 
