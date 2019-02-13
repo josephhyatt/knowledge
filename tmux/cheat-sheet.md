@@ -1,6 +1,4 @@
-# Tmux Commands
-
-> Using [Noobs Termin](https://noobs-term.com/#/) .dotfiles. Love this setup!
+# Tmux Cheat Sheet
 
 ## Prefix 
 
