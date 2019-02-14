@@ -8,6 +8,7 @@
 | `Q` | Quit Ranger |
 | `R` | Reload current directory |
 | `?` | Ranger Manpages / Shortcuts |
+| `S` | Cd in directory |
 
 ## Movement
 
