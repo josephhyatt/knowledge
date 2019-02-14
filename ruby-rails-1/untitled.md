@@ -1,4 +1,4 @@
-# Untitled
+# Curated List
 
 ## Admin Panels
 
@@ -18,7 +18,7 @@ _Libraries for fighting spam._
 
 _Tools for managing, compressing and minifying website assets._
 
-* [sprockets](https://github.com/sstephenson/sprockets) Rack-based asset packaging system
+* [sprockets](https://github.com/sstephenson/sprockets) Rack-based asset packaging system 
 * [rails-assets](https://github.com/rails-assets/rails-assets/) is the frictionless proxy between Bundler and Bower
 
 ## Audio
