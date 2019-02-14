@@ -88,4 +88,6 @@
   * [.vimrc](vim/.vimrc.md)
   * [.ycm\_extra\_config.py](vim/.ycm_extra_config.py-file.md)
   * [Vim Cheat sheet](vim/vim-cheat-sheet.md)
+* [Technical Interview](technical-interview/README.md)
+  * [Curated List](technical-interview/curated-list.md)
 
