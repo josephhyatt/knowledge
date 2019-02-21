@@ -19,6 +19,7 @@
     * [For Loops](c++/loops/for-loops.md)
   * [While Loops](c++/while-loops.md)
   * [Pointers](c++/pointers/README.md)
+    * [Smart Pointers](c++/pointers/smart-pointers.md)
     * [Pointers and Arrays](c++/pointers/pointers-and-arrays.md)
     * [Pointers and Functions](c++/pointers/pointers-and-functions.md)
   * [Recursion](c++/c++-recursion.md)
