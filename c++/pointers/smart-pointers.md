@@ -24,7 +24,7 @@
 {
     std::unique_ptr<int> p1 { new int {100} }; 
     std::cout << *p1 << std::endl;  // 100
-    *p1 = 200l
+    *p1 = 200;
     std::cout << *p1 << std::endl;  // 200
 }  // automatically deleted
 ```
