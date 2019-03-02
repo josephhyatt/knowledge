@@ -44,3 +44,39 @@
 
 ![](../../.gitbook/assets/03-01-19-05-55_1.png)
 
+## Lines or Linear Functions
+
+![](../../.gitbook/assets/03-01-19-05-55_2.png)
+
+## Average Rate of Change
+
+![](../../.gitbook/assets/03-01-19-05-55_3.png)
+
+## Absolute Value Properties
+
+![](../../.gitbook/assets/03-01-19-05-55_4.png)
+
+## Absolute Value Function as a Piecewise-Defined Function
+
+![](../../.gitbook/assets/03-01-19-05-55_5.png)
+
+## Absolute Value Equations and Inequalities
+
+![](../../.gitbook/assets/03-01-19-05-55_6.png)
+
+## Parabolas or Quadratic Functions
+
+![](../../.gitbook/assets/03-01-19-05-55_7.png)
+
+## Special Factoring Formulas
+
+![](../../.gitbook/assets/03-01-19-05-56.png)
+
+## Special Product Formulas
+
+![](../../.gitbook/assets/03-01-19-05-56_1.png)
+
+## Quadratic Formula
+
+![](../../.gitbook/assets/03-01-19-05-56_2.png)
+
