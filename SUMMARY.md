@@ -48,6 +48,7 @@
 * [JavaScript](javascript-1/README.md)
   * [jQuery](javascript-1/jquery.md)
 * [Math](math/README.md)
+  * [College Algebra](math/college-algebra.md)
   * [Formulas](math/formulas/README.md)
     * [Areas](math/formulas/areas.md)
     * [General Formulas](math/formulas/general-formulas.md)
