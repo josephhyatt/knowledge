@@ -80,3 +80,49 @@
 
 ![](../../.gitbook/assets/03-01-19-05-56_2.png)
 
+## End Behavior of a Polynomial Function $$f(x)=ax^n+...$$ 
+
+## Multiplicities of Real Zeros of a Polynomial Function $$f(x)=(x-a)^m$$ 
+
+## Rational Functions
+
+## Composition of Functions
+
+## Inverse Function
+
+## Radical Properties
+
+## Exponent Laws and Properties
+
+## Logarithm Definition
+
+## Special Logarithms
+
+## Logarithm Properties
+
+## Laws of Logarithms
+
+## Logarithm Change of Base Formula
+
+## Steps to Solve an Exponential Equation
+
+## Steps to Solve a Logarithmic Equation
+
+## Arithmetic Sequence
+
+## Geometric Sequence
+
+## Finance Formulas
+
+## Simple Interest
+
+## Compound Interest
+
+## Continuously Compounded Interest
+
+## Future Value of an Annuity
+
+## Present Value of an Annuity
+
+## Payment Amount of a Loan
+
