@@ -36,6 +36,7 @@
   * [Recursion](computer-science-1/recursion.md)
   * [Sorting Algorithms](computer-science-1/sorting-algorithms.md)
 * [General Programming](general-programming/README.md)
+  * [Reading Documentation](general-programming/reading-documentation.md)
   * [Problems and Solutions](general-programming/problems-and-solutions.md)
   * [Starting A Web Development Project](general-programming/starting-a-web-development-project.md)
   * [Thinking Like A Programmer](general-programming/thinking-like-a-programmer.md)
