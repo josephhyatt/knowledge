@@ -35,6 +35,10 @@
   * [Computer Science Degree Links](computer-science-1/computer-science-degree-links.md)
   * [Recursion](computer-science-1/recursion.md)
   * [Sorting Algorithms](computer-science-1/sorting-algorithms.md)
+* [Dotfiles](dotfiles/README.md)
+  * [tmux.conf](dotfiles/tmux.conf.md)
+  * [.zshrc](dotfiles/.zshrc.md)
+  * [.vimrc](dotfiles/.vimrc.md)
 * [General Programming](general-programming/README.md)
   * [Reading Documentation](general-programming/reading-documentation.md)
   * [Problems and Solutions](general-programming/problems-and-solutions.md)
@@ -97,7 +101,6 @@
   * [Migrating Settings](ubuntu/migrating-settings.md)
   * [Useful CLI Commands](ubuntu/useful-ubuntu-commands.md)
 * [Vim](vim/README.md)
-  * [.vimrc](vim/.vimrc.md)
   * [.ycm\_extra\_config.py](vim/.ycm_extra_config.py-file.md)
   * [Vim Cheat sheet](vim/vim-cheat-sheet.md)
 
