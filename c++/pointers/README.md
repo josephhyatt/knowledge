@@ -2,11 +2,11 @@
 
 ## Pointer facts
 
-A pointer is a variable. It stores a number. That number represents a memory address.  
-Therefore we say it points to some data.  
-Pointers can have a type \(e.g. `int`, `char`\) or they can be `void`.  
-The type will hint what you want to interpret the data that is pointed to, as.  
-If you use `void`, you may need to specify a type later.
+* A pointer is a variable. It stores a number. That number represents a memory address.
+* Therefore we say it points to some data.
+* Pointers can have a type \(e.g. `int`, `char`\) or they can be `void`.
+* The type will hint what you want to interpret the data that is pointed to, as.
+* If you use `void`, you may need to specify a type later.
 
 ## Declaring a pointer
 
