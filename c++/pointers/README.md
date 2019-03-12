@@ -1,5 +1,57 @@
 # Pointers
 
+## Pointer facts
+
+A pointer is a variable. It stores a number. That number represents a memory address.  
+Therefore we say it points to some data.  
+Pointers can have a type \(e.g. `int`, `char`\) or they can be `void`.  
+The type will hint what you want to interpret the data that is pointed to, as.  
+If you use `void`, you may need to specify a type later.
+
+## Declaring a pointer
+
+You declare a pointer just like how you would any variable, but add an asterisk \(`*`\) in between the type and the name.  
+  
+Example:
+
+```cpp
+void * function(int *i)
+{
+    void *v;     // we don't know what type of data v will point to
+    v = i + 500; // pointer arithmetic
+    return v;    // return the resulting memory address
+}
+```
+
+## Pointer arithmetic
+
+Pointer arithmetic refers to addition or subtraction between a pointer and an integer.  
+The value of a pointer is the memory address it holds. It is expressed in bytes.  
+Most types occupy more than one byte in memory. \(e.g. `float` uses four bytes.\)  
+The integer represents how many elements of the pointer's type we're shifting the address by.  
+Finally the address shifts by the number of bytes needed to store that number of elements.  
+  
+Example:
+
+```cpp
+float *pf = reinterpret_cast<float *> (100);
+// force pf to contain the value 100 (0x64 in hexadecimal)
+// notice that (sizeof (float) == 4) bytes
+
+pf += 1; // shift pf forward by one float
+// pf is now 104 (0x68)
+pf -= 2; // shift pf backward by two floats
+// pf is now 96 (0x60)
+
+void *pv = reinterpret_cast<void *> (100); // pv is 100 (0x64)
+// notice that (sizeof (void) == 1) byte
+
+pv += 1; // pv is now 101 (0x65)
+pv -= 2; // pv is now 99 (0x63)
+
+// caution, you should never assign a custom address to a pointer
+```
+
 ![C++ Pointers](https://cdn.programiz.com/sites/tutorial2program/files/cpp-pointers_1.jpg)
 
 Pointers are powerful features of C++ that differentiates it from other programming languages like Java and Python.
