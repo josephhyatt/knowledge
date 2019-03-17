@@ -31,6 +31,7 @@
 * [Command Line \(CLI\)](command-line-cli.md)
 * [Computer Science](computer-science-1/README.md)
   * [Algorithms](computer-science-1/algorithm/README.md)
+    * [C++ Data Structures and Algorithms Cheat Sheet](computer-science-1/algorithm/c++-data-structures-and-algorithms-cheat-sheet.md)
     * [Basic Types of Algorithms](computer-science-1/algorithm/basic-types-of-algorithms.md)
     * [Data Structure Basics](computer-science-1/algorithm/data-structure-basics.md)
     * [Efficient Sorting Basics](computer-science-1/algorithm/efficient-sorting-basics.md)
