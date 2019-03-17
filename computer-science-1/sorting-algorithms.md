@@ -112,3 +112,24 @@ When choosing a sorting algorithm to use, weigh these factors. For example, quic
 * [Merge Sort](https://brilliant.org/wiki/merge/)
 * [Counting Sort](https://brilliant.org/wiki/counting-sort/)
 
+### Array Sorting Algorithms <a id="sorting"></a>
+
+| Algorithm | Time Complexity | Space Complexity |  |  |
+| :---: | :---: | :---: | :---: | :---: |
+|  | Best | Average | Worst | Worst |
+| [Quicksort](http://en.wikipedia.org/wiki/Quicksort) | `Ω(n log(n))` | `Θ(n log(n))` | `O(n^2)` | `O(log(n))` |
+| [Mergesort](http://en.wikipedia.org/wiki/Merge_sort) | `Ω(n log(n))` | `Θ(n log(n))` | `O(n log(n))` | `O(n)` |
+| [Timsort](http://en.wikipedia.org/wiki/Timsort) | `Ω(n)` | `Θ(n log(n))` | `O(n log(n))` | `O(n)` |
+| [Heapsort](http://en.wikipedia.org/wiki/Heapsort) | `Ω(n log(n))` | `Θ(n log(n))` | `O(n log(n))` | `O(1)` |
+| [Bubble Sort](http://en.wikipedia.org/wiki/Bubble_sort) | `Ω(n)` | `Θ(n^2)` | `O(n^2)` | `O(1)` |
+| [Insertion Sort](http://en.wikipedia.org/wiki/Insertion_sort) | `Ω(n)` | `Θ(n^2)` | `O(n^2)` | `O(1)` |
+| [Selection Sort](http://en.wikipedia.org/wiki/Selection_sort) | `Ω(n^2)` | `Θ(n^2)` | `O(n^2)` | `O(1)` |
+| [Tree Sort](https://en.wikipedia.org/wiki/Tree_sort) | `Ω(n log(n))` | `Θ(n log(n))` | `O(n^2)` | `O(n)` |
+| [Shell Sort](http://en.wikipedia.org/wiki/Shellsort) | `Ω(n log(n))` | `Θ(n(log(n))^2)` | `O(n(log(n))^2)` | `O(1)` |
+| [Bucket Sort](http://en.wikipedia.org/wiki/Bucket_sort) | `Ω(n+k)` | `Θ(n+k)` | `O(n^2)` | `O(n)` |
+| [Radix Sort](http://en.wikipedia.org/wiki/Radix_sort) | `Ω(nk)` | `Θ(nk)` | `O(nk)` | `O(n+k)` |
+| [Counting Sort](https://en.wikipedia.org/wiki/Counting_sort) | `Ω(n+k)` | `Θ(n+k)` | `O(n+k)` | `O(k)` |
+| [Cubesort](https://en.wikipedia.org/wiki/Cubesort) | `Ω(n)` | `Θ(n log(n))` | `O(n log(n))` | `O(n)` |
+
+#### 
+
