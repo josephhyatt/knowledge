@@ -4,6 +4,7 @@
 * [Builds](builds/README.md)
   * [Python Search Engine](builds/python-search-engine.md)
 * [C++](c++/README.md)
+  * [Stacks](c++/stacks.md)
   * [Arrays](c++/arrays/README.md)
     * [Multidimensional Arrays](c++/arrays/multidimensional-arrays.md)
   * [Passing Array to a Function](c++/passing-array-to-a-function.md)

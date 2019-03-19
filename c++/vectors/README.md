@@ -89,6 +89,19 @@ int main()
 	
 	return 0;
     }
+    
+// Output:
+
+Unsorted vector: 
+4 3 2 1 
+
+Sorted vector: 
+1 2 3 4 
+
+Vector of vectors: 
+1 2 3 
+4 5 6 
+7 8 9 
 ```
 
 ## How do vectors in C++ work?
