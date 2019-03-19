@@ -1,5 +1,17 @@
 # Stacks
 
+Stacks are a type of container adapters with LIFO \(Last In First Out\) type of working, where a new element is added at one end and \(top\) an element is removed from that end only.  
+ 
+
+The functions associated with stack are:  
+[empty\(\)](https://www.geeksforgeeks.org/stack-empty-and-stack-size-in-c-stl/) – Returns whether the stack is empty – Time Complexity : O\(1\)  
+[size\(\)](https://www.geeksforgeeks.org/stack-empty-and-stack-size-in-c-stl/) – Returns the size of the stack – Time Complexity : O\(1\)  
+[top\(\)](https://www.geeksforgeeks.org/stack-top-c-stl/) – Returns a reference to the top most element of the stack – Time Complexity : O\(1\)  
+[push\(g\)](https://www.geeksforgeeks.org/stack-push-and-pop-in-c-stl/) – Adds the element ‘g’ at the top of the stack – Time Complexity : O\(1\)  
+[pop\(\)](https://www.geeksforgeeks.org/stack-push-and-pop-in-c-stl/) – Deletes the top most element of the stack – Time Complexity : O\(1\)
+
+## Stack Example
+
 ```cpp
 #include <iostream>
 #include <stack>
