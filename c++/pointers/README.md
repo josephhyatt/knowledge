@@ -8,6 +8,30 @@
 * The type will hint what you want to interpret the data that is pointed to, as.
 * If you use `void`, you may need to specify a type later.
 
+## Example
+
+**A pointer is a C++ variable that stores the address of some other variable.** 
+
+```cpp
+// Declare an integer variable named srcmake and set it to be 5.
+int srcmake = 5; 
+    
+// Create a pointer to an integer variable named srcmakePointer
+// and set it equal to the address of the variable named srcmake.
+int* srcmakePointer = &srcmake;
+    
+// Print whatever is inside the address that srcmakePointer points to.
+cout << *srcmakePointer; // 5
+```
+
+![](https://www.srcmake.com/uploads/5/3/9/0/5390645/p_orig.jpg)
+
+Pointers store the RAM address of a variable.
+
+Note that pointer syntax is to declare a variable with an asterisk \* next to it, accessing the address of a variable with with an ampersand &, and dereferencing a pointer \(accessing whatever is inside the address of a pointer\) is also with an asterisk \*.
+
+Think of a pointer like knowing a specific index in an array: if you know the direct index, you can just look directly to find the variable you want.
+
 ## Declaring a pointer
 
 You declare a pointer just like how you would any variable, but add an asterisk \(`*`\) in between the type and the name.  
