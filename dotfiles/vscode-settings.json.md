@@ -329,7 +329,7 @@
 		"description": "#define \" \""
 	},
 	/*********************************/
-				/** Custom Snippets **/
+		  /** Custom Snippets **/
 	/********************************/
 	"A pointer is a variable that holds a memory address where a value lives.": {
 		"prefix": "pointer",
