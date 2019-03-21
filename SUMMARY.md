@@ -45,7 +45,7 @@
 * [Dotfiles](dotfiles/README.md)
   * [tmux.conf](dotfiles/tmux.conf.md)
   * [.vimrc](dotfiles/.vimrc.md)
-  * [VSCode \(settings.json\)](dotfiles/vscode-settings.json.md)
+  * [VSCode](dotfiles/vscode-settings.json.md)
   * [.zshrc](dotfiles/.zshrc.md)
 * [General Programming](general-programming/README.md)
   * [Programming Basics](general-programming/programming-basics.md)
