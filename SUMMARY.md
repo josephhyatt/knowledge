@@ -54,6 +54,7 @@
   * [Reading Documentation](general-programming/reading-documentation.md)
   * [Starting A Web Development Project](general-programming/starting-a-web-development-project.md)
   * [Thinking Like A Programmer](general-programming/thinking-like-a-programmer.md)
+  * [Useful Websites](general-programming/useful-websites.md)
   * [Vocabulary](general-programming/vocabulary-1.md)
 * [Github](github/README.md)
   * [Configure Github](github/configure-github.md)
