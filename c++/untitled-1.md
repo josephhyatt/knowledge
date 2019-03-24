@@ -1,5 +1,7 @@
 # Algorithms
 
+![](../.gitbook/assets/world_map_of_cpp_stl_algorithms.png)
+
 ## Base Code and C++ version
 
 For the sake of testing this code, we'll specify a very basic C++ file that our code would run in. Note that we include `vector`, because that's the container the examples will use, we're including `iostream` for `cout`, and we including `algorithm` for the actual STL algorithms.
