@@ -326,14 +326,14 @@ std::vector<int>::iterator it = std::copy(v1.begin(), v1.end(), v2.begin());
 // 'it' points to the element after 4 in v2.
 ```
 
-#### copy\_n
+### copy\_n
 
 Copy the first n elements from one range into another.
 
 * Pass in an iterator to the beginning of the first range, an int representing how many elements to copy, and an iterator to the beginning of the copy range.
 * Returns an iterator to the element after the last one we wrote to in the copy range.
 
-```text
+```cpp
 std::vector<int> v1{ 1, 2, 3, 4 };
 std::vector<int> v2(2);
 
@@ -343,14 +343,14 @@ std::vector<int>::iterator it = std::copy_n(v1.begin(), 2, v2.begin());
 // "it" points to the element after 2 in v2.
 ```
 
-#### copy\_if
+### copy\_if
 
 Copy elements from one range into another if the condition we specify is met.
 
 * Pass in an iterator to the beginning of the first range, an iterator to the end of the first range, an iterator to the beginning of the copy range, and a lambda function that returns a bool.
 * Returns an iterator to the element after the last one we wrote to in the copy range.
 
-```text
+```cpp
 std::vector<int> v1{ 1, 2, 3, 4 };
 std::vector<int> v2(2);
 
@@ -362,14 +362,14 @@ std::vector<int>::iterator it = std::copy_if(v1.begin(), v1.end(), v2.begin(), l
 // "it" points to the element after 4 in v2.
 ```
 
-#### copy\_backward
+### copy\_backward
 
 Copy the elements from one range into another, starting from the back elements and going to the front.
 
 * Pass in an iterator to the beginning of the first range, an iterator to the end of the first range, and an iterator to the end of the copy range.
 * Returns an iterator to the last element we wrote to in the copy range \(which is the beginning of the copy range\).
 
-```text
+```cpp
 std::vector<int> v1{ 1, 2, 3, 4 };
 std::vector<int> v2(4);
 
@@ -379,14 +379,14 @@ std::vector<int>::iterator it = std::copy_backward(v1.begin(), v1.end(), v2.end(
 // "it" points to the 1 in v2.
 ```
 
-#### move
+### move
 
 Move the elements from one range into another. The elements in the original range are valid, but may not be what they were before the move.
 
 * Pass in an iterator to the beginning of the first range, an iterator to the end of the first range, and an iterator to the beginning of the move range.
 * Returns an iterator to the element after the last one we wrote to in the move range.
 
-```text
+```cpp
 std::vector<int> v1{ 1, 2, 3, 4 };
 std::vector<int> v2(4);
 
@@ -397,14 +397,14 @@ std::vector<int>::iterator it = std::move(v1.begin(), v1.end(), v2.begin());
 // 'it' points to the element after 4 in v2.
 ```
 
-#### move\_backward
+### move\_backward
 
 Move the elements from one range into another, starting from the back elements and going to the front. The elements in the original range are valid, but may not be what they were before the move.
 
 * Pass in an iterator to the beginning of the first range, an iterator to the end of the first range, and an iterator to the end of the move range.
 * Returns an iterator to the last element we wrote to in the move range \(which is the beginning of the move range\).
 
-```text
+```cpp
 std::vector<int> v1{ 1, 2, 3, 4 };
 std::vector<int> v2(4);
 
@@ -415,28 +415,28 @@ std::vector<int>::iterator it = std::move_backward(v1.begin(), v1.end(), v2.end(
 // 'it' points to the 1 in v2.
 ```
 
-#### swap
+### swap
 
 Swaps the values of two items.
 
 * Pass in the first and the second item.
 * Returns void.
 
-```text
+```cpp
 int a = 5;
 int b = 10;
 
 std::swap(a, b); // Now a = 10 and b = 5.
 ```
 
-#### swap\_ranges
+### swap\_ranges
 
 Given two ranges, swaps the items in them \(using the `swap` function\).
 
 * Pass in an iterator to the beginning of the first range, an iterator to the end of the first range, and an iterator to the beginning of the second range.
 * Returns an iterator to the element after the last one we wrote to in the second range.
 
-```text
+```cpp
 std::vector<int> v1{ 1, 2, 3, 4 };
 std::vector<int> v2{ 5, 6, 7, 8 };
 
@@ -447,14 +447,14 @@ std::vector<int>::iterator it = std::swap_ranges(v1.begin(), v1.end(), v2.begin(
 // 'it' points to the element after 4 in v2.
 ```
 
-#### iter\_swap
+### iter\_swap
 
 Swap the values that two iterators point too.
 
 * Pass in an iterator to the first value, and an iterator to the second value.
 * Returns void.
 
-```text
+```cpp
 std::vector<int> v{ 1, 2, 3, 4, 5 };
 
 std::vector<int>::iterator it1 = v.begin(); // Points to 1
@@ -465,16 +465,16 @@ std::iter_swap(it1, it2);
 // v is now { 5 2 3 4 1 }
 ```
 
-#### transform
+### transform
 
 Given one or two ranges, performs an operation on each value of the range and stores that result in another range. \(For example, multiply each value in a vector by some number and store it in another vector. Or add each value in two vectors and put that into another vector.\)
 
 * Pass in an iterator to the beginning of the first range, an iterator to the end of the first range, \(optionally, an iterator to the beginning of the second range if there is one\), and an iterator to the beginning of the resulting range, and a lamba expression that accepts the element type\(s\) and returns the element type that does the operation we want to want to do on the range\(s\).
 * Returns an iterator to the element after the last one we wrote to in the resulting range.
 
-Example with just one range:
+Example with just **one** range:
 
-```text
+```cpp
 std::vector<int> v{ 1, 2, 3, 4, 5 };
 std::vector<int> res(5);
 
@@ -485,9 +485,9 @@ std::vector<int>::iterator it = std::transform(v.begin(), v.end(), res.begin(), 
 // res is { 2 3 4 5 6 }
 ```
 
-Example with two ranges:
+Example with **two** ranges:
 
-```text
+```cpp
 std::vector<int> v1{ 1, 2, 3 };
 std::vector<int> v2{ 4, 5, 6 };
 std::vector<int> res(3);
@@ -499,14 +499,14 @@ std::vector<int>::iterator it = std::transform(v1.begin(), v1.end(), v2.begin(),
 // res is { 4 10 18 }
 ```
 
-#### replace
+### replace
 
 For a range, replaces an old value \(that we specify\) with a new value \(that we specify\). \(Ex. Replace all 3's with 7's.\)
 
 * Pass in an iterator to the beginning of the range, an iterator to the end of the range, the old value, and the new value.
 * Returns void.
 
-```text
+```cpp
 std::vector<int> v{ 1, 2, 3, 4, 3, 5 };
 
 std::replace(v.begin(), v.end(), 3, 7);
@@ -514,14 +514,14 @@ std::replace(v.begin(), v.end(), 3, 7);
 // res is now { 1 2 7 4 7 5 }
 ```
 
-#### replace\_if
+### replace\_if
 
 For a range, replaces an element that passes a certain condition with a new value \(that we specify\). \(Ex. Replace all negative elements with a 0.\)
 
 * Pass in an iterator to the beginning of the range, an iterator to the end of the range, a lambda expression that returns a bool, and the new value.
 * Returns void.
 
-```text
+```cpp
 std::vector<int> v{ 1, 2, -3, 4, -5 };
 
 auto lambdaIsNegative = [](int i) { return i < 0; };
@@ -531,14 +531,14 @@ std::replace_if(v.begin(), v.end(), lambdaIsNegative, 0);
 // res is now { 1 2 0 4 0 }
 ```
 
-#### replace\_copy
+### replace\_copy
 
 For a range, copies the elements into another range, and replaces any element \(that we specify\) with a new value \(that we specify\) for the new range. Doesn't change the old range. \(Ex. Replace all 3's with 7's.\)
 
 * Pass in an iterator to the beginning of the range, an iterator to the end of the range, an iterator to the beginning of the new range, the old value, and the new value.
 * Returns an iterator to the element after the last one we wrote to in the resulting range.
 
-```text
+```cpp
 std::vector<int> v{ 1, 2, 3, 4, 3, 5 };
 std::vector<int> res(6);
 
@@ -551,14 +551,14 @@ std::vector<int>::iterator it = std::replace_copy(v.begin(), v.end(), res.begin(
 // 'it' points to the element after 5 in res.
 ```
 
-#### replace\_copy\_if
+### replace\_copy\_if
 
 For a range, copies the elements into another range, and replaces any element that passes a certain condition with a different value \(that we specify\) for the new range. Doesn't change the old range. \(Ex. Replace all negative elements with a 0.\)
 
 * Pass in an iterator to the beginning of the range, an iterator to the end of the range, an iterator to the beginning of the new range, a lambda expression that returns a bool, and the new value.
 * Returns an iterator to the element after the last one we wrote to in the resulting range.
 
-```text
+```cpp
 std::vector<int> v{ 1, 2, -3, 4, -5 };
 std::vector<int> res(5);
 
@@ -571,14 +571,14 @@ std::vector<int>::iterator it = std::replace_copy_if(v.begin(), v.end(), res.beg
 // 'it' points to the element after the second 0 in res.
 ```
 
-#### fill
+### fill
 
 For a range, fill every element with an item \(that we specify\). \(Ex. Fill a range with all 7s.\)
 
 * Pass in an iterator to the beginning of the range, an iterator to the end of the range, and the value that we want to fill it with.
 * Returns void.
 
-```text
+```cpp
 std::vector<int> v{ 1, 2, 3, 4, 5 };
 
 std::fill(v.begin(), v.end(), 7);
@@ -586,14 +586,14 @@ std::fill(v.begin(), v.end(), 7);
 // v is now { 7 7 7 7 7 }
 ```
 
-#### fill\_n
+### fill\_n
 
 For a range, fill every element with an item \(that we specify\). \(Ex. Fill the first 3 elements of a range with 7s.\)
 
 * Pass in an iterator to the beginning of the range,the number of elements we want to fill, and the value that we want to fill it with.
 * Returns an iterator to the element after the last one we wrote to.
 
-```text
+```cpp
 std::vector<int> v{ 1, 2, 3, 4, 5 };
 
 std::fill_n(v.begin(), 3, 7); // Fill the first 3, only.
@@ -601,14 +601,14 @@ std::fill_n(v.begin(), 3, 7); // Fill the first 3, only.
 // v is now { 7 7 7 4 5 }
 ```
 
-#### generate
+### generate
 
 For a range, assigns each element with a value generated by a function \(that we specify\). \(Ex. Use a random number generator function to determine what to assign each element.\)
 
 * Pass in an iterator to the beginning of the range, an iterator to the end of the range, and a function \(that accepts no parameters\) that returns the type of the range.
 * Returns void.
 
-```text
+```cpp
 std::vector<int> v{ 1, 2, 3, 4, 5 };
 
 auto lambdaReturnNine = []() { return 9; };
@@ -618,14 +618,14 @@ std::generate(v.begin(), v.end(), lambdaReturnNine);
 // v is now { 9 9 9 9 9 }
 ```
 
-#### generate\_n
+### generate\_n
 
 For a range, assigns each element with a value generated by a function \(that we specify\) for the first n elements. \(Ex. Use a random number generator function to determine what to assign each element for the first 3 elements.\)
 
 * Pass in an iterator to the beginning of the range, the number of elements we want assign to, and a function \(that accepts no parameters\) that returns the type of the range.
 * Returns an iterator to the element after the last one we wrote to.
 
-```text
+```cpp
 std::vector<int> v{ 1, 2, 3, 4, 5 };
 
 auto lambdaReturnNine = []() { return 9; };
@@ -635,14 +635,14 @@ std::generate_n(v.begin(), 3, lambdaReturnNine);
 // v is now { 9 9 9 4 5 }
 ```
 
-#### remove
+### remove
 
 For a range, removes any element that has a certain value \(that you specify\). This is done by moving a valid element into the removed element's spot. \(The container size does not change.\) You'll know where the updated range ends by checking where the returned iterator is. Order is not preserved, and the extra elements at the end of the range are in some valid state.
 
 * Pass in an iterator to the beginning of the range, an iterator to the end of the range, and the value to be removed.
 * Returns an iterator after the last valid element in the range.
 
-```text
+```cpp
 std::vector<int> v{ 1, 2, 3, 4, 5 };
 
 std::vector<int>::iterator it = std::remove(v.begin(), v.end(), 2);
@@ -652,14 +652,14 @@ std::vector<int>::iterator it = std::remove(v.begin(), v.end(), 2);
 // 'it' points to the element after the first 5 in v.
 ```
 
-#### remove\_if
+### remove\_if
 
 For a range, removes any element that passes a certain condition \(that you specify\). This is done by moving a valid element into the removed element's spot. \(The container size does not change.\) You'll know where the updated range ends by checking where the returned iterator is. Order is not preserved, and the extra elements at the end of the range are in some valid state.
 
 * Pass in an iterator to the beginning of the range, an iterator to the end of the range, and a lambda function that returns a bool.
 * Returns an iterator after the last valid element in the range.
 
-```text
+```cpp
 std::vector<int> v{ 1, 2, 3, 4, 5 };
 
 auto lambdaIsOdd = [](int i) { return i % 2 != 0; };
@@ -671,14 +671,14 @@ std::vector<int>::iterator it = std::remove_if(v.begin(), v.end(), lambdaIsOdd);
 // 'it' points to the element after the first 4 in v.
 ```
 
-#### remove\_copy
+### remove\_copy
 
 For a given range, copies each element into a new range, except for elements with a certain value \(that you specify\). The original range is untouched.
 
 * Pass in an iterator to the beginning of the original range, an iterator to the end of the original range, an iterator to the beginning of the copy range, and the value that you want to skip.
 * Returns an iterator after the last valid element in the copy range.
 
-```text
+```cpp
 std::vector<int> v{ 1, 2, 3, 4, 5 };
 std::vector<int> res(5);
 
@@ -689,14 +689,14 @@ std::vector<int>::iterator it = std::remove_copy(v.begin(), v.end(), res.begin()
 // 'it' points to the element after the 5 in res
 ```
 
-#### remove\_copy\_if
+### remove\_copy\_if
 
 For a given range, copies each element into a new range, except for elements that pass a certain condition \(that you specify\). The original range is untouched.
 
 * Pass in an iterator to the beginning of the original range, an iterator to the end of the original range, an iterator to the beginning of the copy range, and a lambda function that returns a bool.
 * Returns an iterator after the last valid element in the copy range.
 
-```text
+```cpp
 std::vector<int> v{ 1, 2, 3, 4, 5 };
 std::vector<int> res(5);
 
@@ -709,14 +709,14 @@ std::vector<int>::iterator it = std::remove_copy_if(v.begin(), v.end(), res.begi
 // 'it' points to the element after the 4 in res
 ```
 
-#### unique
+### unique
 
 For a range, remove consecutive duplicate elements. \(Ex. { 2 2 3 3 4 4 4 3 } -&gt; { 2 3 4 3 ? ? ? ? } \) This is done by moving a valid element into the removed element's spot. \(The container size does not change.\) You'll know where the updated range ends by checking where the returned iterator is. Order is not preserved, and the extra elements at the end of the range are in some valid state.
 
 * Pass in an iterator to the beginning of the range, and an iterator to the end of the range.
 * Returns an iterator after the last valid element in the range.
 
-```text
+```cpp
 std::vector<int> v{ 2, 2, 3, 3, 4, 4, 4, 3 };
 
 std::vector<int>::iterator it = std::unique(v.begin(), v.end());
@@ -726,14 +726,14 @@ std::vector<int>::iterator it = std::unique(v.begin(), v.end());
 // 'it' points to the element after the second 3 in v.
 ```
 
-#### unique\_copy
+### unique\_copy
 
 For a range, copies all elements that don't have a duplicate neighbor into a new range \(that you specify\). \(Ex. { 2 2 3 3 4 4 4 3 } -&gt; { 2 3 4 3 } \) The original range is untouched.
 
 * Pass in an iterator to the beginning of the original range, an iterator to the end of the original range, and an iterator to the beginning of the copy range.
 * Returns an iterator after the last copied element in the copy range.
 
-```text
+```cpp
 std::vector<int> v{ 2, 2, 3, 3, 4, 4, 4, 3 };
 std::vector<int> res(8);
 
@@ -745,14 +745,14 @@ std::vector<int>::iterator it = std::unique_copy(v.begin(), v.end(), res.begin()
 // 'it' points to the element after the second 3 in res.
 ```
 
-#### reverse
+### reverse
 
 For a range, reverses the order of the elements. \(Ex. { 1 2 3 4 } -&gt; { 4 3 2 1 } .\)
 
 * Pass in an iterator to the beginning of the range, and an iterator to the end of the range.
 * Returns void.
 
-```text
+```cpp
 std::vector<int> v{ 1, 2, 3, 4 };
 
 std::reverse(v.begin(), v.end());
@@ -760,14 +760,14 @@ std::reverse(v.begin(), v.end());
 // v is { 4 3 2 1 }
 ```
 
-#### reverse\_copy
+### reverse\_copy
 
 For a range, copies the elements in verse order into a new range \(that you specify\). \(Ex. { 1 2 3 4 } -&gt; { 4 3 2 1 } .\) The original range is untouched.
 
 * Pass in an iterator to the beginning of the original range, an iterator to the end of the original range, and an iterator to the beginning of the copy range.
 * Returns an iterator after the last copied element in the copy range.
 
-```text
+```cpp
 std::vector<int> v{ 1, 2, 3, 4 };
 std::vector<int> res(4);
 
@@ -778,14 +778,14 @@ std::vector<int>::iterator it = std::reverse_copy(v.begin(), v.end(), res.begin(
 // 'it' points to the element after 1 in res
 ```
 
-#### rotate
+### rotate
 
 For a range, rotates the elements \(in a circular fashion\) so that a specified becomes the new first element, and every other element is shifted over.
 
 * Pass in an iterator to the beginning of the range, an iterator to the element we want to be the beginning of the range, and an iterator to the end of the range.
 * Returns void.
 
-```text
+```cpp
 std::vector<int> v{ 1, 2, 3, 4 };
 
 std::vector<int>::iterator it = v.begin() + 2; // Points to 3
@@ -795,14 +795,14 @@ std::rotate(v.begin(), it, v.end());
 // v is now { 3 4 1 2 }
 ```
 
-#### rotate\_copy
+### rotate\_copy
 
 For a range, copies the elements into a new range if the elements were rotating \(in a circular fashion\) so that a specified becomes the new first element, and every other element is shifted over. The original range is untouched.
 
 * Pass in an iterator to the beginning of the original range, an iterator to the element we want to be the beginning of the copy range. an iterator to the end of the original range, and an iterator to the beginning of the copy range.
 * Returns an iterator after the last copied element in the copy range.
 
-```text
+```cpp
 std::vector<int> v{ 1, 2, 3, 4 };
 std::vector<int> res(4);
 
