@@ -76,6 +76,18 @@ list <int>::iterator it;
 
 You will see the implementations using iterators in the topics explained below.
 
+**begin\(\)** :- This function is used to return the **beginning position** of the container.
+
+**end\(\)** :- This function is used to return the **afterend position** of the container.
+
+**advance\(\)** :- This function is used to **increment the iterator position** till the specified number mentioned in its arguments.
+
+**next\(\)** :- This function **returns the new iterator**that the iterator would point after **advancing the positions** mentioned in its arguments.
+
+**prev\(\)** :- This function **returns the new iterator**that the iterator would point **after decrementing the positions** mentioned in its arguments.
+
+**inserter\(\)** :- This function is used to **insert the elements at any position** in the container. It accepts **2 arguments, the container and iterator to position where the elements have to be inserted**.
+
 ## **String**
 
 C++ provides a powerful alternative for the **char**\*. It is not a built-in data type, but is a container class in the Standard Template Library. String class provides different string manipulation functions like concatenation, find, replace etc. Let us see how to construct a string type.
