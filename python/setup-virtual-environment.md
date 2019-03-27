@@ -1,116 +1,153 @@
 # Setup Virtual Environment
 
-## Step 1: Create Directory
+## Installing Virtualenv using pip3
 
-Create a folder for your Python virtual environments where you can create your stand-alone virtual environments. You can use the following syntax to create your own working directory:
+Virtualenv is installed by default on all DreamHost servers for Python 2 versions. If you're working with Python 3, you should install virtualenv using pip3.
 
-_$ mkdir \[environment\_dir\_name\]_
+These instructions assume you've already installed a [custom version of Python 3](https://help.dreamhost.com/hc/en-us/articles/115000702772-Installing-a-custom-version-of-Python-3). After it's installed and your shell is using this version, run pip3 to install virtualenv:
 
-Example:
-
-```python
-$ mkdir environment_directory
+```bash
+[server]$ pip3 install virtualenv
 ```
 
-Now change the working directory to the environments directory that you just created:
+You'll need the full path to the Python 3 version of virtualenv, so run the following to view it:
 
-```python
-$ cd environment_directory
+```bash
+[server]$ which virtualenv
+/home/linuxbrew/.linuxbrew/bin/virtualenv
 ```
 
-![Create directory for virtual Python environment](https://vitux.com/wp-content/uploads/2018/11/word-image-181.png)
+## Creating a virtual environment using a custom Python version
 
-## Step 2: Create New Virtual Environment
+When working with virtual environments in Python, it's common to use a [custom version of Python](https://help.dreamhost.com/hc/en-us/articles/115000702772-Installing-a-custom-version-of-Python-3) rather than the server's version. To create a new virtual environment using your custom installed version of Python, follow these steps:
 
-In the environments directory, we will be creating a new virtual environment where you can write your Python programs and create projects.
+1. Make a note of the full file path to the custom version of Python you just installed. 
 
-Syntax:
+   ```text
+   [server]$ which python3
+   /home/linuxbrew/.linuxbrew/bin/python3
+   ```
 
-_$ python3 -m_ venv _environment\_name_
+2. Navigate to your site's directory, where you'll create the new virtual environment:
 
-Example:
+   ```text
+   [server]$ cd ~/example.com
+   ```
 
-```python
-$ python3 -m venv sample_environment
+3. Create the virtual environment while you specify the version of Python you wish to use. The following command creates a virtualenv named 'my\_project' and uses the -p flag to specify the full path to the Python3 version you just installed:
+
+```bash
+[server]$ virtualenv -p /home/linuxbrew/.linuxbrew/bin/python3 my_project
 ```
 
-When you list the contents of your Python environment through the ls command, you will be able to see the following basic contents:
+* This command creates a local copy of your environment specific to this website. While working on this website, you should activate the local environment in order to make sure you're working with the right versions of your tools and packages.
 
-_bin include lib lib64 pyvenv.cfg_
+1. To activate the new virtual environment, run the following:
 
-Example:
+   ```bash
+   [server]$ source my_project/bin/activate
+   ```
 
-```python
-$ ls sample_environment
+   _The name of the current virtual environment appears to the left of the prompt. For example:_
+
+   ```bash
+   (my_project) [server]$ 
+   ```
+
+2. To verify the correct Python version, run the following:
+
+   ```bash
+   [server]$ python -V
+   Python 3.6.2
+   ```
+
+Any package that you install using pip is now placed in the virtual environments project folder, isolated from the global Python installation.
+
+## Deactivating your virtualenv
+
+When finished working in the virtual environment, you can deactivate it by running the following:
+
+```bash
+[server]$ deactivate
 ```
 
-![List content of virtualenv](https://vitux.com/wp-content/uploads/2018/11/word-image-182.png)
+* This puts you back into your Shell user's default settings.
 
-This means that your environment is successfully set up.
+## Deleting your virtual environment
 
-## Step 4: Activate the Python Virtual Environment
+To delete a virtual environment, simply delete the project folder. Using the previous example, run the following command:
 
-When you want to use the newly created virtual environment, you first need to activate it. Use the following command to syntax to do so:
-
-Syntax:
-
-_$ source environment\_name/bin/activate_
-
-Example:
-
-```python
-$ source sample_environment/bin/activate
+```bash
+[server]$ rm -rf my_project
 ```
 
-![Activate the Python Virtual Environment](https://vitux.com/wp-content/uploads/2018/11/word-image-183.png)
+## Installing custom modules
 
-When you activate the environment, you will see how your environment name appears inside brackets, suggesting that you are now inside the environment.
+Next, run the following to activate your local Python environment.
 
-Whenever you want to deactivate the environment, you can use the following command:
-
-```python
-$ deactivate
+```bash
+[server]$ . ~/.zshrc
 ```
 
-![Deactivate virtualenv](https://vitux.com/wp-content/uploads/2018/11/word-image-184.png)
+You now have access to pip3. Confirm this by running the following:
 
-This will deactivate the virtual environment and you can work outside of it.
-
-## Your First Python Program
-
-You can create and run your first Python program both inside and outside of the Virtual Working environment. In this example, we will tell you how to write a sample Python program inside the virtual environment you just created.
-
-In order to get inside the environment, first change the directory to your environments folder and then activate whichever virtual environment you want to activate.
-
-Once you are inside the virtual environment, you can use your favorite text editor to create your first Python program. In this example, we are using the Nano editor to create a program.
-
-```python
-$ nano first_program.py
+```bash
+[server]$ pip3 --version
+pip 18.1 from /home/username/my_project/lib/python3.6/site-packages/pip (python 3.6)
 ```
 
-This command will open a blank text file by the name of first\_program.py
+## Upgrading pip3
 
-Write or paste the following line in your first Python program:
+At this point it's a good idea to upgrade pip3.
 
-```python
-print("This is my first Python program :) :)")
+```bash
+[server]$  python3 -m pip install --upgrade pip
+Collecting pip
+  Downloading https://files.pythonhosted.org/packages/c2/d7/90f34cb0d83a6c5631cf71dfe64cc1054598c843a92b400e55675cc2ac37/pip-18.1-py2.py3-none-any.whl (1.3MB)
+    100% |████████████████████████████████| 1.3MB 613kB/s
+Installing collected packages: pip
+  Found existing installation: pip 9.0.1
+    Uninstalling pip-9.0.1:
+      Successfully uninstalled pip-9.0.1
+Successfully installed pip-18.1
+
+[server]$  pip3 --version
+pip 19.0.3 from /home/linuxbrew/.linuxbrew/opt/python/lib/python3.7/site-packages/pip (python 3.7)
 ```
 
-![First Python program](https://vitux.com/wp-content/uploads/2018/11/word-image-185.png)
+## Installing custom modules within your virtual environment
 
-Save the file by hitting Ctrl+X, then entering Y and hitting Enter. Your program is now saved in your virtual environment.
+When working with Python projects, it's always a good idea to create a virtual environment. This allows you to create an isolated environment, separate from the system version of Python. Any changes you make to this virtual environment only affects the single project, nothing else. In this way, it's a very safe way to test your projects as they can be deleted and rebuilt very easily. View the following article for further details.
 
-Run the following command in order to execute the Python program:
+To use pip3 to easily install custom modules:
 
-_$ python \[program\_name.py\]_
+1. Install a [custom version of Python3](https://help.dreamhost.com/hc/en-us/articles/115000702772-Installing-a-custom-version-of-Python-3) and create a [virtual environment](https://help.dreamhost.com/hc/en-us/articles/115000695551-Installing-and-using-Python-s-virtualenv-using-Python-3).
+2. Run the following command to activate this new virtual environment \(change the directory to where you installed it\):
 
-Example:
+   ```bash
+   [server]$ source my_project/bin/activate
+   ```
 
-```python
-$ python [first_program.py]
-```
+   _The name of the current virtual environment appears to the left of the prompt. For example:_
 
-![Run python app](https://vitux.com/wp-content/uploads/2018/11/word-image-186.png)
+   ```bash
+   (my_project) [server]$ 
+   ```
 
-You can then deactivate the environment. Please remember that when you want to execute this program outside the virtual environment, you might have to use the Python3 commands instead of Python commands.
+3. Use pip3 to install a module:
+
+   ```text
+   [server]$ pip3 install <module>
+   ```
+
+   _You can use 'python-openstackclient' if you're going to work with_ [_openstack_](https://www.openstack.org/)_. For example:_
+
+   ```bash
+   [server]$ pip3 install python-openstackclient
+   ```
+
+View the following links for further module examples:
+
+* [Installing Python Modules](https://docs.python.org/3/installing/)
+* [Browse Packages](https://pypi.python.org/)
 
