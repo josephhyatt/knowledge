@@ -117,7 +117,37 @@ Where:
 
 **Loop** is a concept which allows performing a specific task **several times**. It's **repeating** one or more command, function, program. It is used when you need to solve the same task with a numerous amount of objects. Loops are used widely to process **arrays** \(see data types\), so you can do something with each element of the array one by one.
 
-For example, if you need to delete a bottom face of several cubes in your scene, you will write a function which would be able to delete bottom face of one cube \(and this cube would be passed as input data \(argument\) into your function\) and then repeat this function for every cube with a help of **loop**.
+### Examples:
+
+```cpp
+  // 
+  // Using a for loop to find a value in an array. 
+  // 
+  //   Variables: 
+  //        i      : the loop index. Changes from start to finish 
+  //        start  : the first index of the array. usually one 
+  //        finish : the last index of the array. ( found with length(array) ) 
+  //        array  : a list of integer numbers 
+  //        search : the number we are looking for. 
+  // 
+         
+ 
+ int array[100];              // note: in C++, we must specify how large the array is 
+ int start  = 0;              // note you could simply use the constat 0 below 
+ int finish = 100;            // must know how many elements in array 
+ 
+ for (int i = start; i < finish; i++)     // ++ means add one to i 
+   { 
+     if (array[i] == search)  // note: for non-integers we would not use == 
+       { 
+         std::cout << "found the item" << std::endl;  // note: we often would not print 
+                                     // the value, simply return it (if we 
+                                     // were in a function). 
+       } 
+   } 
+```
+
+If you need to delete a bottom face of several cubes in your scene, you will write a function which would be able to delete bottom face of one cube \(and this cube would be passed as input data \(argument\) into your function\) and then repeat this function for every cube with a help of **loop**.
 
 Check one more example — [double intensity of all lights in the scene](https://github.com/kiryha/AnimationDNA/wiki/06-Tutorials#introduction-to-artistic-developing) for Maya and Python.
 
