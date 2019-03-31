@@ -1,12 +1,18 @@
 # tmux.conf
 
 ```bash
+# Reload tmux config
+tmux source-file ~/.tmux.conf 
+```
+
+```bash
 #
 # Main Settings
 # 
 
 set-option -g prefix C-a # Set mode key to Control + a
 bind-key C-a send-prefix
+setw -g mouse on
 
 #
 # Plugins
