@@ -1,5 +1,7 @@
 # Vim Cheat sheet
 
+![](../.gitbook/assets/visual-vim-cheatsheet.png)
+
 ## Basic Commands
 
 | **Vim Command** | **Description** |
