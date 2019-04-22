@@ -10,6 +10,7 @@
   * [Passing Array to a Function](c++/passing-array-to-a-function.md)
   * [Break and Continue Statement](c++/c++-break-and-continue-statement.md)
   * [Overview](c++/cheat-sheet.md)
+  * [Competitive Programming](c++/competitive-programming.md)
   * [Data Structures and Algorithms](c++/data-structures-and-algorithms.md)
   * [Examples](c++/examples.md)
   * [Frameworks, Libraries, and Resources](c++/frameworks-libraries-and-resources.md)
