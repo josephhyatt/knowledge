@@ -31,6 +31,7 @@
   * [Stacks](c++/stacks.md)
   * [Standard Template Library](c++/standard-template-library.md)
   * [Switch..Case Statement](c++/c++-switch..case-statement.md)
+  * [Useful Websites](c++/useful-websites.md)
   * [Vectors](c++/vectors/README.md)
     * [Vector Functions](c++/vectors/vector-functions.md)
     * [Vector Overview](c++/vectors/untitled.md)
