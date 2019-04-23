@@ -23,8 +23,10 @@ std::set<Sample> // contains only Sample class objects.
 **Basic Example:**
 
 ```cpp
+#include <iostream>
 #include<set>
 #include<string>
+
 int main()
 {
 	std::set<std::string> setOfNumbers;
@@ -81,6 +83,7 @@ It Searches the container for an element equivalent to val and returns an iterat
 #include<iostream>
 #include<set>
 #include<string>
+
 int main()
 {
 	std::set<std::string> setOfNumbers;
@@ -193,6 +196,7 @@ Let’s see an example to **erase element** in `std::set`
 #include<iostream>
 #include<set>
 #include<string>
+
 int main()
 {
  
@@ -231,153 +235,208 @@ first second
 
 **Maps** are used to replicate associative arrays. Maps contain sorted **key-value** pair, in which each key is unique and cannot be changed, and it can be inserted or deleted but cannot be altered. Value associated with keys can be altered. We can search, remove and insert in a map within `O(n)` time complexity.
 
-For example: A map of students where **roll number** is the key and **name** is the value can be represented graphically as :
-
 ![](https://www.studytonight.com/cpp/images/map-example.png)
 
-Notice that keys are arranged in ascending order, its because maps always arrange its keys in sorted order. In case the keys are of string type, they are sorted lexicographically.
+### **Benefits of using std::map :**
 
-### Creating a Map in C++ STL
+* It stores only unique keys and that too in sorted order based on its assigned sorting criteria.
+* As keys are in sorted order therefore searching element in map through key is very fast i.e. it takes logarithmic time.
+* In `std::map` there will be only one value attached with the every key.
+* `std::map` can be used as associative arrays.
+* It might be implemented using balanced binary trees.
 
-Maps can easily be created using the following statement :
+Lets see an example
 
 ```cpp
-map<key_type , value_type> map_name;
+#include <map>
+#include <string>
+#include <iterator>
+ 
+int main()
+{
+    std::map<std::string, int> mapOfWords;
+    // Inserting data in std::map
+    mapOfWords.insert(std::make_pair("earth", 1));
+    mapOfWords.insert(std::make_pair("moon", 2));
+    mapOfWords["sun"] = 3;
+    // Will replace the value of already added key i.e. earth
+    mapOfWords["earth"] = 4;
+    // Iterate through all elements in std::map
+    std::map<std::string, int>::iterator it = mapOfWords.begin();
+    while(it != mapOfWords.end())
+    {
+        std::cout<<it->first<<" :: "<<it->second<<std::endl;
+        it++;
+    }
+    // Check if insertion is successful or not
+    if(mapOfWords.insert(std::make_pair("earth", 1)).second == false)
+    {
+        std::cout<<"Element with key 'earth' not inserted because already existed"<<std::endl;
+    }
+    // Searching element in std::map by key.
+    if(mapOfWords.find("sun") != mapOfWords.end())
+        std::cout<<"word 'sun' found"<<std::endl;
+    if(mapOfWords.find("mars") == mapOfWords.end())
+        std::cout<<"word 'mars' not found"<<std::endl;
+    return 0;
+}
+
+/* Output:
+earth :: 4
+moon :: 2
+sun :: 3
+Element with key ‘earth’ not inserted because already existed
+word ‘sun’ found
+word ‘mars’ not found
+*/
 ```
 
-This will create a map with key of type **Key\_type** and value of type **value\_type**. One thing which is to remembered is that key of a map and corresponding values are always inserted as a pair, you cannot insert only key or just a value in a map.
+### **Creating std::map objects**
 
-Here is a program that will illustrate creating a map in different ways:
+Creating a `std::map` of words i.e.
+
+Key = Word \(`std::string`\)  
+Value = Word’s frequency count \(`int`\)
+
+```cpp
+std::map<std::string, int> mapOfWords;
+```
+
+As no external sorting criteria for key\(`std::string`\) is specified in above `std::map`, therefore it will use default key sorting criteria i.e operator &lt; and all elements will be arranged inside std::map in alphabetical sorted order of keys.
+
+### **Inserting data in std::map :**
+
+Inserting data using insert member function,
+
+```cpp
+mapOfWords.insert(std::make_pair("earth", 1));
+mapOfWords.insert(std::make_pair("moon", 2));
+```
+
+We can also insert data in std::map using operator \[\] i.e.
+
+```cpp
+mapOfWords["sun"] = 3;
+```
+
+### **Different between operator \[\] and insert function:**
+
+If specified key already existed in map then operator \[\] will silently change its value where as insert will not replace already added key instead it returns the information i.e. if element is added or not. e.g.
+
+```cpp
+mapOfWords["earth"] = 4; // Will replace the value of already added key.
+```
+
+Where as for insert member function,
+
+```cpp
+mapOfWords.insert(std::make_pair("earth", 1)).second
+```
+
+will return false.
+
+### **Iterating through all std::map elements:**
+
+```cpp
+std::map<std::string, int>::iterator it = mapOfWords.begin();
+while(it != mapOfWords.end())
+{
+std::cout<<it->first<<" :: "<<it->second<<std::endl;
+it++;
+}
+```
+
+Each entry in `std::map<std::string, int>` is `std::pair<std::string, int>` therefore through iterator, key can be accessed by it-&gt;first and value by it-&gt;second 
+
+### **Searching element in std::map by key**
+
+find member function of `std::map` can be used to search element in `std::map` by key. If specified key is not present then it returns the `std::map::end` else an iterator to the searched element.
+
+```cpp
+iterator find (const key_type& k);
+ 
+//e.g.
+ 
+if(mapOfWords.find("sun") != mapOfWords.end())
+std::cout<<"word 'sun' found"<<std::endl;
+if(mapOfWords.find("mars") == mapOfWords.end())
+std::cout<<"word 'mars' not found"<<std::endl;
+```
+
+### **Searching element in std::map by Value**
+
+To search element in `std::map` by value we need to iterate through all of the elements and check for the passed value and return i.e.
 
 ```cpp
 #include <iostream>
 #include <map>
-
-using namespace std;
-
-int main ()
+#include <string>
+#include <iterator>
+ 
+std::map<std::string, int>::iterator serachByValue(std::map<std::string, int> & mapOfWords, int val)
 {
-    map<int,int> m{ {1,2} , {2,3} , {3,4} };
-    /* creates a map m with keys 1,2,3 and 
-        their corresponding values 2,3,4 */  
-    
-    map<string,int> map1; 
-    /*  creates a map with keys of type character and 
-      values of type integer */
-    
-    map1["abc"]=100;    // inserts key = "abc" with value = 100
-    map1["b"]=200;      // inserts key = "b" with value = 200
-    map1["c"]=300;      // inserts key = "c" with value = 300
-    map1["def"]=400;    // inserts key = "def" with value = 400
-    
-    map<char,int> map2 (map1.begin(), map1.end());
-    /* creates a map map2 which have entries copied 
-        from map1.begin() to map1.end() */ 
-    
-    map<char,int> map3 (m);
-    /* creates map map3 which is a copy of map m */
+    // Iterate through all elements in std::map and search for the passed element
+    std::map<std::string, int>::iterator it = mapOfWords.begin();
+    while(it != mapOfWords.end())
+    {
+        if(it->second == val)
+        return it;
+        it++;
+    }
 }
+int main()
+{
+    std::map<std::string, int> mapOfWords;
+    // Inserting data in std::map
+    mapOfWords.insert(std::make_pair("earth", 1));
+    mapOfWords.insert(std::make_pair("moon", 2));
+    mapOfWords["sun"] = 3;
+ 
+    std::map<std::string, int>::iterator it = serachByValue(mapOfWords, 3);
+    if(it != mapOfWords.end())
+        std::cout<<it->first<<" :: "<<it->second<<std::endl;
+ 
+return 0;
+}
+
+/* output:
+sun :: 3
+/*
 ```
 
-#### Member Functions of Map in C++ STL
+### **Deleting data from std::map**
 
-Following are some of the commonly used function of Map container in STL:
-
-#### `at` and `[ ]`
-
-Both **at** and `[ ]` are used for accessing the elements in the map. The only difference between them is that **at** throws an exception if the accessed key is not present in the map, on the other hand operator `[ ]` inserts the key in the map if the key is not present already in the map.
-
-```text
-#include <iostream>
-#include <map>
-
-using namespace std;
-
-int main ()
-{
-    map<int,string> m{ {1,”nikhilesh”} , {2,”shrikant”} , {3,”ashish”} };
-    
-    
-    cout << m.at(1) ;  // prints value associated with key 1 ,i.e nikhilesh
-    cout << m.at(2) ;  // prints value associated with key 2 ,i.e shrikant
-    
-    /* note that the parameters in the above at() are the keys not the index */
-    
-    cout << m[3] ; // prints value associated with key 3 , i.e ashish
-    
-    
-    
-    m.at(1) = "vikas";   // changes the value associated with key 1 to vikas
-    m[2] = "navneet";   // changes the value associated with key 2 to navneet
-    
-    m[4] = "doodrah";   
-    /* since there is no key with value 4 in the map, 
-        it insert a key-value pair in map with key=4 and value = doodrah */
-    
-    m.at(5) = "umeshwa"; 
-    /* since there is no key with value 5 in the map , 
-     it throws an exception  */  
-}
-```
-
-#### `empty`, `size` and `max_size`
-
-`empty()` returns boolean true if the map is empty, else it returns Boolean false. `size()` returns number of entries in the map, an entry consist of a key and a value. `max_size()` returns the upper bound of the entries that a map can contain \(maximum possible entries\) based on the memory allocated to the map.
-
-#### `insert` and `insert_or_assign`
-
-`insert()` is used to insert entries in the map. Since keys are unique in a map, it first checks that whether the given key is already present in the map or not, if it is present the entry is not inserted in the map and the iterator to the existing key is returned otherwise new entry is inserted in the map.
-
-There are two variations of insert\(\):
-
-* `insert(pair)` : In this variation, a pair of key and value is inserted in the map. The inserted pair is always inserted at the appropriate position as keys are arranged in sorted order.
-* `insert(start_itr , end_itr)`: This variation inserts the entries in range defined by **start\_itr** and **end\_itr** of another map.
-
-The `insert_or_assing()` works exactly as insert\(\) except that if the given key is already present in the map then its value is modified.
+`std::map`’s erase member function is used to delete the element in `std::map`
 
 ```cpp
-#include <iostream>
-#include <map>
-
-using namespace std;
-
-int main ()
-{
-    map<int,int> m{{1,2} , {2,3} , {3,4} };
-    
-    m.insert( pair<int,int> (4,5));
-    /* inserts a new entry of key = 4 and value = 5 in map m */
-    
-    /* make_pair() can also be used for creating a pair */
-    m.insert( make_pair(5, 6));
-    /* inserts a new entry of key = 5 and value = 6 */
-    
-    
-    map::iterator i , j;
-    i = m.find(2);    // points to entry having key =2
-    j = m.find(5);    // points to entry having key =5
-    
-    map<int,int> new_m;
-    
-    new_m.insert(i,j);
-     /* insert all the entries which are pointed 
-     by iterator i to iterator j*/ 
-    
-    m.insert( make_pair(3,6));  
-     // do not insert the pair as map m already contain key = 3 */ 
-    
-    m.insert_or_assign( make_pair(3,6));  // assign value = 6 to key =3   
-}
+void erase (iterator position);
+size_type erase (const key_type& k);
+void erase (iterator first, iterator last);
 ```
 
-#### `erase` and `clear`
+**Code example**
 
-`erase()` removes the entry from the map pointed by the iterator \(which is passed as parameter\), however if we want to remove all the elements from the map, we can use `clear()`, it clears the map and sets its size to 0.
-
-There are two variations of erase :
-
-* `erase(iterator_itr)` : This removes entry from the map pointed by iterator **iterator\_itr**, reducing the size of map by 1.
-* `erase(start_iterator, end_iterator)` : It removes the elements in range specified by the **start\_iterator** and **end\_iterator**.
+```cpp
+#include <map>
+#include <string>
+#include <iterator>
+int main()
+{
+    std::map<std::string, int> mapOfWords;
+    mapOfWords.insert(std::make_pair("earth", 1));
+    mapOfWords.insert(std::make_pair("moon", 2));
+    mapOfWords["sun"] = 3;
+ 
+    // Erasing By iterator
+    std::map<std::string, int>::iterator it = mapOfWords.find("moon");
+    mapOfWords.erase(it);
+ 
+    // Erasing By Key
+    mapOfWords.erase("earth");
+ 
+    return 0;
+}
+```
 
 #### `begin`, `end` and `find`
 
