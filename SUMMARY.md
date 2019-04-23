@@ -27,6 +27,7 @@
     * [Pointers and Functions](c++/pointers/pointers-and-functions.md)
   * [Queues](c++/queues.md)
   * [Recursion](c++/c++-recursion.md)
+  * [Sets and Maps](c++/sets-and-maps.md)
   * [Stacks](c++/stacks.md)
   * [Standard Template Library](c++/standard-template-library.md)
   * [Switch..Case Statement](c++/c++-switch..case-statement.md)
