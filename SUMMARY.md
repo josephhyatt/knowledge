@@ -86,7 +86,7 @@
     * [Combinatory Logic](math/logic/combinatory-logic.md)
 * [Python](python/README.md)
   * [Basic Setup to Scrape Sites](python/basic-setup-to-scrape-sites.md)
-  * [Setup Virtual Environment](python/setup-virtual-environment.md)
+  * [Quickstart](python/setup-virtual-environment.md)
 * [Ranger](ranger/README.md)
   * [Ranger Cheat Sheet](ranger/ranger-cheat-sheet.md)
 * [Ruby/Rails](ruby-rails-1/README.md)
