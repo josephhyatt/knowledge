@@ -53,6 +53,7 @@
   * [C++](cookbook/c++.md)
   * [Ruby/Rails](cookbook/ruby-rails.md)
 * [Dotfiles](dotfiles/README.md)
+  * [.zsh\_aliases](dotfiles/.zsh_aliases.md)
   * [Save/Sync Dotfiles](dotfiles/save-sync-dotfiles.md)
   * [.vimrc](dotfiles/.vimrc.md)
   * [.zshrc](dotfiles/.zshrc.md)

@@ -13,6 +13,7 @@ tmux source-file ~/.tmux.conf
 set-option -g prefix C-a # Set mode key to Control + a
 bind-key C-a send-prefix
 setw -g mouse on
+set-option -sg escape-time 10 #
 
 #
 # Plugins
