@@ -53,6 +53,7 @@
   * [C++](cookbook/c++.md)
   * [Ruby/Rails](cookbook/ruby-rails.md)
 * [Dotfiles](dotfiles/README.md)
+  * [Save/Sync Dotfiles](dotfiles/save-sync-dotfiles.md)
   * [.vimrc](dotfiles/.vimrc.md)
   * [.zshrc](dotfiles/.zshrc.md)
   * [Gnome Shortcuts Exstension](dotfiles/gnome-shortcuts-exstension.md)
