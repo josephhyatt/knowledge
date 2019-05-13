@@ -94,6 +94,7 @@
 * [Ranger](ranger/README.md)
   * [Ranger Cheat Sheet](ranger/ranger-cheat-sheet.md)
 * [Ruby/Rails](ruby-rails-1/README.md)
+  * [Important Gems](ruby-rails-1/important-gems.md)
   * [Arrays](ruby-rails-1/arrays.md)
   * [Backslash Notations](ruby-rails-1/backslash-notations.md)
   * [Create Application](ruby-rails-1/create-application.md)
