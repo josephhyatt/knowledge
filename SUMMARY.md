@@ -113,6 +113,7 @@
   * [Reference Guide](ruby-rails-1/reference-guide.md)
   * [Ruby/Rails Cheat Sheet](ruby-rails-1/ruby-rails-cheat-sheet.md)
   * [Selenium Cheat Sheet](ruby-rails-1/selenium-cheat-sheet.md)
+  * [Starting A Rails Project](ruby-rails-1/starting-a-rails-project.md)
   * [Structure of a Rails Application](ruby-rails-1/the-structure-of-a-rails-application.md)
   * [Variables](ruby-rails-1/variables.md)
 * [Starter Templates](starter-templates-1/README.md)
