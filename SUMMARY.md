@@ -92,6 +92,7 @@
     * [Combinatory Logic](math/logic/combinatory-logic.md)
 * [Python](python/README.md)
   * [Basic Setup to Scrape Sites](python/basic-setup-to-scrape-sites.md)
+  * [Jupyter](python/jupyter.md)
   * [Quickstart](python/setup-virtual-environment.md)
 * [Ranger](ranger/README.md)
   * [Ranger Cheat Sheet](ranger/ranger-cheat-sheet.md)
