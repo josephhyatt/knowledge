@@ -1,6 +1,4 @@
----
-description: 'This is my gitbook, there are many like it but this one is mine.'
----
+# 'This is my gitbook, there are many like it but this one is mine.'
 
 # Introduction
 
