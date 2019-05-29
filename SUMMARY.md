@@ -115,6 +115,7 @@
   * [Naming Conventions](ruby-rails-1/naming-conventions.md)
   * [Operators](ruby-rails-1/operators.md)
   * [Rails Console](ruby-rails-1/rails-console.md)
+  * [rbenv Cheat Sheet](ruby-rails-1/rbenv-cheat-sheet.md)
   * [Reference Guide](ruby-rails-1/reference-guide.md)
   * [Ruby/Rails Cheat Sheet](ruby-rails-1/ruby-rails-cheat-sheet.md)
   * [Selenium Cheat Sheet](ruby-rails-1/selenium-cheat-sheet.md)
