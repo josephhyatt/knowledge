@@ -101,6 +101,7 @@
   * [Backslash Notations](ruby-rails-1/backslash-notations.md)
   * [Create Application](ruby-rails-1/create-application.md)
   * [Curated List](ruby-rails-1/untitled.md)
+  * [Custom Generators](ruby-rails-1/custom-generators.md)
   * [Custom Scaffold Templates](ruby-rails-1/custom-scaffold-templates.md)
   * [Databases](ruby-rails-1/databases.md)
   * [Design Philosophy](ruby-rails-1/design-philosophy.md)
