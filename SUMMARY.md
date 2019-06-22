@@ -113,6 +113,7 @@
   * [Important Gems](ruby-rails-1/important-gems.md)
   * [Interview Questions](ruby-rails-1/interview-questions.md)
   * [Keywords](ruby-rails-1/keywords.md)
+  * [Methods](ruby-rails-1/methods.md)
   * [Migrations](ruby-rails-1/migrations.md)
   * [MVC](ruby-rails-1/mvc.md)
   * [Naming Conventions](ruby-rails-1/naming-conventions.md)

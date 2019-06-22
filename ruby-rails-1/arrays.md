@@ -31,6 +31,10 @@ a.length     # => 11
 array.size                            # Array size
 array.length                          # Array size
 array.count                           # Array size
+array.reverse                         # This method reverses an array.
+array.first                           # Returns the first element of the array
+array.last                            # Returns the last element of the array
+array.inspect                         # Returns a readable list of what’s items are in the array.
 array.at(5)                           # Element at index 5
 array.push(42)                        # Add 42 to end of array
 array.pop                             # Remove last element from array
@@ -51,4 +55,39 @@ array.methods.sort - Object.methods   # List all Array instance methods
 array = %w{a b c #{num}}              # ["a", "b", "c", "\#{num}"]
 array = %W{a b c #{num}}              # ["a", "b", "c", "5"] (if num = 5)
 ```
+
+## Iterate Through Array
+
+```ruby
+#created a new empty array arr.
+#iterate through the other array array which is passed as an argument, squaring each element before pushing it (using <<) into our new array arr.
+#Finally we return the newly created array arr by simply writing arr as the final line in the method block.
+def square_array(array)
+  arr = []
+  array.each { |i| arr << i ** 2 }
+  return arr
+end
+```
+
+## Takes Array of Names and Returns Another Array
+
+```ruby
+#Write a batch_badge_creator method that takes an array of names as an argument and returns an array of badge messages:
+def badge_maker(speakers)
+  speakers.map { |speaker| “Hello, my name is #{speaker}.” }
+end
+```
+
+## Takes List and Assigns Each Item to New Parameter
+
+```ruby
+#Write a method called assign_rooms that takes the list of speakers and assigns each speaker to a room. Make sure that each room only has one speaker:
+def assign_rooms(speakers)
+  Speakers.each_with_index.map do | speaker, room |
+    “Hello, #{speaker}! "You’ll be assigned to room #{room + 1}!”
+  end
+end
+```
+
+## 
 
