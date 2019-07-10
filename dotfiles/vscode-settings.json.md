@@ -4,7 +4,9 @@
 
 ```javascript
 {
-  /*** disabling vscode extra bloat stuff ***/
+  /******************************************/
+  /*** Disabling VSCode Extra Bloat Stuff ***/
+  /******************************************/
   "telemetry.enableTelemetry": false,
   "workbench.statusBar.feedback.visible": false,
   "editor.fontFamily": "Hasklig",
@@ -24,46 +26,41 @@
   "editor.wordWrapColumn": 120,
   "editor.minimap.enabled": false,
   "editor.snippetSuggestions": "top",
-  // fixing UI issues / no need to click confirm boxes
-  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDragAndDrop": false, // Fixing UI issues / no need to click confirm boxes
   "git.confirmSync": false,
   "git.autofetch": true,
-  // no need to confirm imports when filename changes
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "javascript.implicitProjectConfig.experimentalDecorators": true, // stops errors using decorators
-  // emmet and suggestions
-  "editor.acceptSuggestionOnEnter": "off", // use tab for suggestions, so you can press enter to newline
+  "javascript.updateImportsOnFileMove.enabled": "always", // No need to confirm imports when filename changes
+  "javascript.implicitProjectConfig.experimentalDecorators": true, // Stops errors using decorators
+  "editor.acceptSuggestionOnEnter": "off", // Use TAB for suggestions, so you can press enter to newline
   "editor.quickSuggestions": {
-    "comments": false // no suggestions inside comments
+    "comments": false // No suggestions inside comments
   },
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": true,
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "HTML (Eex)": "html"
-  },
   "emmet.syntaxProfiles": {
     "javascript": "jsx",
     "erb": "erb"
   },
-  /*** general formatting ***/
-  // toggle to false and enable [javascript] & [javascriptreact] when not using eslint
-  "ruby.format": false,
+  /******************************************/
+  /********** General Formatting ************/
+  /******************************************/
+  "ruby.format": false, // toggle to false and enable [javascript] & [javascriptreact] when not using eslint
   "ruby.codeCompletion": false,
   "solargraph.hover": true,
   "solargraph.completion": true,
   "solargraph.rename": false,
   "solargraph.diagnostics": true,
-  //CSS
-  // No unit for zero needed
-  "css.lint.zeroUnits": "warning",
+  /******************************************/
+  /*************** CSS **********************/
+  /******************************************/
+  "css.lint.zeroUnits": "warning", // No unit for zero needed
   "css.lint.idSelector": "warning",
-  //SCSS
-  // No unit for zero needed
-  "scss.lint.zeroUnits": "warning",
+  /******************************************/
+  /*************** SCSS *********************/
+  /******************************************/
+  "scss.lint.zeroUnits": "warning", // No unit for zero needed
   "scss.lint.idSelector": "warning",
-  //intellisense plugin setting
-  "path-intellisense.extensionOnImport": true,
+  "path-intellisense.extensionOnImport": true, // Intellisense plugin setting
   "path-intellisense.showHiddenFiles": true,
   "path-intellisense.autoSlashAfterDirectory": true,
   "workbench.colorCustomizations": {
@@ -72,24 +69,117 @@
     "sideBar.background": "#282c34"
   },
   "window.zoomLevel": 0,
-  // Allows to display errors.
-  "scss.showErrors": false,
-  // Add vendor prefixes to CSS when you save a file.
-  "liveServer.settings.donotShowInfoMsg": true,
+  "scss.showErrors": false, // Allows to display errors.
+  "liveServer.settings.donotShowInfoMsg": true, // Add vendor prefixes to CSS when you save a file.
   "workbench.startupEditor": "newUntitledFile",
   "editor.tabCompletion": "on",
   "breadcrumbs.enabled": true,
-  "sync.gist": "4f53f0100634a4ad5376ab6a49fe446a",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "code-runner.runInTerminal": true,
   "code-runner.saveFileBeforeRun": true,
+  /******************************************/
+  /************** C++ ***********************/
+  /******************************************/
   "code-runner.executorMap": {
     "cpp": "cd $dir && g++ -std=c++14 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
   },
   "C_Cpp.default.cppStandard": "c++14",
   "C_Cpp.default.cStandard": "c11",
   "C_Cpp.updateChannel": "Insiders",
+  "workbench.iconTheme": "material-icon-theme",
+  "python.jediEnabled": false,
+  /******************************************/
+  /************** Files *********************/
+  /******************************************/
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/tmp": true,
+    "**/coverage": true,
+    "**/log": true,
+    "**/public/uploads": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/log": true
+  },
+  /******************************************/
+  /*********** Format On Save ***************/
+  /******************************************/
+  "editor.formatOnSave": false, // <-------- FORMAT ON SAVE
+  "search.location": "panel",
+  "files.trimTrailingWhitespace": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.renderIndentGuides": false,
+  /******************************************/
+  /************** Font Colors ***************/
+  /******************************************/
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "storage",
+        ],
+        "settings": {
+          "foreground": "#c7c68b",
+        }
+      },
+      {
+        "scope": [
+          "keyword",
+        ],
+        "settings": {
+          "foreground": "#c7c68b",
+        }
+      },
+      {
+        "scope": [
+          "variable",
+        ],
+        "settings": {
+          "foreground": "#7db170",
+        }
+      },
+      {
+        "scope": [
+          "entity.name.type",
+        ],
+        "settings": {
+          "foreground": "#589668",
+        }
+      },
+      {
+        "scope": [
+          "keyword.other.using",
+        ],
+        "settings": {
+          "foreground": "#c7c68b",
+        }
+      },
+      {
+        "scope": [
+          "entity.name.tag",
+        ],
+        "settings": {
+          "foreground": "#5b9c60",
+        }
+      },
+      {
+        "scope": [
+          "entity.name.function",
+        ],
+        "settings": {
+          "foreground": "#c2c2c2",
+        }
+      },
+    ]
+  },
 }
 ```
 
