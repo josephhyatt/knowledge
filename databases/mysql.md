@@ -1,10 +1,6 @@
 # MySQL
 
-## Calling Database
-
-```sql
-USE dataBaseName;
-```
+## Big 6 Elements of a SQL SELECT STATEMENT
 
 ## SELECT
 
@@ -26,8 +22,7 @@ SELECT columnName
 
 ```sql
 # Syntax
-SELECT columnName 
-FROM tableName
+SELECT columnName FROM tableName
 ```
 
 ```sql
@@ -35,8 +30,7 @@ FROM tableName
 
 # Selects ALL columns from the specified table
 # Without using a WHERE clause will return the entire table (all columns, all rows)
-SELECT * 
-FROM tableName
+SELECT * FROM tableName
 ```
 
 > **TIP** - `SELECT * FROM tableName`is a great way to quickly see what data a table contains.
@@ -48,9 +42,7 @@ FROM tableName
 
 ```sql
 # Syntax
-SELECT columnName 
-FROM tableName 
-WHERE logicalCondition
+SELECT columnName FROM tableName WHERE logicalCondition
 ```
 
 ## GROUP BY
@@ -60,10 +52,7 @@ WHERE logicalCondition
 
 ```sql
 # Syntax
-SELECT columnName 
-FROM tableName 
-WHERE logicalCondition 
-GROUP BY columnName
+SELECT columnName FROM tableName WHERE logicalCondition GROUP BY columnName
 ```
 
 ## HAVING
@@ -73,11 +62,7 @@ GROUP BY columnName
 
 ```sql
 # Syntax
-SELECT columnName 
-FROM tableName 
-WHERE logicalCondition 
-GROUP BY columnName 
-HAVING logicalCondition
+SELECT columnName FROM tableName WHERE logicalCondition GROUP BY columnName HAVING logicalCondition
 ```
 
 ## ORDER BY
@@ -87,11 +72,6 @@ HAVING logicalCondition
 
 ```sql
 # Syntax
-SELECT columnName 
-FROM tableName 
-WHERE logicalCondition 
-GROUP BY columnName 
-HAVING logicalCondition 
-ORDER BY columnName
+SELECT columnName FROM tableName WHERE logicalCondition GROUP BY columnName HAVING logicalCondition ORDER BY columnName
 ```
 
