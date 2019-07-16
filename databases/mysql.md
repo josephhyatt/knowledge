@@ -1,21 +1,45 @@
 # MySQL
 
-## Big 6 Elements of a SQL SELECT STATEMENT
+## Calling Database
 
-## SELECT and FROM
+```sql
+USE dataBaseName;
+```
+
+## SELECT
 
 > **SELECT** - Identifies the **column\(s\)** you want your query to select for your results.
 
 ![](../.gitbook/assets/select%20%281%29.png)
 
-> **FROM** - Identifies the **table\(s\)** your query will pull data from.
+```sql
+# Syntax
+SELECT columnName
+```
+
+## FROM
+
+> **FROM** - Identifies the **table\(s\)** your query will pull data from.  
+> Comes **after** **SELECT**.
 
 ![](../.gitbook/assets/from.png)
 
 ```sql
 # Syntax
-SELECT columnName FROM tablename
+SELECT columnName 
+FROM tableName
 ```
+
+```sql
+# Examples of SELECT and FROM
+
+# Selects ALL columns from the specified table
+# Without using a WHERE clause will return the entire table (all columns, all rows)
+SELECT * 
+FROM tableName
+```
+
+> **TIP** - `SELECT * FROM tableName`is a great way to quickly see what data a table contains.
 
 ## WHERE
 
@@ -24,7 +48,9 @@ SELECT columnName FROM tablename
 
 ```sql
 # Syntax
-SELECT columnName FROM tablename WHERE logicalCondition
+SELECT columnName 
+FROM tableName 
+WHERE logicalCondition
 ```
 
 ## GROUP BY
@@ -34,7 +60,10 @@ SELECT columnName FROM tablename WHERE logicalCondition
 
 ```sql
 # Syntax
-SELECT columnName FROM tablename WHERE logicalCondition GROUP BY columnName
+SELECT columnName 
+FROM tableName 
+WHERE logicalCondition 
+GROUP BY columnName
 ```
 
 ## HAVING
@@ -44,7 +73,11 @@ SELECT columnName FROM tablename WHERE logicalCondition GROUP BY columnName
 
 ```sql
 # Syntax
-SELECT columnName FROM tablename WHERE logicalCondition GROUP BY columnName HAVING logicalCondition
+SELECT columnName 
+FROM tableName 
+WHERE logicalCondition 
+GROUP BY columnName 
+HAVING logicalCondition
 ```
 
 ## ORDER BY
@@ -54,6 +87,11 @@ SELECT columnName FROM tablename WHERE logicalCondition GROUP BY columnName HAVI
 
 ```sql
 # Syntax
-SELECT columnName FROM tablename WHERE logicalCondition GROUP BY columnName HAVING logicalCondition ORDER BY columnName
+SELECT columnName 
+FROM tableName 
+WHERE logicalCondition 
+GROUP BY columnName 
+HAVING logicalCondition 
+ORDER BY columnName
 ```
 
