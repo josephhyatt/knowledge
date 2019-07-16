@@ -60,6 +60,7 @@
   * [Ruby/Rails](cookbook/ruby-rails.md)
   * [C++](cookbook/c++.md)
 * [DataBases](databases/README.md)
+  * [MySQL](databases/mysql.md)
   * [SQL](databases/sql.md)
   * [PostgreSQL](databases/postgresql.md)
 * [Dotfiles](dotfiles/README.md)
