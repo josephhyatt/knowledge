@@ -1,6 +1,10 @@
 # MySQL
 
-## Big 6 Elements of a SQL SELECT STATEMENT
+## Calling Database
+
+```sql
+USE dataBaseName;
+```
 
 ## SELECT
 
@@ -13,6 +17,17 @@
 SELECT columnName
 ```
 
+```sql
+# Examples
+
+# Return one or more specific columns in results by naming them
+# Seperate column names with a comma
+SELECT
+    customer_id,
+    rental_date
+FROM rental;
+```
+
 ## FROM
 
 > **FROM** - Identifies the **table\(s\)** your query will pull data from.  
@@ -22,7 +37,8 @@ SELECT columnName
 
 ```sql
 # Syntax
-SELECT columnName FROM tableName
+SELECT columnName 
+FROM tableName
 ```
 
 ```sql
@@ -30,7 +46,8 @@ SELECT columnName FROM tableName
 
 # Selects ALL columns from the specified table
 # Without using a WHERE clause will return the entire table (all columns, all rows)
-SELECT * FROM tableName
+SELECT * 
+FROM tableName
 ```
 
 > **TIP** - `SELECT * FROM tableName`is a great way to quickly see what data a table contains.
@@ -42,7 +59,9 @@ SELECT * FROM tableName
 
 ```sql
 # Syntax
-SELECT columnName FROM tableName WHERE logicalCondition
+SELECT columnName 
+FROM tableName 
+WHERE logicalCondition
 ```
 
 ## GROUP BY
@@ -52,7 +71,10 @@ SELECT columnName FROM tableName WHERE logicalCondition
 
 ```sql
 # Syntax
-SELECT columnName FROM tableName WHERE logicalCondition GROUP BY columnName
+SELECT columnName 
+FROM tableName 
+WHERE logicalCondition 
+GROUP BY columnName
 ```
 
 ## HAVING
@@ -62,7 +84,11 @@ SELECT columnName FROM tableName WHERE logicalCondition GROUP BY columnName
 
 ```sql
 # Syntax
-SELECT columnName FROM tableName WHERE logicalCondition GROUP BY columnName HAVING logicalCondition
+SELECT columnName 
+FROM tableName 
+WHERE logicalCondition 
+GROUP BY columnName 
+HAVING logicalCondition
 ```
 
 ## ORDER BY
@@ -72,6 +98,11 @@ SELECT columnName FROM tableName WHERE logicalCondition GROUP BY columnName HAVI
 
 ```sql
 # Syntax
-SELECT columnName FROM tableName WHERE logicalCondition GROUP BY columnName HAVING logicalCondition ORDER BY columnName
+SELECT columnName 
+FROM tableName 
+WHERE logicalCondition 
+GROUP BY columnName 
+HAVING logicalCondition 
+ORDER BY columnName
 ```
 
