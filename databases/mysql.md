@@ -88,9 +88,21 @@ WHERE payment_date > '2006-01-01'
 
 > Comes **after** **FROM**.
 
+### WHERE Operators
+
 ![](../.gitbook/assets/where%20%281%29.png)
 
+### WHERE Examples
+
 ![](../.gitbook/assets/where2.png)
+
+### WHERE & AND
+
+![](../.gitbook/assets/whereandand.png)
+
+### WHERE & OR
+
+![](../.gitbook/assets/2019-07-17.png)
 
 ## GROUP BY
 
