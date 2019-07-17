@@ -1,5 +1,7 @@
 # MySQL
 
+![](../.gitbook/assets/big6%20%281%29.png)
+
 ## Calling Database
 
 ```sql
@@ -28,12 +30,15 @@ SELECT
 FROM rental;
 ```
 
+### SELECT DISTINCT
+
+![](../.gitbook/assets/selectdistinct.png)
+
 ## FROM
 
-> **FROM** - Identifies the **table\(s\)** your query will pull data from.  
-> Comes **after** **SELECT**.
-
 ![](../.gitbook/assets/from.png)
+
+> Comes **after** **SELECT**.
 
 ```sql
 # Syntax
@@ -54,15 +59,38 @@ FROM tableName
 
 ## WHERE
 
-> **WHERE** - _\(Optional\)_ Specifies filtering criteria to limit the amount of results that come out in your dataset.  
-> Comes **after** **FROM**.
+![](../.gitbook/assets/where.png)
 
 ```sql
 # Syntax
 SELECT columnName 
 FROM tableName 
 WHERE logicalCondition
+
+# Example
+SELECT
+	customer_id,
+    rental_id,
+    amount,
+    payment_date
+FROM payment
+WHERE amount = 0.99
+
+# Example 2
+SELECT
+	customer_id,
+    rental_id,
+    amount,
+    payment_date
+FROM payment
+WHERE payment_date > '2006-01-01'
 ```
+
+> Comes **after** **FROM**.
+
+![](../.gitbook/assets/where%20%281%29.png)
+
+![](../.gitbook/assets/where2.png)
 
 ## GROUP BY
 
