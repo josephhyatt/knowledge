@@ -132,10 +132,13 @@ GROUP BY columnName
 
 ![](../.gitbook/assets/2019-07-18.png)
 
+### AGGREGATE FUNCTIONS
+
+![](../.gitbook/assets/2019-07-18%20%281%29.png)
+
 ## HAVING
 
-> **HAVING** - _\(Optional\)_ Specifies group-filtering criteria for filtering specific groups based on certain criteria.   
->  Comes after **GROUP BY** and can only be used when **GROUP BY** is present.
+![](../.gitbook/assets/2019-07-18_1.png)
 
 ```sql
 # Syntax
@@ -145,6 +148,8 @@ WHERE logicalCondition
 GROUP BY columnName 
 HAVING logicalCondition
 ```
+
+> Comes after **GROUP BY** and can only be used when **GROUP BY** is present.
 
 ## ORDER BY
 
