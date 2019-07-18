@@ -130,6 +130,8 @@ GROUP BY columnName
 
 > Comes **after** **WHERE**.
 
+![](../.gitbook/assets/2019-07-18.png)
+
 ## HAVING
 
 > **HAVING** - _\(Optional\)_ Specifies group-filtering criteria for filtering specific groups based on certain criteria.   
@@ -158,4 +160,6 @@ GROUP BY columnName
 HAVING logicalCondition 
 ORDER BY columnName
 ```
+
+## COMMENTS & ALIASES
 
