@@ -118,8 +118,7 @@ WHERE payment_date > '2006-01-01'
 
 ## GROUP BY
 
-> **GROUP BY** - _\(Optional\)_ Specifies how to group the data in your results. Allows you to segment the data and do aggregate level analysis.  
-> Comes **after** **WHERE**.
+![](../.gitbook/assets/2019-07-17_3.png)
 
 ```sql
 # Syntax
@@ -128,6 +127,8 @@ FROM tableName
 WHERE logicalCondition 
 GROUP BY columnName
 ```
+
+> Comes **after** **WHERE**.
 
 ## HAVING
 
