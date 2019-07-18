@@ -102,7 +102,19 @@ WHERE payment_date > '2006-01-01'
 
 ### WHERE & OR
 
-![](../.gitbook/assets/2019-07-17.png)
+![](../.gitbook/assets/2019-07-17%20%281%29.png)
+
+### WHERE & IN
+
+![](../.gitbook/assets/2019-07-17%20%282%29.png)
+
+### LIKE
+
+![](../.gitbook/assets/2019-07-17_1.png)
+
+### WILDCARD
+
+![](../.gitbook/assets/2019-07-17_2.png)
 
 ## GROUP BY
 
