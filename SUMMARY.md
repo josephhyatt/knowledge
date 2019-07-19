@@ -64,6 +64,7 @@
   * [SQL](databases/sql.md)
   * [PostgreSQL](databases/postgresql.md)
 * [Dotfiles](dotfiles/README.md)
+  * [.bashrc](dotfiles/.bashrc.md)
   * [.vimrc](dotfiles/.vimrc.md)
   * [.zsh\_aliases](dotfiles/.zsh_aliases.md)
   * [.zshrc](dotfiles/.zshrc.md)
