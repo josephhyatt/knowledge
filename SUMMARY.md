@@ -147,6 +147,7 @@
   * [Gnome Extensions](ubuntu/gnome-extensions/README.md)
     * [Shortcuts](ubuntu/gnome-extensions/shortcuts.md)
   * [Migrating Settings](ubuntu/migrating-settings.md)
+  * [Terminal Plugins](ubuntu/terminal-plugins.md)
   * [Useful CLI Commands](ubuntu/useful-ubuntu-commands.md)
 * [Vim](vim/README.md)
   * [.ycm\_extra\_config.py](vim/.ycm_extra_config.py-file.md)
