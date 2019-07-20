@@ -2,7 +2,7 @@
 
 
 
-![](../../../.gitbook/assets/mvc_rails.png)
+![](../../.gitbook/assets/mvc_rails.png)
 
 > A **user** who sees the `view` of the **application** in the `browser` and it can make a **request** with **input** to a `router` \(a request can me a `link` that gets clicked\). The `router` will **call** a specific `controller method` based on that `route`, and if **data** is needed to be **fetched** the `controller` will then interact with the  `model`, which interacts with the `database`. Once the `controller` gets that data **passed back** it can then load a `view` and it can **send the data** to the `view` and will be **dealt with** by the `template engine`. Once that is all done, it will **send** the `view` back to the `browser` for the user to see.
 
