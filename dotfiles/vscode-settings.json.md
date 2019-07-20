@@ -1,6 +1,4 @@
-# VSCode
-
-## settings.json
+# settings.json \(VSCode\)
 
 ```javascript
 {
