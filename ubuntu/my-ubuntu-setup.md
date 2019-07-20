@@ -1319,7 +1319,34 @@ bindkey '^[[B' history-substring-search-down
   "C_Cpp.default.cppStandard": "c++14",
   "C_Cpp.default.cStandard": "c11",
   "C_Cpp.updateChannel": "Insiders",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme":},
+      {
+        "key": "Ctrl  +  D",
+        "description": "Kill Window"
+      },
+      {
+        "key": "Prefix  +  #",
+        "description": "Change Window"
+      },
+      {
+        "key": "Prefix  +  ,",
+        "description": "Rename Window"
+      },
+      {
+        "key": "Prefix  +  %",
+        "description": "Open Vertical Console"
+      },
+      {
+        "key": "Prefix  +  \"",
+        "description": "Open Horizontal Pane"
+      },
+      {
+        "key": "Prefix  +  :",
+        "description": "Enter Command Mode"
+      }
+    ]
+  }
+] "material-icon-theme",
   "python.jediEnabled": false,
   /******************************************/
   /************** Files *********************/
@@ -1426,5 +1453,132 @@ bindkey '^[[B' history-substring-search-down
   },
   "explorer.confirmDelete": false
 }
+```
+
+### shortcuts.json \(GNOME extension\)
+
+```bash
+[
+  {
+    "name": "CLI Tools",
+    "shortcuts": [
+      {
+        "key": "h  <question>",
+        "description": "Lookup Question on StackOverflow"
+      },
+      {
+        "key": "fzf",
+        "description": "Fuzzy Search"
+      },
+      {
+        "key": "exa",
+        "description": "View Fil Chmod Rights"
+      },
+      {
+        "key": "ghp  <file name>  |  peco",
+        "description": "Interactive Filtering Tool"
+      },
+      {
+        "key": "tig",
+        "description": "Text-Mode Interface for Git"
+      },
+      {
+        "key": "fac",
+        "description": "CUI for FixingGit Conflicts"
+      },
+      {
+        "key": "fd  <filename>",
+        "description": "alternative to 'find'"
+      },
+      {
+        "key": "help",
+        "description": "TLDR, Simplified Man Pages"
+      },
+      {
+        "key": "ghq",
+        "description": "Remote Repository Managemen"
+      }
+    ]
+  },
+  {
+    "name": "RANGER",
+    "shortcuts": [
+      {
+        "key": "Shift  +  S",
+        "description": "Open Directory"
+      },
+      {
+        "key": "Shift  +  Q",
+        "description": "Exit Ranger"
+      }
+    ]
+  },
+  {
+    "name": "VISUAL STUDIO CODE",
+    "shortcuts": [
+      {
+        "key": "Ctrl  +  Shift  +  P",
+        "description": "Command Palette"
+      },
+      {
+        "key": "Ctrl  +  Shift  +  F",
+        "description": "Search Within All Files in Project"
+      },
+      {
+        "key": "Ctrl  +  Shift  +  ~",
+        "description": "Open Command Prompt"
+      },
+      {
+        "key": "Ctrl  +  F2",
+        "description": "Change All Occurrences"
+      },
+      {
+        "key": "Ctrl  +  Space",
+        "description": "Code Suggestions"
+      },
+      {
+        "key": "Alt  +  Up/Down",
+        "description": "Move Line of Code Up or Down"
+      }
+    ]
+  },
+  {
+    "name": "TMUX",
+    "shortcuts": [
+      {
+        "key": "Ctrl  +  a",
+        "description": "Prefix Key"
+      },
+      {
+        "key": "Prefix  +  c",
+        "description": "Create New Window"
+      },
+      {
+        "key": "Ctrl  +  D",
+        "description": "Kill Window"
+      },
+      {
+        "key": "Prefix  +  #",
+        "description": "Change Window"
+      },
+      {
+        "key": "Prefix  +  ,",
+        "description": "Rename Window"
+      },
+      {
+        "key": "Prefix  +  %",
+        "description": "Open Vertical Console"
+      },
+      {
+        "key": "Prefix  +  \"",
+        "description": "Open Horizontal Pane"
+      },
+      {
+        "key": "Prefix  +  :",
+        "description": "Enter Command Mode"
+      }
+    ]
+  }
+]
 ```
 
