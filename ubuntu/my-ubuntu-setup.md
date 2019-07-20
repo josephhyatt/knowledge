@@ -1,4 +1,10 @@
+---
+description: This is  everything I add to make Ubuntu feel like home.
+---
+
 # My Ubuntu Setup
+
+> Feel free to drop my a line if there's anything you think I should add that would make this list even more awesome. You can reach me at my website [josephhyatt.com](https://josephhyatt.com/)
 
 ## Applications/Software
 
@@ -1371,7 +1377,7 @@ bindkey '^[[B' history-substring-search-down
       {
         "scope": ["entity"],
         "settings": {
-          "foreground": "#eb35359c"
+          "foreground": "#ffffff9c"
         }
       },
       {
@@ -1383,7 +1389,7 @@ bindkey '^[[B' history-substring-search-down
       {
         "scope": ["constant"],
         "settings": {
-          "foreground": "#ff0000"
+          "foreground": "#d1842b"
         }
       },
       {
