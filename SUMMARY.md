@@ -108,7 +108,7 @@
   * [.vimrc](dotfiles/.vimrc.md)
   * [.zsh\_aliases](dotfiles/.zsh_aliases.md)
   * [.zshrc](dotfiles/.zshrc.md)
-  * [Gnome Shortcuts Exstension](dotfiles/gnome-shortcuts-exstension.md)
+  * [shortcuts.json](dotfiles/gnome-shortcuts-exstension.md)
   * [Save/Sync Dotfiles](dotfiles/save-sync-dotfiles.md)
   * [settings.json \(VSCode\)](dotfiles/vscode-settings.json.md)
   * [tmux.conf](dotfiles/tmux.conf.md)
