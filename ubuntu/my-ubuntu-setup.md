@@ -46,6 +46,20 @@
 * [howdoi](https://github.com/gleitz/howdoi) - Instant coding answers via the command line.
 * [ghq](https://github.com/motemen/ghq) - Remote repository management made easy.
 
+## GNOME Extensions
+
+* [Appfolders Management Extension](https://extensions.gnome.org/extension/1217/appfolders-manager/) - An easy way to arrange your applications in folders, directly from the applications grid.
+* [Caffeine](https://extensions.gnome.org/extension/517/caffeine/) - Disable the screensaver and auto suspend.
+* [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/) - Adds a clipboard indicator to the top panel, and caches clipboard history.
+* [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/) - An icon taskbar for the Gnome Shell.
+* [Gsconnect](https://extensions.gnome.org/extension/1319/gsconnect/) - GSConnect is a complete implementation of KDE Connect especially for GNOME Shell with Nautilus, Chrome and Firefox integration.
+* [Panel OSD](https://extensions.gnome.org/extension/708/panel-osd/) - Configuring where on the \(main\) screen notifications will appear, instead of just above the message tray.
+* [Screenshot Tool](https://extensions.gnome.org/extension/1112/screenshot-tool/) - Conveniently create, copy, store and upload screenshots.
+* [Shortcuts](https://extensions.gnome.org/extension/1144/shortcuts/) - This shows a pop-up of useful keyboard shortcuts when Super + S is pressed.
+* [User Themes](https://extensions.gnome.org/extension/19/user-themes/) - Load shell themes from user directory.
+* [Vitals](https://extensions.gnome.org/extension/1460/vitals/) - A glimpse into your computer's temperature, voltage, fan speed\(rpm\), memory\(ram\) usage, processor load, uptime, network speed, public ip address and hard drive storage stats.
+* [Gtile](https://extensions.gnome.org/extension/28/gtile/) - Tile windows on a grid.
+
 ## Dotfiles
 
 ### .bashrc
@@ -192,7 +206,6 @@ eval "$(rbenv init -)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 ```
 
 ### .irbrc \(ruby\)
@@ -507,7 +520,6 @@ set -g @tpm_plugins 'arcticicestudio/nord-tmux' # an arctic, north-bluish theme
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
-
 ```
 
 ### .vimrc
@@ -1080,6 +1092,333 @@ man () {
     LESS_TERMCAP_se=$(tput sgr0) \
     LESS_TERMCAP_ue=$(tput sgr0) \
     command man "$@"
+}
+```
+
+### .zshrc
+
+```bash
+#
+# Tmux
+#
+
+if [ -z "$TMUX" ] # When zsh is started attach to current tmux session or create a new one
+then
+    tmux attach -t TMUX || tmux new -s TMUX
+fi
+
+#
+# vim
+#
+
+export EDITOR="vim"
+alias vim="vim"
+
+#
+# Oh-my-zsh
+#
+
+export ZSH="$HOME/.oh-my-zsh"
+
+SPACESHIP_PROMPT_FIRST_PREFIX_SHOW=true # Show prefix before first line in prompt
+ZSH_THEME="spaceship" # Set theme
+
+plugins=(
+  # git # https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git
+  history-substring-search # ZSH port of Fish history search. Begin typing command, use up arrow to select previous use
+  zsh-autosuggestions # Suggests commands based on your history
+  zsh-completions # More completions
+  zsh-syntax-highlighting # Fish shell like syntax highlighting for Zsh
+  colored-man-pages # Self-explanatory
+  sudo # adds sudo to front of text by double pressing Esc
+  history-substring-search
+  )
+autoload -U compinit && compinit # reload completions for zsh-completions
+
+source $ZSH/oh-my-zsh.sh # required
+
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh # required
+[[ -f ~/.bash_aliases ]] && . ~/.bash_aliases
+
+# Colorize autosuggest
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
+
+#
+# Spaceship-prompt
+#
+
+# Spaceship-prompt customization
+SPACESHIP_PROMPT_ORDER=(
+dir             # Current directory section
+user            # Username section
+host            # Hostname section
+git             # Git section (git_branch + git_status)
+time          # Time stampts section
+# hg            # Mercurial section (hg_branch  + hg_status)
+# package       # Package version
+# node          # Node.js section
+# ruby          # Ruby section
+# elixir        # Elixir section
+# xcode         # Xcode section
+# swift         # Swift section
+# golang        # Go section
+# php           # PHP section
+# rust          # Rust section
+# haskell       # Haskell Stack section
+# julia         # Julia section
+# docker        # Docker section
+# aws           # Amazon Web Services section
+# venv          # virtualenv section
+# conda         # conda virtualenv section
+# pyenv         # Pyenv section
+# dotnet        # .NET section
+# ember         # Ember.js section
+# kubecontext   # Kubectl context section
+exec_time       # Execution time
+line_sep        # Line break
+battery         # Battery level and status
+vi_mode         # Vi-mode indicator
+jobs            # Background jobs indicator
+# exit_code     # Exit code section
+char            # Prompt character
+)
+
+SPACESHIP_DIR_PREFIX="%{$fg[blue]%}┌─[%b "
+SPACESHIP_DIR_SUFFIX="%{$fg[blue]%} ] "
+SPACESHIP_CHAR_SYMBOL="%{$fg[blue]%}└─▪%b "
+
+#
+# Other
+#
+
+# This speeds up pasting w/ autosuggest
+# https://github.com/zsh-users/zsh-autosuggestions/issues/238
+pasteinit() {
+  OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
+  zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
+}
+
+pastefinish() {
+  zle -N self-insert $OLD_SELF_INSERT
+}
+zstyle :bracketed-paste-magic paste-init pasteinit
+zstyle :bracketed-paste-magic paste-finish pastefinish
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+export PATH="/Users/jh/.gem/ruby/2.5.0/bin:$PATH"
+
+export PATH="$HOME/bin:$PATH"
+## Load Aliases
+[[ -f ~/.zsh_aliases ]] && . ~/.zsh_aliases
+
+eval $(thefuck --alias)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completionsource /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+# zsh-history-substring-search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+```
+
+### settings.json \(VSCode\)
+
+```bash
+{
+  /******************************************/
+  /*** Disabling VSCode Extra Bloat Stuff ***/
+  /******************************************/
+  "telemetry.enableTelemetry": false,
+  "workbench.statusBar.feedback.visible": false,
+  "editor.fontFamily": "Hasklig",
+  "workbench.colorTheme": "Kimbie Dark",
+  "editor.fontSize": 16,
+  "editor.fontLigatures": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "terminal.integrated.fontFamily": "Hasklig",
+  "workbench.sideBar.location": "right",
+  "editor.renderWhitespace": "none",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "editor.wordWrap": "on",
+  "editor.cursorBlinking": "smooth",
+  "terminal.integrated.cursorStyle": "line",
+  "editor.wordWrapColumn": 120,
+  "editor.minimap.enabled": false,
+  "editor.snippetSuggestions": "top",
+  "explorer.confirmDragAndDrop": false, // Fixing UI issues / no need to click confirm boxes
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "javascript.updateImportsOnFileMove.enabled": "always", // No need to confirm imports when filename changes
+  "javascript.implicitProjectConfig.experimentalDecorators": true, // Stops errors using decorators
+  "editor.acceptSuggestionOnEnter": "off", // Use TAB for suggestions, so you can press enter to newline
+  "editor.quickSuggestions": {
+    "comments": false // No suggestions inside comments
+  },
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "erb": "erb"
+  },
+  /******************************************/
+  /********** General Formatting ************/
+  /******************************************/
+  "ruby.format": false, // toggle to false and enable [javascript] & [javascriptreact] when not using eslint
+  "ruby.codeCompletion": false,
+  "solargraph.hover": true,
+  "solargraph.completion": true,
+  "solargraph.rename": false,
+  "solargraph.diagnostics": true,
+  /******************************************/
+  /*************** CSS **********************/
+  /******************************************/
+  "css.lint.zeroUnits": "warning", // No unit for zero needed
+  "css.lint.idSelector": "warning",
+  /******************************************/
+  /*************** SCSS *********************/
+  /******************************************/
+  "scss.lint.zeroUnits": "warning", // No unit for zero needed
+  "scss.lint.idSelector": "warning",
+  "path-intellisense.extensionOnImport": true, // Intellisense plugin setting
+  "path-intellisense.showHiddenFiles": true,
+  "path-intellisense.autoSlashAfterDirectory": true,
+  "workbench.colorCustomizations": {
+    "tab.activeBackground": "#232833",
+    "activityBar.background": "#282c34",
+    "sideBar.background": "#282c34"
+  },
+  "window.zoomLevel": 0,
+  "scss.showErrors": false, // Allows to display errors.
+  "liveServer.settings.donotShowInfoMsg": true, // Add vendor prefixes to CSS when you save a file.
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.tabCompletion": "on",
+  "breadcrumbs.enabled": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  /******************************************/
+  /************** C++ ***********************/
+  /******************************************/
+  "code-runner.executorMap": {
+    "cpp": "cd $dir && g++ -std=c++14 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+  },
+  "C_Cpp.default.cppStandard": "c++14",
+  "C_Cpp.default.cStandard": "c11",
+  "C_Cpp.updateChannel": "Insiders",
+  "workbench.iconTheme": "material-icon-theme",
+  "python.jediEnabled": false,
+  /******************************************/
+  /************** Files *********************/
+  /******************************************/
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/tmp": true,
+    "**/coverage": true,
+    "**/log": true,
+    "**/public/uploads": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/log": true
+  },
+  /******************************************/
+  /*********** Format On Save ***************/
+  /******************************************/
+  "editor.formatOnSave": false, // <-------- FORMAT ON SAVE <-------------------
+  "search.location": "panel",
+  "files.trimTrailingWhitespace": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.renderIndentGuides": false,
+  /******************************************/
+  /************** Font Colors ***************/
+  /******************************************/
+  /*********** ctrl + shift + p *************/
+  /****** Developer: Inspect TM Scopes ******/
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["storage"],
+        "settings": {
+          "foreground": "#005A9C"
+        }
+      },
+      {
+        "scope": ["keyword"],
+        "settings": {
+          "foreground": "#c1d164bd"
+        }
+      },
+      {
+        "scope": ["string"],
+        "settings": {
+          "foreground": "#caf0e19c"
+        }
+      },
+      {
+        "scope": ["entity"],
+        "settings": {
+          "foreground": "#ffffff9c"
+        }
+      },
+      {
+        "scope": ["keyword.operator"],
+        "settings": {
+          "foreground": "#7bff00bd"
+        }
+      },
+      {
+        "scope": ["constant"],
+        "settings": {
+          "foreground": "#d1842b"
+        }
+      },
+      {
+        "scope": ["variable"],
+        "settings": {
+          "foreground": "#7db170"
+        }
+      },
+      {
+        "scope": ["entity.name.type"],
+        "settings": {
+          "foreground": "#cacaca"
+        }
+      },
+      {
+        "scope": ["keyword.other.using"],
+        "settings": {
+          "foreground": "#c7c68b"
+        }
+      },
+      {
+        "scope": ["entity.name.tag"],
+        "settings": {
+          "foreground": "#5b9c60"
+        }
+      },
+      {
+        "scope": ["entity.name.function"],
+        "settings": {
+          "foreground": "#c2c2c2"
+        }
+      }
+    ]
+  },
+  "explorer.confirmDelete": false
 }
 ```
 
