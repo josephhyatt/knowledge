@@ -13,9 +13,10 @@
 * [tig](https://github.com/jonas/tig) - Text-mode interface for git.
 * [fac](https://github.com/mkchoi212/fac) - Easy-to-use CUI for fixing git conflicts.
 * [httpie](https://github.com/jakubroztocil/httpie) - Modern command line HTTP client.
-* [find](https://github.com/sharkdp/fd/) - A simple, fast and user-friendly alternative to 'find'.
+* [fd](https://github.com/sharkdp/fd/) - A simple, fast and user-friendly alternative to 'find'.
 * [tldr](https://github.com/tldr-pages/tldr) - Simplified and community-driven man pages.
 * [howdoi](https://github.com/gleitz/howdoi) - Instant coding answers via the command line.
+* [ghq](https://github.com/motemen/ghq) - Remote repository management made easy.
 
 
 
