@@ -96,7 +96,7 @@ Counting sort is an integer sorting algorithm that assumes that each of the  inp
 
 To choose a sorting algorithm for a particular problem, consider the running time, space complexity, and the expected format of the input list.
 
-![](../.gitbook/assets/sorting-algorithm.png)
+![](../../.gitbook/assets/sorting-algorithm.png)
 
 \*Most quicksort implementations are not stable, though stable implementations do exist.
 

@@ -1,6 +1,6 @@
 # MySQL
 
-![](../.gitbook/assets/big6%20%281%29.png)
+![](../../.gitbook/assets/big6%20%281%29.png)
 
 ## Calling Database
 
@@ -12,7 +12,7 @@ USE dataBaseName;
 
 > **SELECT** - Identifies the **column\(s\)** you want your query to select for your results.
 
-![](../.gitbook/assets/select%20%281%29.png)
+![](../../.gitbook/assets/select%20%281%29.png)
 
 ```sql
 # Syntax
@@ -32,11 +32,11 @@ FROM rental;
 
 ### SELECT DISTINCT
 
-![](../.gitbook/assets/selectdistinct.png)
+![](../../.gitbook/assets/selectdistinct.png)
 
 ## FROM
 
-![](../.gitbook/assets/from.png)
+![](../../.gitbook/assets/from.png)
 
 > Comes **after** **SELECT**.
 
@@ -59,7 +59,7 @@ FROM tableName
 
 ## WHERE
 
-![](../.gitbook/assets/where.png)
+![](../../.gitbook/assets/where.png)
 
 ```sql
 # Syntax
@@ -90,35 +90,35 @@ WHERE payment_date > '2006-01-01'
 
 ### WHERE Operators
 
-![](../.gitbook/assets/where%20%281%29.png)
+![](../../.gitbook/assets/where%20%281%29.png)
 
 ### WHERE Examples
 
-![](../.gitbook/assets/where2.png)
+![](../../.gitbook/assets/where2.png)
 
 ### WHERE & AND
 
-![](../.gitbook/assets/whereandand.png)
+![](../../.gitbook/assets/whereandand.png)
 
 ### WHERE & OR
 
-![](../.gitbook/assets/2019-07-17%20%281%29.png)
+![](../../.gitbook/assets/2019-07-17%20%281%29.png)
 
 ### WHERE & IN
 
-![](../.gitbook/assets/2019-07-17%20%282%29.png)
+![](../../.gitbook/assets/2019-07-17%20%282%29.png)
 
 ### LIKE
 
-![](../.gitbook/assets/2019-07-17_1.png)
+![](../../.gitbook/assets/2019-07-17_1.png)
 
 ### WILDCARD
 
-![](../.gitbook/assets/2019-07-17_2.png)
+![](../../.gitbook/assets/2019-07-17_2.png)
 
 ## GROUP BY
 
-![](../.gitbook/assets/2019-07-17_3.png)
+![](../../.gitbook/assets/2019-07-17_3.png)
 
 ```sql
 # Syntax
@@ -130,15 +130,15 @@ GROUP BY columnName
 
 > Comes **after** **WHERE**.
 
-![](../.gitbook/assets/2019-07-18.png)
+![](../../.gitbook/assets/2019-07-18.png)
 
 ### AGGREGATE FUNCTIONS
 
-![](../.gitbook/assets/2019-07-18%20%281%29.png)
+![](../../.gitbook/assets/2019-07-18%20%281%29.png)
 
 ## HAVING
 
-![](../.gitbook/assets/2019-07-18_1.png)
+![](../../.gitbook/assets/2019-07-18_1.png)
 
 ```sql
 # Syntax

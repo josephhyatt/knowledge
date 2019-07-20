@@ -1,6 +1,6 @@
 # Algorithms
 
-![](../.gitbook/assets/world_map_of_cpp_stl_algorithms.png)
+![](../../.gitbook/assets/world_map_of_cpp_stl_algorithms.png)
 
 ## Base Code and C++ version
 
