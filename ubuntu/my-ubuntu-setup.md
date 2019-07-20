@@ -1371,7 +1371,7 @@ bindkey '^[[B' history-substring-search-down
       {
         "scope": ["entity"],
         "settings": {
-          "foreground": "#ffffff9c"
+          "foreground": "#eb35359c"
         }
       },
       {
@@ -1383,7 +1383,7 @@ bindkey '^[[B' history-substring-search-down
       {
         "scope": ["constant"],
         "settings": {
-          "foreground": "#d1842b"
+          "foreground": "#ff0000"
         }
       },
       {
