@@ -43,8 +43,6 @@
   * [Vectors](c++/vectors/README.md)
     * [Vector Functions](c++/vectors/vector-functions.md)
     * [Vector Overview](c++/vectors/untitled.md)
-* [Command Line \(CLI\)](command-line-cli/README.md)
-  * [Useful Commands](command-line-cli/useful-commands.md)
 * [Computer Science](computer-science-1/README.md)
   * [Algorithms](computer-science-1/algorithm/README.md)
     * [C++ Data Structures and Algorithms Cheat Sheet](computer-science-1/algorithm/c++-data-structures-and-algorithms-cheat-sheet.md)
