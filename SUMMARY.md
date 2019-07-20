@@ -141,6 +141,8 @@
   * [Tmux Cheat Sheet](tmux/cheat-sheet.md)
 * [Ubuntu](ubuntu/README.md)
   * [My Ubuntu Setup](ubuntu/my-ubuntu-setup.md)
+  * [Gnome Extensions](ubuntu/gnome-extensions/README.md)
+    * [Shortcuts](ubuntu/gnome-extensions/shortcuts.md)
   * [Migrating Settings](ubuntu/migrating-settings.md)
   * [Useful CLI Commands](ubuntu/useful-ubuntu-commands.md)
 * [Vim](vim/README.md)
