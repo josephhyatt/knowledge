@@ -17,7 +17,7 @@ description: This is  everything I add to make Ubuntu feel like home.
 * [Flameshot](https://flameshot.js.org/#/) - Powerful yet simple to use screenshot software.
 * [FileZilla](https://filezilla-project.org/) - Cross-platform FTP application.
 * [HydraPaper](https://github.com/GabMus/HydraPaper) - A Gtk utility to set two different backgrounds for each monitor on GNOME.
-* [BU](https://www.ezeelinux.com/bash-scripts/) - BU is a program that makes keeping all of your user data safely backed up on a dedicated External USB drive easy.
+* [BU](https://www.ezeelinux.com/bash-scripts/) - BU is a bash script that makes keeping all of your user data safely backed up on a dedicated External USB drive easy.
 
 ## Terminal Setup
 
