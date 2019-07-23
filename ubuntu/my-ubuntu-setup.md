@@ -51,6 +51,7 @@ description: This is  everything I add to make Ubuntu feel like home.
 * [tldr](https://github.com/tldr-pages/tldr) - Simplified and community-driven man pages.
 * [howdoi](https://github.com/gleitz/howdoi) - Instant coding answers via the command line.
 * [ghq](https://github.com/motemen/ghq) - Remote repository management made easy.
+* [neofetch](https://github.com/dylanaraps/neofetch) - A command-line system information tool written in bash 3.2+.
 
 ## GNOME Extensions
 
