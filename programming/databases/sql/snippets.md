@@ -1,6 +1,6 @@
 # Snippets
 
-> * Get the row count of each table in a database in SQL Server
+## Get the row count of each table in a database 
 
 ```sql
 SELECT 
@@ -31,5 +31,17 @@ GROUP BY
     t.Name, s.Name, p.Rows
 ORDER BY 
     t.Name
+```
+
+## Create New User
+
+```sql
+CREATE USER 'username'@'localhost' identified with mysql_native_password BY 'password'; 
+```
+
+## List All Users
+
+```sql
+SELECT User, Host FROM mysql.user;
 ```
 
