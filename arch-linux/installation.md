@@ -1,5 +1,7 @@
 # Installation
 
+## Install Arch Linux
+
 1. Pull up [Arch Linux Installation Guide](https://wiki.archlinux.org/index.php/Installation_guide)
    1. Scroll down to [Connect to the Internet](https://wiki.archlinux.org/index.php/Installation_guide#Connect_to_the_internet).
 2. Verify internet is working
@@ -102,7 +104,18 @@
             2. Quit out of vim
                1. click `:` and type `wq` and click `enter`
 9. [Install GRUB](https://wiki.archlinux.org/index.php/Arch_boot_process#Boot_loader) \(boot loader\)
-   1. 
+   1. Download grub 
+      1. `pacman -S grub`
+   2. Install grub to disk grub will be going on \(not `sda1`\)
+      1. `grub-install /dev/sda` 
+   3. Create grub config file
+      1. `grub-mkconfig -o /boot/grub/grub.cfg`
+10. Reboot \(You're Finished!\)
 
+## Install Graphical Environment
+
+1. Install Xorg
+   1. `sudo pacman -S xorg`
+2. 
 
 
