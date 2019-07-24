@@ -1,6 +1,8 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Arch Linux](arch-linux/README.md)
+  * [Installation](arch-linux/installation.md)
 * [Builds](builds/README.md)
   * [Python Search Engine](builds/python-search-engine.md)
 * [Dotfiles](dotfiles/README.md)
