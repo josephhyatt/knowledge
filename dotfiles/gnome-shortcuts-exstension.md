@@ -9,39 +9,43 @@ This is my **custom** `shortcuts.json` for the Shortcuts GNOME extension.
     "shortcuts": [
       {
         "key": "h  <question>",
-        "description": "Lookup Question on StackOverflow"
+        "description": "Lookup  Question  on  StackOverflow"
       },
       {
         "key": "fzf",
-        "description": "Fuzzy Search"
+        "description": "Fuzzy  Search"
       },
       {
         "key": "exa",
-        "description": "View Fil Chmod Rights"
+        "description": "View  File  Chmod  Rights"
       },
       {
         "key": "ghp  <file name>  |  peco",
-        "description": "Interactive Filtering Tool"
+        "description": "Interactive  Filtering  Tool"
       },
       {
         "key": "tig",
-        "description": "Text-Mode Interface for Git"
+        "description": "Text-Mode  Interface  for  Git"
       },
       {
         "key": "fac",
-        "description": "CUI for FixingGit Conflicts"
+        "description": "CUI  for  FixingGit  Conflicts"
       },
       {
         "key": "fd  <filename>",
-        "description": "alternative to 'find'"
+        "description": "Alternative  to  'find'"
       },
       {
-        "key": "help",
-        "description": "TLDR, Simplified Man Pages"
+        "key": "help  <question>",
+        "description": "TLDR,  Simplified  Man  Pages"
       },
       {
         "key": "ghq",
-        "description": "Remote Repository Managemen"
+        "description": "Remote  Repository  Management"
+      },
+      {
+        "key": "cheat  <question>",
+        "description": "Cheat Sheet"
       }
     ]
   },
@@ -50,11 +54,11 @@ This is my **custom** `shortcuts.json` for the Shortcuts GNOME extension.
     "shortcuts": [
       {
         "key": "Shift  +  S",
-        "description": "Open Directory"
+        "description": "Open  Directory"
       },
       {
         "key": "Shift  +  Q",
-        "description": "Exit Ranger"
+        "description": "Exit  Ranger"
       }
     ]
   },
@@ -63,27 +67,27 @@ This is my **custom** `shortcuts.json` for the Shortcuts GNOME extension.
     "shortcuts": [
       {
         "key": "Ctrl  +  Shift  +  P",
-        "description": "Command Palette"
+        "description": "Command  Palette"
       },
       {
         "key": "Ctrl  +  Shift  +  F",
-        "description": "Search Within All Files in Project"
+        "description": "Search  Within  All  Files  in  Project"
       },
       {
         "key": "Ctrl  +  Shift  +  ~",
-        "description": "Open Command Prompt"
+        "description": "Open  Command  Prompt"
       },
       {
         "key": "Ctrl  +  F2",
-        "description": "Change All Occurrences"
+        "description": "Change  All  Occurrences"
       },
       {
         "key": "Ctrl  +  Space",
-        "description": "Code Suggestions"
+        "description": "Code  Suggestions"
       },
       {
         "key": "Alt  +  Up/Down",
-        "description": "Move Line of Code Up or Down"
+        "description": "Move  Line  of  Code  Up  or  Down"
       }
     ]
   },
@@ -92,38 +96,39 @@ This is my **custom** `shortcuts.json` for the Shortcuts GNOME extension.
     "shortcuts": [
       {
         "key": "Ctrl  +  a",
-        "description": "Prefix Key"
+        "description": "Prefix  Key"
       },
       {
         "key": "Prefix  +  c",
-        "description": "Create New Window"
+        "description": "Create  New  Window"
       },
       {
         "key": "Ctrl  +  D",
-        "description": "Kill Window"
+        "description": "Kill  Window"
       },
       {
         "key": "Prefix  +  #",
-        "description": "Change Window"
+        "description": "Change  Window"
       },
       {
         "key": "Prefix  +  ,",
-        "description": "Rename Window"
+        "description": "Rename  Window"
       },
       {
         "key": "Prefix  +  %",
-        "description": "Open Vertical Console"
+        "description": "Open  Vertical  Console"
       },
       {
         "key": "Prefix  +  \"",
-        "description": "Open Horizontal Pane"
+        "description": "Open  Horizontal  Pane"
       },
       {
         "key": "Prefix  +  :",
-        "description": "Enter Command Mode"
+        "description": "Enter  Command  Mode"
       }
     ]
   }
 ]
+
 ```
 

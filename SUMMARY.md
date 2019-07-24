@@ -7,6 +7,8 @@
   * [Python Search Engine](builds/python-search-engine.md)
 * [Dotfiles](dotfiles/README.md)
   * [.bashrc](dotfiles/.bashrc.md)
+  * [.irbrc](dotfiles/.irbrc.md)
+  * [.pryrc](dotfiles/.pryrc.md)
   * [.vimrc](dotfiles/.vimrc.md)
   * [.zsh\_aliases](dotfiles/.zsh_aliases.md)
   * [.zshrc](dotfiles/.zshrc.md)

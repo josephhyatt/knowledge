@@ -110,7 +110,7 @@
   /******************************************/
   /*********** Format On Save ***************/
   /******************************************/
-  "editor.formatOnSave": false, // <-------- FORMAT ON SAVE
+  "editor.formatOnSave": false, // <-------- FORMAT ON SAVE <-------------------
   "search.location": "panel",
   "files.trimTrailingWhitespace": true,
   "liveServer.settings.donotVerifyTags": true,
@@ -118,66 +118,79 @@
   /******************************************/
   /************** Font Colors ***************/
   /******************************************/
+  /*********** ctrl + shift + p *************/
+  /****** Developer: Inspect TM Scopes ******/
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "scope": [
-          "storage",
-        ],
+        "scope": ["storage"],
         "settings": {
-          "foreground": "#c7c68b",
+          "foreground": "#005A9C"
         }
       },
       {
-        "scope": [
-          "keyword",
-        ],
+        "scope": ["keyword"],
         "settings": {
-          "foreground": "#c7c68b",
+          "foreground": "#c1d164bd"
         }
       },
       {
-        "scope": [
-          "variable",
-        ],
+        "scope": ["string"],
         "settings": {
-          "foreground": "#7db170",
+          "foreground": "#caf0e19c"
         }
       },
       {
-        "scope": [
-          "entity.name.type",
-        ],
+        "scope": ["entity"],
         "settings": {
-          "foreground": "#589668",
+          "foreground": "#ffffff9c"
         }
       },
       {
-        "scope": [
-          "keyword.other.using",
-        ],
+        "scope": ["keyword.operator"],
         "settings": {
-          "foreground": "#c7c68b",
+          "foreground": "#7bff00bd"
         }
       },
       {
-        "scope": [
-          "entity.name.tag",
-        ],
+        "scope": ["constant"],
         "settings": {
-          "foreground": "#5b9c60",
+          "foreground": "#d1842b"
         }
       },
       {
-        "scope": [
-          "entity.name.function",
-        ],
+        "scope": ["variable"],
         "settings": {
-          "foreground": "#c2c2c2",
+          "foreground": "#7db170"
         }
       },
+      {
+        "scope": ["entity.name.type"],
+        "settings": {
+          "foreground": "#cacaca"
+        }
+      },
+      {
+        "scope": ["keyword.other.using"],
+        "settings": {
+          "foreground": "#c7c68b"
+        }
+      },
+      {
+        "scope": ["entity.name.tag"],
+        "settings": {
+          "foreground": "#5b9c60"
+        }
+      },
+      {
+        "scope": ["entity.name.function"],
+        "settings": {
+          "foreground": "#c2c2c2"
+        }
+      }
     ]
   },
+  "explorer.confirmDelete": false
 }
 ```
 
