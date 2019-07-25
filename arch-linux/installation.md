@@ -116,6 +116,26 @@
 
 1. Install Xorg
    1. `sudo pacman -S xorg`
-2. 
+
+## Install Gnome
+
+1. Verify you have sudo privilages
+   1. `sudo pacman -Syyu`
+2. Install `reflector` to get the fastest mirrors and backup the current mirrorlist and generatte a new one
+   1. `sudo pacman -S reflector`
+   2. `sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup`
+   3. `sudo reflector --verbose --latest 10 --sort rate --save /etc/pacman.d/mirrorlis`
+3. Install `Xorg` and needed `video drivers`
+   1. `sudo pacman -S xorg-server xterm xorg-xinit xf86-video-vesa bash-completion nvidia`
+4. Check if `X` works
+   1. `startx`
+      1. Exit out of `X`
+         1. `exit`
+5. [Install Gnome](https://wiki.archlinux.org/index.php/GNOME#Installation)
+   1. `sudo pacman -S gnome gdm`
+6. Enable the `GDM` service so it starts on boot
+   1. `sudo systemctl enable gdm`
+7. Reboot your machine! You're Done!
+
 
 

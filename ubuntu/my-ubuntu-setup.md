@@ -19,6 +19,12 @@ description: This is  everything I add to make Ubuntu feel like home.
 * [HydraPaper](https://github.com/GabMus/HydraPaper) - A Gtk utility to set two different backgrounds for each monitor on GNOME.
 * [BU](https://www.ezeelinux.com/bash-scripts/) - BU is a bash script that makes keeping all of your user data safely backed up on a dedicated External USB drive easy.
 
+## Themes \(Utility Tweak Tool\)
+
+* [Nordic](https://www.gnome-look.org/p/1267246/) -   \(Applications\)
+* Redglass - \(Cursor\) Default 
+* [Papirus](https://www.gnome-look.org/p/1166289/) - \(Icons\)
+
 ## Terminal Setup
 
 * [Terminal Settings Installer](https://noobs-term.com/#/?id=overview) - A easy way to setup a GREAT terminal

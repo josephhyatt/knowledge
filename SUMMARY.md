@@ -87,6 +87,7 @@
     * [Recursion](programming/computer-science-1/recursion.md)
     * [Sorting Algorithms](programming/computer-science-1/sorting-algorithms.md)
   * [DataBases](programming/databases/README.md)
+    * [MyCLI](programming/databases/mycli.md)
     * [MySQL](programming/databases/mysql.md)
     * [SQL](programming/databases/sql/README.md)
       * [Snippets](programming/databases/sql/snippets.md)
