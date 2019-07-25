@@ -136,6 +136,7 @@
 6. Enable the `GDM` service so it starts on boot
    1. `sudo systemctl enable gdm`
 7. Reboot your machine! You're Done!
+   1. `reboot`
 
 
 
