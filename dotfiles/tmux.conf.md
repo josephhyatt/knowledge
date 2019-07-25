@@ -8,16 +8,17 @@ tmux source-file ~/.tmux.conf
 ```bash
 #
 # Main Settings
-# 
+#
 
 set-option -g prefix C-a # Set mode key to Control + a
 bind-key C-a send-prefix
 setw -g mouse on
-set-option -sg escape-time 10 #
+set-option -sg escape-time 10 
+set-option -g allow-rename off
 
 #
 # Plugins
-# 
+#
 
 # List of plugins
 set -g @tpm_plugins 'tmux-plugins/tpm' # tmux package manager
