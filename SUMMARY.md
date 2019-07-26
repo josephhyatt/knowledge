@@ -12,6 +12,7 @@
   * [.vimrc](dotfiles/.vimrc.md)
   * [.zsh\_aliases](dotfiles/.zsh_aliases.md)
   * [.zshrc](dotfiles/.zshrc.md)
+  * [Install Script](dotfiles/install-script.md)
   * [Save/Sync Dotfiles](dotfiles/save-sync-dotfiles.md)
   * [settings.json \(VSCode\)](dotfiles/vscode-settings.json.md)
   * [shortcuts.json](dotfiles/gnome-shortcuts-exstension.md)
