@@ -15,7 +15,7 @@
   * [.zsh\_aliases](dotfiles/.zsh_aliases.md)
   * [.zshrc](dotfiles/.zshrc.md)
   * [Save/Sync Dotfiles](dotfiles/install-script.md)
-  * [settings.json \(VSCode\)](dotfiles/vscode-settings.json.md)
+  * [settings.json/snippets \(VSCode\)](dotfiles/vscode-settings.json.md)
   * [shortcuts.json](dotfiles/gnome-shortcuts-exstension.md)
   * [tmux.conf](dotfiles/tmux.conf.md)
 * [Github](github/README.md)

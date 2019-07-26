@@ -1,4 +1,6 @@
-# settings.json \(VSCode\)
+# settings.json/snippets \(VSCode\)
+
+## settings.json
 
 ```javascript
 {
@@ -192,9 +194,10 @@
   },
   "explorer.confirmDelete": false
 }
+
 ```
 
-## cpp.json
+## cpp.json \(snippets\)
 
 ```cpp
 {
