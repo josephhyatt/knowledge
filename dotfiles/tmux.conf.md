@@ -13,7 +13,7 @@ tmux source-file ~/.tmux.conf
 set-option -g prefix C-a # Set mode key to Control + a
 bind-key C-a send-prefix
 setw -g mouse on
-set-option -sg escape-time 10 
+set-option -sg escape-time 10
 set-option -g allow-rename off
 
 #
@@ -36,5 +36,6 @@ set -g @tpm_plugins 'arcticicestudio/nord-tmux' # an arctic, north-bluish theme
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
+
 ```
 
