@@ -21,7 +21,7 @@ Let’s add a remote, and also set status not to show untracked files:
 
 ```bash
 dotfiles config --local status.showUntrackedFiles no
-dotfiles remote add origin git@github.com:anandpiyer/.dotfiles.git
+dotfiles remote add origin git@github.com:josephhyatt/.dotfiles.git
 ```
 
 You’ll need to change the remote URL to your git repo. Now, you can easily add the config files you want to be in version control from where they are supposed to be, commit and push. For example, to add `tmux` config files, I’ll do:
