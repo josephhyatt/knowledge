@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
 * [Arch Linux](arch-linux/README.md)
-  * [Installation Guide \(Dual Boot\) Windows/Arch](arch-linux/installation-guide-dual-boot-windows-arch.md)
   * [Installation](arch-linux/installation.md)
 * [Builds](builds/README.md)
   * [Python Search Engine](builds/python-search-engine.md)
