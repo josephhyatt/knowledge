@@ -27,7 +27,7 @@ description: This is  everything I add to make Ubuntu feel like home.
 
 ## Terminal Setup
 
-* [Terminal Settings Installer](https://noobs-term.com/#/?id=overview) - A easy way to setup a GREAT terminal
+* [Terminal Settings Installer](https://noobs-term.com/#/?id=overview) - A easy way to setup a GREAT terminal which installs the following plugins.
   * [zsh](https://ohmyz.sh/) - A popular shell with features like completion, path correction, spelling correction, and more.
   * [tmux](https://github.com/tmux/tmux) - Terminal multiplexer allows you to manage multiple terminal sessions from a single window.
   * [neovim](https://neovim.io/) - \(I uninstall neovime and use normal vim\) A project that seeks to aggressively refactor Vim.
