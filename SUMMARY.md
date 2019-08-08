@@ -93,6 +93,7 @@
     * [MyCLI](programming/databases/mycli.md)
     * [MySQL](programming/databases/mysql.md)
     * [SQL](programming/databases/sql/README.md)
+      * [SQL Injection](programming/databases/sql/sql-injection.md)
       * [Snippets](programming/databases/sql/snippets.md)
     * [PostgreSQL](programming/databases/postgresql.md)
   * [General Programming](programming/general-programming/README.md)

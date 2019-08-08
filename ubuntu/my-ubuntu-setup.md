@@ -58,6 +58,7 @@ description: This is  everything I add to make Ubuntu feel like home.
 * [howdoi](https://github.com/gleitz/howdoi) - Instant coding answers via the command line.
 * [ghq](https://github.com/motemen/ghq) - Remote repository management made easy.
 * [neofetch](https://github.com/dylanaraps/neofetch) - A command-line system information tool written in bash 3.2+.
+* [mycli](https://www.mycli.net/) - A command line interface for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting.
 
 ## GNOME Extensions
 
