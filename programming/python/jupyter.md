@@ -12,6 +12,16 @@ jupyter notebook
 
 * Python Notebook Files are saved as `.ipynb`
 
+## Jupyter Commands
+
+#### Run Code
+
+`shift + enter`
+
+#### Restart Kernel
+
+`00`
+
 ## Importing Modules
 
 * `help(module_name)` will list all functions for module
