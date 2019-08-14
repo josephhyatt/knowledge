@@ -5,7 +5,7 @@
 * Create new project inside directory
   * `python3 -m venv <project_directory_name>/<project_name>`
 * Activate virtual environment 
-  * `source <project_directory_name>/<project_name>/bin/active`
+  * `source <project_directory_name>/<project_name>/bin/activate`
 * To verify you're in virtual environment in the terminal type:
   * `which python`
     * output: `/home/jh/code/projects/python/python3/NM/<project_name>/bin/python`
