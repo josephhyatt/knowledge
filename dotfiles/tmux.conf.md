@@ -17,10 +17,22 @@ set-option -sg escape-time 10
 set-option -g allow-rename off
 
 #
+# Custom Commands
+#
+
+# Moving Window
+# ctrl + arrow
+bind-key -n C-right next
+bind-key -n C-left prev
+
+# Reload Settings
+bind r source-file ~/.tmux.conf \; display "Reloaded!"
+
+#
 # Plugins
 #
 
-# List of plugins
+# List of 0Plugins
 set -g @tpm_plugins 'tmux-plugins/tpm' # tmux package manager
 set -g @tpm_plugins 'tmux-plugins/tmux-sensible' # sensible settings everyone can agree on (hopefully)
 set -g @tpm_plugins 'tmux-plugins/tmux-resurrect' # persist tmux environment across system restarts
@@ -36,6 +48,5 @@ set -g @tpm_plugins 'arcticicestudio/nord-tmux' # an arctic, north-bluish theme
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
-
 ```
 
