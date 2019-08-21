@@ -13,7 +13,7 @@
   * [.myclirc](dotfiles/.myclirc.md)
   * [.pryrc](dotfiles/.pryrc.md)
   * [.vimrc](dotfiles/.vimrc.md)
-  * [.zsh\_aliases](dotfiles/.zsh_aliases.md)
+  * [.aliases](dotfiles/.zsh_aliases.md)
   * [.zshrc](dotfiles/.zshrc.md)
   * [Save/Sync Dotfiles](dotfiles/install-script.md)
   * [settings.json/snippets \(VSCode\)](dotfiles/vscode-settings.json.md)
