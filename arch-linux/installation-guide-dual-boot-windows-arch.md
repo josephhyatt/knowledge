@@ -2,7 +2,7 @@
 
 ## Arch Linux and Windows Installation: UEFI and Encrypted \(2019\)
 
-Arch Linux is my primary workstation OS. I run it as a dual boot alongside Windows. While I rarely boot the Windows partition, there are edge cases where it has come in use. Booting occurs with UEFI. Root volumes for both operating systems are encrypted. This guide describes that installation.
+Arch Linux is my primary workstation OS. I run it as a dual boot alongside Windows. While I rarely boot the Windows partition, there are edge cases where it has come in use. Booting occurs with UEFI. Root volumes for both operating systems are encrypted. This guide describes that installation. 
 
 ## Installation Media
 
