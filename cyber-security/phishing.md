@@ -18,9 +18,3 @@ First Name,Last Name,Position,Email
 John,Smith,job position,johnsmith@gmail.com
 ```
 
-## Kill Server
-
-```text
-sudo fuser -k 80/tcp
-```
-
