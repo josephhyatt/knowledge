@@ -6,6 +6,8 @@
   * [Installation](arch-linux/installation.md)
 * [Builds](builds/README.md)
   * [Python Search Engine](builds/python-search-engine.md)
+* [Cyber Security](cyber-security/README.md)
+  * [Phishing](cyber-security/phishing.md)
 * [Dotfiles](dotfiles/README.md)
   * [.bashrc](dotfiles/.bashrc.md)
   * [.irbrc](dotfiles/.irbrc.md)
