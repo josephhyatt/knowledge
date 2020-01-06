@@ -1,4 +1,4 @@
-# Jupyter
+# Jupyter Notebook
 
 * Login to Jupyter through `terminal`
 
@@ -21,6 +21,15 @@ jupyter notebook
 #### Restart Kernel
 
 `00`
+
+## Install Packages
+
+```python
+# Install Package in Terminal
+conda install <package name>
+# or
+pip install <package name>
+```
 
 ## Importing Modules
 

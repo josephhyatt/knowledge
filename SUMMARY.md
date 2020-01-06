@@ -111,7 +111,7 @@
     * [jQuery](programming/javascript-1/jquery.md)
   * [Python](programming/python/README.md)
     * [Basic Setup to Scrape Sites](programming/python/basic-setup-to-scrape-sites.md)
-    * [Jupyter](programming/python/jupyter.md)
+    * [Jupyter Notebook](programming/python/jupyter.md)
     * [Quickstart](programming/python/setup-virtual-environment.md)
   * [Ruby/Rails](programming/ruby-rails-1/README.md)
     * [Arrays](programming/ruby-rails-1/arrays.md)
