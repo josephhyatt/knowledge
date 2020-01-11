@@ -109,6 +109,7 @@
     * [Vocabulary](programming/general-programming/vocabulary-1.md)
   * [JavaScript](programming/javascript-1/README.md)
     * [jQuery](programming/javascript-1/jquery.md)
+  * [Jupyter Notebook](programming/jupyter-notebook.md)
   * [Python](programming/python/README.md)
     * [Basic Setup to Scrape Sites](programming/python/basic-setup-to-scrape-sites.md)
     * [Jupyter Notebook](programming/python/jupyter.md)
