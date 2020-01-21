@@ -8,6 +8,7 @@
 * [Builds](builds/README.md)
   * [Python Search Engine](builds/python-search-engine.md)
 * [Cheat Sheets](cheat-sheets/README.md)
+  * [Python](cheat-sheets/python.md)
   * [Tmux](cheat-sheets/tmux.md)
 * [Cyber Security](cyber-security/README.md)
   * [Phishing](cyber-security/phishing.md)
