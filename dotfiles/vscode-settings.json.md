@@ -303,6 +303,6 @@
     ],
     "python.pythonPath": "/home/jh/anaconda3/bin/python",
     "terminal.integrated.inheritEnv": false
-  }
+  } 
 ```
 
