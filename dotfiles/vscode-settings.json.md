@@ -206,6 +206,12 @@
 				"settings": {
 					"foreground": "#b34040"
 				}
+			},
+			{
+				"scope": ["entity.name.tag.js"],
+				"settings": {
+					"foreground": "#83A598"
+				}
 			}
 		]
 	},
@@ -252,5 +258,6 @@
 	],
 	"workbench.colorTheme": "Gruvbox Material Dark"
 }
+
 ```
 
