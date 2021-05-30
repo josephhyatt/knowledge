@@ -8,12 +8,10 @@
 	/*** Disabling VSCode Extra Bloat Stuff ***/
 	/******************************************/
 	"telemetry.enableTelemetry": false,
-	"workbench.statusBar.feedback.visible": false,
 	"editor.fontFamily": "Fira Code",
 	"editor.fontSize": 15,
 	"editor.fontLigatures": true,
 	"editor.multiCursorModifier": "ctrlCmd",
-	"editor.rulers": [80],
 	"window.title": "${activeEditorMedium}${separator}${rootName}",
 	"terminal.integrated.fontFamily": "Fira Code",
 	"workbench.sideBar.location": "right",
@@ -25,6 +23,7 @@
 	"terminal.integrated.cursorStyle": "line",
 	"editor.minimap.enabled": false,
 	"editor.snippetSuggestions": "top",
+	"editor.letterSpacing": 0.2,
 	"explorer.confirmDragAndDrop": false, // Fixing UI issues / no need to click confirm boxes
 	"git.confirmSync": false,
 	"git.autofetch": true,
@@ -50,7 +49,8 @@
 		"*.html": "html"
 	},
 	"emmet.includeLanguages": {
-		"django-html": "html"
+		"django-html": "html",
+		"javascript": "javascriptreact"
 	},
 	/******************************************/
 	/********** General Formatting ************/
@@ -135,7 +135,6 @@
 		"editor.formatOnSave": true,
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-
 	"python.formatting.provider": "black",
 	"terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
 	"files.trimTrailingWhitespace": true,
@@ -189,17 +188,49 @@
 				"settings": {
 					"foreground": "#83A598"
 				}
+			},
+			{
+				"scope": ["support.type.property-name.json"],
+				"settings": {
+					"foreground": "#83A598"
+				}
+			},
+			{
+				"scope": ["variable.other.property.js"],
+				"settings": {
+					"foreground": "#8f9a95"
+				}
+			},
+			{
+				"scope": ["variable.other.object.property"],
+				"settings": {
+					"foreground": "#b34040"
+				}
 			}
 		]
 	},
-
+	"workbench.colorCustomizations": {
+		"tab.activeBackground": "#557e4696",
+		"tab.border": "#949353",
+		"tab.inactiveBackground": "#1D2021",
+		"terminal.background": "#1D2021",
+		"terminal.foreground": "#A89984",
+		// "sideBar.background": "#1d20212d",
+		"sideBar.foreground": "#A89984",
+		"panel.background": "#1d20212d"
+	},
+	"editor.mouseWheelZoom": true,
+	"workbench.settings.useSplitJSON": true,
+	"workbench.editor.highlightModifiedTabs": true,
+	"files.trimFinalNewlines": true,
 	"explorer.confirmDelete": false,
+	"explorer.sortOrder": "modified",
 	"sync.gist": "d27ef29f5aa3c5dd6c54cba0fc67cdbe",
 	"cSpell.userWords": ["pyautogui"],
 	"terminal.integrated.inheritEnv": false,
 	"terminal.integrated.shell.linux": "/bin/zsh",
 	"terminal.integrated.windowsEnableConpty": false,
-	"kite.showWelcomeNotificationOnStartup": false,
+	"kite.showWelcomeNotificationOnStartup": true,
 	"python.languageServer": "Pylance",
 	"files.autoSave": "afterDelay",
 	"python.defaultInterpreterPath": "/sbin/python",
